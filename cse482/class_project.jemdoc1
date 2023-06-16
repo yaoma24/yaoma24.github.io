@@ -1,0 +1,47 @@
+# jemdoc: menu{MENU}{exercises_homework}
+= Class Project
+
+~
+As part of the course requirement, students are required to complete a class
+project. The class project accounts for 10% of your final grade. Each project
+can be done individually or in groups of 2 or 3 students. 
+
+There are four components to the project:
+
+. Data collection and preprocessing.
+. Data analysis.
+. Development of a web-based prototype system that uses the results of data
+analysis.
+. Project reports (see the details about what report to submit below).
+
+Students working individually are required to complete steps 1, 2, and 4 only.
+Students working in groups of 2 or 3 students must also complete step 3. The
+timeline and deliverables for the project are as follows. All deliverables are
+due before midnight on the due date:
+
+. *October 12, 2017*: Email the instructor a 1-2 pages project proposal. The
+proposal must contain the following information: 
+.. Project title along with a list of team members
+.. List of data sources that will be used (provide a URL for the data). State
+whether the data needs to be further preprocessed.
+.. A short abstract describing the goals of the project.
+.. Project timeline.
+.. Role of team members (who will be responsible for doing what).
+. *November 7, 2017*: Email the instructor your project intermediate report. The
+report must contain the following information:
+.. Project title along with a list of team members
+.. A detailed abstract (less than 250 words) describing the goals of the
+project, what you plan to do, what data sets you will be using, what are the
+challenges that may arise and how you plan to solve them.
+.. Project timeline (what you have accomplished so far and what you still need
+to do).
+.. Role of team members (who will be responsible for doing what).
+Note that at this point, you are expected to have completed the data collection
+and preprocessing.
+. *December 7, 2017*: Email the instructor your final project report. A sample of
+the final report will be provided on the class project web site. Make sure you
+submit a zip file that includes the source code as well (you don't need to
+submit the raw data). If you are hosting the project on a non-CSE server,
+make sure you make the web site accessible until December 27, 2017.
+
+A list of suggested project topics can found be in [project/Topics.pdf Topics.pdf].

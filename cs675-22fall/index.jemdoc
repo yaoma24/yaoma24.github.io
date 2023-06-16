@@ -1,0 +1,131 @@
+# jemdoc: menu{MENU}{index.html}
+= CS675 Introduction to Machine Learning (Fall 2022)
+
+== General Information
+
+*Course Number*: CS675-003 \n
+*Lecture Hours*: 11:30 am - 12:50 pm, Monday and Wednesday \n
+*Location*: CKB 303 \n
+
+== Instructor
+
+[https://web.njit.edu/~ym329/ Yao Ma] \n
+*Email*: yao dot ma at njit dot edu \n
+*Office*: GITC4204
+
+== Teaching Assistant
+- Hongliang Chi \n
+ *Email*: hc443 at njit dot edu
+- Prajwal Mani \n
+ *Email*: pbm6 at njit dot edu
+
+== TA Office Hours:
+  ~~~
+  {}{table}{}
+          | TA           | Time | Location ||
+ Session 1|Hongliang Chi | 14:00-15:00, Tuesday| GITC 4324||
+ Session 2|Prajwal Mani  | 15:00-16:00, Thursday| GITC 4403|| 
+  ~~~
+
+== Course Overview
+This course is an introduction to machine learning and contains both theory and applications. Students will get exposure to a broad
+range of machine learning methods and hands-on practice on real data. Topics include Bayesian classification, perceptron, neural
+networks, logistic regression, support vector machines, decision trees, random forests, boosting, dimensionality reduction,
+unsupervised learning, regression, and learning new feature spaces. 
+
+
+== Prerequisites
+
+Basic probability, linear algebra, computer programming, and graduate or undergraduate senior standing, or approval of the
+instructor. 
+
+== Learning Outcomes 
+
+- Understand the background of supervised and unsupervised machine learning.
+- Understand a wide variety of learning algorithms.
+- Understand how to evaluate machine learning models.
+- Apply the algorithms to real problems, and optimize their parameters.
+
+
+
+== Textbooks
+There will be no required textbooks for the class. Some of the class material, however, will be based on content from the following books (none of which you are required to purchase):
+- Richard Duda, Peter Hart and David Stork, Pattern Classification, 2nd ed. John Wiley & Sons, 2001.
+- Tom Mitchell, Machine Learning. McGraw-Hill, 1997. 1st edition.
+- Christopher Bishop, Pattern Recognition and Machine Learning. Springer 2007.
+- Hal Daumé, [http://ciml.info/ A Course in Machine Learning]
+- Shai Shalev-Shwartz and Shai ben-David, Understanding Mahcine Learning: Frpm Theory to Algorithms
+- Raschka, V. Mirjalili, Python Machine Learning: Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow 2, 3rd edition
+- Machine Learning, An algorithmic Perspective, 2 Edition, Stephen Marsland
+- The Elements of Statistical Learning, 2 Edition, Hastie, R. Tibshirani, J. Friedman
+- Linear Algebra and Learning from Data, Gilbert Strang
+
+
+== Assignments 
+There will be 4-6 coding assigments throughout the semester. Each assignment consists of several small tasks where selected code needs to be completed. Each assignment has its own detailed instructions. In addition, own research on the details of the implementation needs to be conducted. Each assignment needs to be completed in 7-14 days and submitted via Canvas. 
+
+== Project
+- The project can be carried out by a group of at most 3 students. 
+- You can choose any topics as long as they are related to machine learning.
+- Each group is required to submit a project proposal and a final report.
+- Each group is required to give a Final Presentation (10 minutes). 
+- More information about the project will be released at [project.html this page].
+
+
+== Grading Policies
+- Assigments (30%)
+- Midterm exam (25%)
+- Final Exam (25%)
+- Project (20%)
+
+=== Grading Scale
+ - A: 93-100,
+ - B+: 84-92,
+ - B: 76-83,
+ - C+: 68-75,
+ - C: 60-67,
+ - F: 0-59.
+
+=== Grade Corrections
+
+Check the grades in course work and report errors promptly. Please try and resolve any issue within one week of the grade
+notification.
+
+== Course Policies
+
+=== Absence
+If you miss a class, it is up to you to make up for the lost time. Missing two exams leads to an automatic F in the course. If you
+miss one exam, you must contact the Dean of Students (DOS) within 2 working days from the day the reason for the absence is
+lifted with all necessary documentation. If DOS approves, your missing exam grade will be set equal to the average of the nonmissing exam grades.
+
+=== Collaboration and External Resources for Assignments
+Some homework problems will be challenging. You are advised to first try and solve all the problems on your own. You are also allowed to collaborate with your classmates and search for solutions online. But you should use such solutions only if you understand them completely (admitting that you do not understand something is way better than copying things you do not understand). Also, make sure to give the appropriate credit and citation.
+
+=== Late Policy 
+- There will be a 10% penalty of total regular points for every day an assignment is late.
+- Max. late submission is 5 days late. 
+
+#== Contents
+
+#- Linear regression
+#- Classification
+#- Clustering
+#- Introduction to Deep Learning
+
+== Important Dates
+- 10/05 Project Proposal Due
+- 10/26 Midterm Exam
+- 12/14 Project Final Report Due
+- 12/19 Final Exam
+
+
+
+ == Academic Integrity
+ Academic Integrity is the cornerstone of higher education and is central to the ideals of this course and the university. Cheating is strictly prohibited and devalues the degree that you are working on. As a member of the NJIT community, it is your responsibility to protect your educational investment by knowing and following the academic code of integrity policy that is found at:
+ [http://www5.njit.edu/policies/sites/policies/files/academic-integrity-code.pdf academic-integrity-code.pdf].
+
+ Please note that it is my professional obligation and responsibility to report any academic misconduct to the Dean of Students Office. *Any student found in violation of the code by cheating, plagiarizing or using any online software inappropriately will result in disciplinary action. This may include a failing grade of F, and/or suspension or dismissal from the university*. If you have any questions about the code of Academic Integrity, please contact the Dean of Students Office at [dos@njit.edu dos@njit.edu]
+
+ == Acknowledgement
+
+ A large potion of the course materials are adapted from [https://web.njit.edu/~przem/ Dr. Przmyslaw Musialski]'s machine learning course. Some of the materials are adopted from machine learning courses developed by [https://jiayuzhou.github.io/ Dr. Jiayu Zhou] and [https://web.njit.edu/~ikoutis/ Dr. Yiannis Koutis].    

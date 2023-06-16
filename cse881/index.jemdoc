@@ -1,0 +1,92 @@
+# jemdoc: menu{MENU}{index.html}
+= CSE 881 Data Mining (Spring 2021)
+
+== General Information
+
+*Course Number*: CSE881 \n
+*Lecture Hours*:  Tuesday, Thursday 12:40 pm - 14:00 pm \n
+*Zoom Link*: [https://msu.zoom.us/j/92168455322 https://msu.zoom.us/j/92168455322] \n
+
+== Instructor
+
+[http://www.cse.msu.edu/~tangjili/ Jiliang Tang] \n
+*Email*: tangjili at cse dot msu dot edu \n
+
+== Teaching Assitant
+[http://cse.msu.edu/~mayao4/ Yao Ma] \n
+*Email*: mayao4 at msu dot edu \n
+
+== Course Overview
+This course will cover the fundamental topics in data mining including classification, clustering, association analysis, and anomaly detection. The course is aimed towards graduate students who are interested to do research in data mining, machine learning, and other related disciplines.
+Students are expected to have programming background either in C, C++, Java, Python, or other equivalent programming languages in order to do the homework assignments and class project. Some of the homework assignments may require programming in Matlab. Students are also expected to have background in algorithms and data structures, linear algebra, and probability/statistics.
+
+
+
+
+== Preference Books
+There is no main textbook for the class. However, you may use materials from the following books as a reference. Lecture slides and additional reading materials will be provided on the class website.
+- Introduction to Data Mining (Pang-Ning Tan, Michael Steinbach, and Vipin
+Kumar), Addison Wesley, 2006
+- Mining of Massive Datasets (Anand Rajaraman, Jeff Ullman), Cambridge University
+Press, 2011
+
+
+== Course Outline
+Please refer to the [schedule.html class schedule] for more details
+- Introduction
+- Overview of linear algebra, probability, statistics, and analysis of algorithms 
+- Classification
+- clustering
+- Other topics
+
+== Course Assessment 
+[exercises_homework.html Homework assignments] (30\%) \n 
+[class_project.html Project] (30\%) \n
+Class participation (5\%) \n
+[exams.html Exams] (35\%) \n
+
+
+
+== Grading Criteria
+4.0 ~  90\%+ \n
+3.5 ~  85\% \n
+3.0 ~  80\% \n
+2.5 ~  75\% \n
+2.0 ~  70\% \n
+1.5 ~  65\% \n
+1.0 ~  60\%- \n
+
+== Course Policy
+
+- Homework assignments are due before midnight on the due date. Late submissions will
+be deducted 25\% of the total possible assignment grade (if submitted after the
+deadline but on the same day) or 50\% (if submitted a day after the deadline).
+Assignments submitted more than one day after the deadline will not be accepted
+(unless you receive permission from the instructor). 
+- Weekly lab exercises are due before midnight on the due date. The three lowest
+grades for the lab exercises will not be included when calculating your final
+grade.
+- You are encouraged to form study groups to learn the materials in class.
+However, all submitted assignments (including computer programs) must be your
+own work. If plagiarism is detected, the students involved will automatically
+receive a 0 for the grade and will be reported to the university. 
+- The instructor reserves the right to modify the course content and class
+schedule during the semester.
+- Make-ups for examinations may be arranged if your absence is caused by
+documented illness or personal emergency. A written explanation (including
+supporting documentation) must be submitted to your lecture instructor; if the
+explanation is acceptable, an alternative to the examination will be arranged.
+When possible, make-up arrangements must be made in advance. 
+- All students are expected to be responsible users of the computer system
+provided for this course. Account usage guidelines published by the Department
+of Computer Science and Engineering are posted at
+[http://www.cse.msu.edu/facility/policy.php].  
+- The Department of Computer Science expects all students to adhere to MSU's
+policy on Integrity of Scholarship and Grades. Information about MSU policy
+regarding academic integrity is available at
+[https://www.msu.edu/~ombud/academic-integrity/index.html].  
+- Students who require accommodation under the Americans with Disabilities Act
+(ADA) with MSU's Resource Centers for Disabilities (RCPD) should bring their
+Verified Individualized Services and Accommodations (VISA) form to the
+instructor at the beginning of the semester as possible.
+

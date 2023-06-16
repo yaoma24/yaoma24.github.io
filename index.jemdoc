@@ -1,0 +1,73 @@
+# jemdoc: menu{MENU}{index.html}
+= Yao Ma
+
+~~
+{}{img_left}{images/yaoma.png}{Image of Yao}{238}{238}{images/yaoma.png}
+
+Assistant Professor\n
+Department of Computer Science\n
+Ying Wu College of Computing\n
+New Jersey Institute of Technology\n
+
+#[index.html  Data Analytics and Machine Intelligence (DAMI) Lab]
+[https://dami-lab.github.io Data Analytics and Machine Intelligence (DAMI) Lab]
+
+Email: yao dot ma at njit dot edu\n
+Office: GITC 4204\n
+
+
+[https://scholar.google.com/citations?user=wf9TTOIAAAAJ&hl=en Google Scholar]\n
+[https://www.linkedin.com/in/yao-ma-21b9a6179/ LinkedIn]
+
+~~ 
+
+== Short Bio
+Yao Ma is an assistant professor in the [https://cs.njit.edu/ Department of Computer Science] at [https://njit.edu/ New Jersey Institute of Technology (NJIT)].\n
+He got his PhD from [https://msu.edu Michigan State University] in 2021 under the supervision of [http://www.cse.msu.edu/~tangjili Dr. Jiliang Tang]. Before that, he completed his MS (2016) in Statistics, Probability & Operations Research at [https://www.tue.nl/en/ Eindhoven University of Technology] and 
+BS (2015) in Mathematics and Applied Mathematics at [http://www.zju.edu.cn/english/ Zhejiang University]. \n
+
+
+=== *I have several fully-funded PhD positions available in Spring 2023 and Fall 2023. If you are interested in working with me, please feel free to email me. Please check [openings.html here] for more details.* 
+
+== Research Interests
+- Machine Learning with Graphs, Graph Neural Networks 
+- Trustworthy AI: Robustness, Fairness, Privacy
+- Data Centric-AI: Data Augmentation, Active Learning, Data Valuation, Data Condensation
+
+== Call for Papers
+
+- [https://www.frontiersin.org/research-topics/30288/machine-learning-on-complex-graphs Machine Learning on Complex Graphs] - Frontiers in Big Data (Topic Editor) 
+ -- Welcomed topics include: graph kernels\/summarization\/coarsening\/alignment\/etc, graph neural networks, network embedding, related applications, etc
+ -- We especially invite submissions with emphasis on complex graphs such as dynamic\/hyper\/heterogeneous\/knowledge graphs
+ -- Paper Submission Deadline: November 25th 2022 ([https://www.frontiersin.org/research-topics/30288/machine-learning-on-complex-graphs/participate-in-open-access-research-topic link])
+
+
+
+#=== Our recent tutorial: Graph Neural Networks: Models and Applications ([https://web.njit.edu/~ym329/tutorials/aaai2021/ Video/Slides]).
+#=== Our book: [https://web.njit.edu/~ym329/dlg_book/ Deep Learning on Graphs] ([https://web.njit.edu/~ym329/dlg_book/dlg_book.pdf Preprint]).
+== News ([news.html more])
+- 05/2023 Honored to receive a research grant from NSF for the project [https://www.nsf.gov/awardsearch/showAward?AWD_ID=2300341&HistoricalAwards=false SHINE: Prediction of Coronal Mass Ejections and Interplanetary Magnetic Fields Using Advanced Artificial Intelligence Techniques] as a Co-PI.
+- 05/2023 Gave a lecture on machine learning for the ISWS-REU program.
+- 05/2023 One paper accepted by *ACL2023*.
+- 04/2023 One paper accepted by *TKDE*.
+- 04/2023 Invited to give a talk at [https://web.njit.edu/~sa2564/IEEE_CAS_Seasonal_School.html IEEE CAS Seasonal School].
+- 04/2023 One paper accepted by *SIGIR2023*.
+- 01/2023 Receving a gift grant from *Shell* for the project Supply Chain Network Optimization. Thanks Shell!   
+- 12/2022 Invited to serve as a grant proposal panelist for *NSF*.
+- 11/2022 Our workshop Data Science for Smart Manufacturing and Healthcare was accepted by SDM2023.
+- 10/2022 Our workshop Machine Learning on Graphs (MLoG) is accepted by WSDM2023. 
+- 08/2022 Honored to receive a research grant from NSF for the project [https://www.nsf.gov/awardsearch/showAward?AWD_ID=2212145&HistoricalAwards=false Collaborative Research: III: Medium: Graph Neural Networks for Heterophilous Data: Advancing the Theory, Models, and Applications] as the Site PI at NJIT. 
+- 08/2022 Invited to give a talk for the Data Science Show at AT\&T Labs. 
+- 08/2022 New preprint on graph contrastive learning is available [https://arxiv.org/pdf/2208.06743.pdf here].
+- 07/2022 Invited to serve as Senior PC member for AAAI2023. 
+- 05/2022 One paper accepted by *KDD2022*.
+- 04/2022 Our workshop [https://mlog-workshop.github.io/ Machine Learning on Graphs (MLoG)] is accepted at ICDM2022.
+- 03/2022 Invited to serve as a PC menber for *KDD2022*, *ICML2022*, *IJCAI2022*, and *NeurIPS2022*.
+- 02/2022 Gratefully received an NSF CRII grant ([https://nsf.gov/awardsearch/showAward?AWD_ID=2153326&HistoricalAwards=false IIS-2153326]) as the PI to support our research on advancing graph neural networks. 
+- 01/2022 Two papers accepted by ICLR2022.
+- 11/2021 Our workshop "[https://mlog-workshop.github.io/ Machine Learning on Graphs (MLoG)]" has been accpeted by WSDM2022. 
+- 10/2021 Invited to serve as Proceddings Co-chair of KDD2022.
+- 10/2021 Invited to serve as PC member for SDM 2022.
+- 10/2021 Invited to serve as PC menber for The Web Conference 2022. 
+- 09/2021 One paper accepted by *NeurIPS2021*.
+- 08/2021 Two papers accepted by *CIKM2021*. 

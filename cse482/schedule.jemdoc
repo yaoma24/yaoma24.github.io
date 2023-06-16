@@ -1,0 +1,97 @@
+# jemdoc: menu{MENU}{schedule.html}
+= Schedule 
+
+~~
+*Lecture slides and materials will be released on this page.*
+- Lecture 1 : Introduction 
+-- slides: [slides/lecture1/lecture1.pptx lecture1.pptx]
+- Lecture 2 : Data Representation 
+-- slides: [slides/lecture2/lecture2.pptx lecture2.pptx] 
+-- materials: [slides/lecture2/vehicle.csv vehicle.csv] ~
+[slides/lecture2/cdc.json cdc.json] ~ [slides/lecture2/readCSV.ipynb
+readCSV.ipynb] ~ [slides/lecture2/read_json.ipynb read_json.ipynb]  
+- Lecture 3 : Data Collection
+-- slides: [slides/lecture3/lecture3.pptx lecture3.pptx]
+-- materials: [slides/lecture3/geocoder.ipynb geocoder.ipynb] ~
+[slides/lecture3/twitter_searchAPI.ipynb twitter_searchAPI.ipynb] ~ [slides/lecture3/twitter_stream.ipynb twitter_stream.ipynb] 
+- Lecture 4 : SQL
+-- slides: [slides/lecture4/lecture4.pptx lecture4.pptx] 
+-- materials: [slides/lecture4/wiki_edit.txt wiki_edit.txt] ~
+[slides/lecture4/dbase.ipynb dbase.ipynb]
+- Lecture 5 : NoSQL
+-- slides: [slides/lecture5/lecture5.pptx lecture5.pptx]
+-- materials: [slides/lecture5/mongo_twitter.ipynb mongo_twitter.ipynb] ~
+[slides/lecture5/mongodb.ipynb mongodb.ipynb] 
+- Lecture 6 : Data Quality and Pandas
+-- slides: [slides/lecture6/lecture6.pptx lecture6.pptx]
+-- materials: [slides/lecture6/election_example.ipynb election_example.ipynb] ~
+[slides/lecture6/pandas_example.ipynb pandas_example.ipynb] 
+- Lecture 7 : Data Preprocessing
+-- slides: [slides/lecture7/lecture7.pptx lecture7.pptx]
+-- materials [slides/lecture7/diabetes.csv diabetes.csv] ~ [slides/lecture7/buy.csv buy.csv] ~ [slides/lecture7/lecture7.ipynb lecture7.ipynb]
+- Lecture 8 : Data Summarization and Visualization
+-- slides: [slides/lecture8/lecture8.pptx lecture8.pptx] 
+-- materials [slides/lecture8/students.csv students.csv] ~
+[slides/lecture8/diabetes.csv diabetes.csv] ~[slides/lecture8/mapping.ipynb
+mapping.ipynb] ~ [slides/lecture8/lecture8.ipynb lecture8.ipynb]
+- Lecture 9 : Predictive Modeling
+-- slides: [slides/lecture9/lecture9.pptx lecture9.pptx]
+-- materials: [slides/lecture9/diabetes.csv diabetes.csv] ~
+[slides/lecture9/lecture9.ipynb lecture9.ipynb]
+- Lecture 10 : Predictive modeling
+-- slides: [slides/lecture10/lecture10.pptx lecture10.pptx]
+-- materials: [slides/lecture10/lecture10.ipynb lecture10.ipynb] 
+- Lecture 11 : Cluster Analysis  
+-- slides: [slides/lecture12/lecture11.pptx lecture11.pptx]
+-- materials: [slides/lecture12/ratings.csv ratings.csv] ~ [slides/lecture12/ratings2.csv ratings2.csv] ~ [slides/lecture12/ratings.xlsx ratings.xlsx] ~ [slides/lecture12/lecture11.ipynb lecture11.ipynb]
+- Lecture 12 : Cluster Analysis
+-- slides: [slides/lecture13/lecture12.pptx lecture12.pptx]
+-- materials: [slides/lecture13/animals.csv animals.csv] ~
+[slides/lecture13/diabetes.csv diabetes.csv] ~
+[slides/lecture13/lecture12.ipynb lecture12.ipynb]
+- Lecture 13 : Market Basket Analysis 
+-- slides: [slides/lecture11/lecture13.pptx lecture13.pptx]
+-- materials: [slides/lecture11/Titanic.csv Titanic.csv] ~
+[slides/lecture11/apriori.exe apriori.exe] ~ [slides/lecture11/freqiset.txt
+freqiset.txt] ~ [slides/lecture11/rules.txt rules.txt] ~
+[slides/lecture11/lecture13.ipynb lecture13.ipynb]
+- Lecture 14 : Anomaly Detection
+-- slides: [slides/lecture14/lecture14.pptx lecture14.pptx]
+-- materials: [slides/lecture14/Synthetic_control_sample.csv
+Synthetic_control_sample.csv] ~ [slides/lecture14/lecture14.ipynb lecture14.ipynb]
+- Lecture 15 : Ranking (Collaborative Filtering)
+-- slides: [slides/lecture15/lecture15.pptx lecture15.pptx]
+-- materials: [slides/lecture15/ratings.csv ratings.csv] ~ [slides/lecture15/lecture15.ipynb lecture15.ipynb]
+- Lecture 16 : Hadoop (Introduction)
+-- slides: [slides/lecture16/lecture16.pptx lecture16.pptx] ~
+[slides/lecture16/lecture16b.pptx lecture16b.pptx] 
+- Lecture 17 : Hadoop programming (Getting started)
+-- slides: [slides/lecture17/lecture17.pptx lecture17.pptx]
+-- materials: [slides/lecture17/AWS.tar AWS.tar]
+- Lecture 18: Hadoop: Programming Examples
+-- slides: [slides/lecture18/lecture18.pptx lecture18.pptx] 
+-- materials: [slides/lecture18/WordCount.java WordCount.java]
+- Lecture 19 : Hadoop I/O
+-- slides: [slides/lecture19/lecture19.pptx lecture19.pptx]
+-- materials: [slides/lecture19/sentiment.txt sentiment.txt] ~ [slides/lecture19/sentiment.xlsx sentiment.xlsx]
+- Lecture 20 : Hadoop Streaming
+-- slides: [slides/lecture20/lecture20.pptx lecture20.pptx] 
+- Lecture 21 : Pig (Introduction)
+-- slides: [slides/lecture21/lecture21.pptx lecture21.pptx]
+- Lecture 22 : Pig programming
+-- slides: [slides/lecture22/lecture22.pptx lecture22.pptx]
+- Lecture 23 : Pig and Hive
+-- slides: [slides/lecture23/lecture23.pptx lecture23.pptx]
+- Lecture 24 : Hive
+-- slides: [slides/lecture24/lecture24.pptx lecture24.pptx]
+- Lecture 25 : Mahout
+-- slides: [slides/lecture25/lecture25.pptx lecture25.pptx]
+- Lecture 26 : Mahout
+-- slides: [slides/lecture26/lecture26.pptx lecture26.pptx]
+
+- Slides for Spark (Lecture 27 \& Lecture 28)
+-- [slides/lecture27/lecture27.pptx lecture27.pptx]~[slides/lecture28/lecture28.pptx lecture28.pptx] 
+
+
+
+~~

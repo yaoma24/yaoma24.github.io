@@ -1,0 +1,21 @@
+= Chapter 10 Application in Natrual Language Processing
+
+== Introduction
+Graphs have been extensively utilized in natural language process (NLP) to represent linguistic structures. For example, the constituency-based parse trees represent phrase structures for a given sentence; the syntactic dependency trees encode syntactic relations in terms of tree structures; and abstract meaning representation (AMR) denotes semantic meanings of sentences as rooted and labeled graphs that are easy for the program to traverse. These graph representations of natural languages carry the rich semantic and/or syntactic information in an explicit structural way. Graph neural networks (GNNs) have been adopted by various NLP tasks where graphs are involved. These graphs include the aforementioned widely used graphs and also other graphs designed specifically for particular tasks. Specifically, GNNs have been utilized to enhance many NLP tasks such as semantic role labeling, (multi-hop) question answering (QA), relation extraction, neural machine translation, and graph to sequence learning. Furthermore, knowledge graphs, which encode multi-relational information in terms of graphs, are widely adopted by NLP tasks. There are also a lot works generalizing graph neural network models to knowledge graphs. In this chapter, we take Semantic Role Labeling, Neural Machine Translation, Relation Extraction, Question Answering and graph to sequence learning as examples to demonstrate how graph neural networks can be applied to NLP tasks. We also introduce the graph neural network models designed for knowledge graphs.  
+== Contents
+ . Semantic Role Labeling
+ . Neural Machine Translation
+ . Realtion Extraction
+ . Question Answering
+ . Graph to Sqeuence learning
+ . Graoh Neural Networks for Knowledge Graphs
+ . Conclusion
+ . Further Reading
+ 
+
+ 
+
+
+
+
+ 

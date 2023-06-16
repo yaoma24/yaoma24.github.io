@@ -1,0 +1,52 @@
+# jemdoc: menu{MENU}{resources.html}
+= Resources
+
+~~
+== Data Analysis
+- [http://www.cs.waikato.ac.nz/ml/weka/ Weka software]
+- [http://weka.wikispaces.com/Use+WEKA+in+your+Java+code?responseToken=0a6d9e51bfc332363d409df7b4f113ef9 Using Weka in your Java Code]
+
+== Programming 
+- Instructions on how to log in to the CSE database server: [http://www.cse.msu.edu/Facility/Services/MySQL.php MySQL Database Server for Students]
+
+== MapReduce and Hadoop
+- [http://hadoop.apache.org/ Apache Hadoop]
+- [resources/Hadoop_Guide.pdf Instructions on how to connect to CSE hadoop clusters]
+- Instructions on how to sign up for Amazon Web services
+- Instructions on how to submit jobs to AWS
+
+== Python Programming & Jupyter notebook
+- [resources/python.pdf Getting started using Python]
+- [https://jupyter.readthedocs.io/en/latest/install.html\#installing-jupyter-notebook
+  Installing Jupyter Notebook]
+- [resources/Changing_cell_type.pdf Changing the cell type] 
+== Java Programming
+
+- [resources/started.pdf Lesson1: Getting started]
+- [resources/lesson2.pdf Lesson2: More about Java] (Short intro to Java Programming by Kary Framling)
+
+Here are some books on Java programming if you're not familiar with the language:
+- [http://iit.qau.edu.pk/books/teach_your_self_java_in_21_days.pdf Teach Yourself Java in 21 
+Days] (by Laura Lemay and Charles L Perkins)
+
+- [http://math.hws.edu/eck/cs124/downloads/javanotes7-linked.pdf Introduction to Programming Using Java] (by David J Eck)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~~

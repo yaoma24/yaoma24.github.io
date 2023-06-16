@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Chapter 4 Graph Embedding</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Chapter 4 Graph Embedding</h1>
+</div>
+<h2>Introduction</h2>
+<p>Graph embedding aims to map each node in a given graph into a low-dimensional vector representation (or commonly known as node embeddings) that typically preserves some key information of the node in the original graph. A node in graph embedding can be viewed from two domains: 1) the original graph domain, where nodes are connected to each other via edges (or the graph structure); and 2) the embedding domain, where each node is represented as a continuous vector. Thus, from this two domain perspective, graph embedding targets on mapping each node from the graph domain to the embedding domain such that the information in the graph domain can be preserved in the embedding domain. Two key questions naturally arise: 1) which information to preserve? and 2) how to preserve this information? Different graph embedding algorithms often provide different answers to these two questions. For the first question, many types of information have been investigated such as node's neighborhood information, node's structural role, node status and  community information. There are various techniques proposed to answer the second question. While the technical details of these techniques vary, the majority of them share the same idea, which is to reconstruct the graph domain information to preserve by using the node representations in the embedding domain. The intuition is that good node representations should be able to reconstruct the information we desire to preserve. Therefore, the mapping can be learned by minimizing the reconstruction error. We illustrate an overall framework in Figure&nbsp;ref{fig:general<u>framework</u>network_embedding} to summarize the general process of graph embedding.     
+</p>
+<h2>Contents</h2>
+<ol>
+<li><p>Graph Embedding for Simple Graphs
+</p>
+</li>
+<li><p>Graph Embedding for Complex Graphs
+</p>
+</li>
+<li><p>Conclusion
+</p>
+</li>
+<li><p>Further Reading
+</p>
+</li>
+</ol>
+<div id="footer">
+<div id="footer-text">
+Page generated 2022-01-21 12:21:07 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</div>
+</body>
+</html>

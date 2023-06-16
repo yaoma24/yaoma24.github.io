@@ -1,0 +1,16 @@
+= Chapter 6 Robust Graph Neural Networks
+
+== Introduction
+As the generalizations of traditional DNNs to graphs, GNNs inherit both advantages and disadvantages of traditional DNNs. Similar to traditional DNNs, GNNs have been shown to be effective in many graph-related tasks such as node-focused and graph-focused tasks. Traditional DNNs have been demonstrated to be vulnerable to dedicated designed adversarial attacks. Under adversarial attacks, the victimized samples are perturbed in such a way that they are not easily noticeable but they can lead to vicious results. It is increasingly evident that GNNs also inherit this drawback. The adversary can generate graph adversarial perturbations by manipulating the graph structure or node features to fool the GNN models. This limitation of GNNs has arisen immense concerns on adopting them in safety-critical applications such as financial systems and risk management. For example, in a credit scoring system, fraudsters can fake connections with several high-credit customers to evade the fraudster detection models; and  spammers can easily create fake followers to increase the chance of fake news being recommended and spread. Therefore, we have witnessed more and more research attention on graph adversarial attacks and their countermeasures. In this chapter, we first introduce concepts and definitions of graph adversarial attacks and detail some representative adversarial attack methods on graphs. Then, we discuss representative defense techniques to these adversarial attacks.     
+== Contents
+ . Graph Adversarial Attacks
+ . Graph Adversarial Defenses
+ . Conclusion
+ . Further Reading
+
+ 
+
+
+
+
+ 

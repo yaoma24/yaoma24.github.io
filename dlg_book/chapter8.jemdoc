@@ -1,0 +1,21 @@
+= Chapter 9 Graph Neural Networks on Complex Graphs
+
+== Introduction
+In the earlier chapters, we have discussed graph neural network models with the focus on simple graphs where the graphs are static and have only one type of nodes and one type of edges. However, graphs in many real-world applications are much more complex. They typically have multiple types of nodes and often are dynamic. As a consequence, these complex graphs present more complicated patterns that are beyond the capacity of the aforementioned graph neural network models for simple graphs. Thus, dedicated efforts are desired to design graph neural network models for complex graphs. These efforts can greatly impact the successful adoption and use of GNNs in a broader range of applications. In this chapter, using complex graphs as examples, we discuss how to extend the graph neural network models to capture more sophisticated patterns. More specifically, we describe more advanced graph filters designed for complex graphs to capture their specific properties. 
+== Contents
+ . Heterogeneous Graph Neural Networks
+ . Bipartite Graph Neural Networks
+ . Multi-dimensional Graph Neural Networks
+ . Signed Graph Neural Networks
+ . Hypergraph Neural Networks
+ . Dynamic Graph Neural Networks
+ . Conclusion
+ . Further Reading
+ 
+
+ 
+
+
+
+
+ 

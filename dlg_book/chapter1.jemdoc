@@ -1,0 +1,11 @@
+= Chapter 1 Deep Learning on Graphs: An Introduction
+
+== Introduction
+We start the chapter by answering a few questions about the book. First, we discuss why we should pay attention to deep learning on graphs. In particular, why do we represent real-world data as graphs, why do we want to bridge deep learning with graphs, and what are challenges for deep learning on graphs? Second, we introduce what content will be covered by this book.  Specifically, which topics we will discuss and how to organize these topics?  Third, we provide guidance about who should read this book. Especially what is our target audience and how to read this book with different backgrounds and purposes of reading? To help better understand deep learning on graphs, we briefly review the history under the more general context of feature learning on graphs.
+== Contents
+ . Why Deep Learning on Graphs?
+ . What Content is Covered?
+ . Who Shoud Read the Book?
+ . Feature Learning on Graphs: A Brief History
+ . Conclusion
+ . Further Reading

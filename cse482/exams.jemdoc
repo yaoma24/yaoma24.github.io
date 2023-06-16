@@ -1,0 +1,19 @@
+# jemdoc: menu{MENU}{Exams}
+= Exams
+
+~~
+There will be two exams, a midterm exam and a final exam. The 20\% will be
+equally split to these two exams.
+== Midterm exam
+- Date: 10\/26\/2017 (in the class).
+- The instructor will give an overall review on 10\/24\/2017.
+- You are allowed to bring an A4 cheatsheet for the exam.
+- Slides: [cse482_midterm_review.pptx Midterm review]
+
+== Final exam
+- Time: 10 am-12 am, 12\/14\/2017 
+- Location: 1234 Engineering Building
+- Content: only cover content after mid-term.
+- You are allowed to bring an A4 cheatsheet for the exam.
+- Slides: [overview.pptx Final review]
+~~

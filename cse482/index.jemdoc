@@ -1,0 +1,124 @@
+# jemdoc: menu{MENU}{index.html}
+= CSE 482 Big Data Analysis (Fall 2017)
+= *Note: This is the class website for Fall 2017*
+~~
+== General Information
+
+*Course Number*: CSE482 \n
+*Lecture Hours*:  Tuesday, Thursday 10:20am-11:40am \n
+*Lecture Room*: 1234 Engineering Building \n
+
+== Instructor
+
+[http://www.cse.msu.edu/~tangjili/ Jiliang Tang] \n
+*Office*: 2148 Engineering Building \n
+*Office Hours*: Tuesday, Thursday 11:40am-12:40pm \n
+*Email*: tangjili at cse dot msu dot edu \n
+
+== Teaching Assitant
+[http://cse.msu.edu/~mayao4/ Yao Ma] \n
+*Office Hours*: Wednesday, Friday 15:00pm-16:00pm \n
+*Location*: 3203 Engineering Building \n
+*Email*: mayao4 at msu dot edu \n
+
+== Course Overview
+This course is intended for senior undergraduate students who are interested to
+gain hands-on experience applying computational techniques to solve big data
+analysis problems. Examples of such problems include: How to detect trending
+topics in Twitter data? How to predict customers who would churn to a
+competitor? How to design a large-scale recommender system? Students will learn
+the basic techniques and programming tools that can be used to provide answers
+to such questions. 
+
+== Course Objectives
+- To  introduce the basic concepts and methods for big data analysis
+- To teach programming skills and tools for collecting, storing, querying, and
+analyzing large-scale data
+
+== Course Outcomes
+- Students will have a good understanding of the capabilities provided by various data analysis techniques and apply the appropriate ones to solve real-world
+problems
+- Students will gain hands-on experience on using data analysis tools
+- Students will gain experience designing and developing programs for collecting, querying, and analyzing data
+
+== Prerequisite and Background
+CSE 331 and CSE 335 and STT 351. Students should demonstrate a basic
+understanding of algorithms and data structures and methods to create reliable
+programs. Students must have working knowledge of abstract data types and
+classes. Such background is needed to ensure that students can understand the
+sample programs provided in class and able to write their own programs for
+homework assignments and class project. An integral part of the course is the
+Hadoop distributed computing platform, which is written in Java programming
+language. Thus, familiarity with data abstraction, classes, and object-oriented
+concepts (such as inheritance and polymorphism) will be needed. 
+
+== Preference Books
+There is no main textbook for the class. Lecture notes will be posted online
+and are based on materials from the following books:
+- Introduction to Data Mining (Pang-Ning Tan, Michael Steinbach, and Vipin
+Kumar), Addison Wesley, 2006
+- Mining of Massive Datasets (Anand Rajaraman, Jeff Ullman), Cambridge University
+Press, 2011
+- Hadoop: The Definitive Guide (Tom White), O'Reilly Media, Fourth Edition,
+2015
+
+== Course Outline
+Please refer to the [schedule.html class schedule] for more details
+- Data collection, querying, and preprocessing (3 weeks)
+- Overview of data analysis techniques (4-5 weeks)
+- Implementation (5-6 weeks)
+- Case studies and applications (1 week)
+
+== Course Assessment 
+[exercises_homework.html Homework assignments] (50\%) \n 
+[exercises_homework.html Weekly lab exercises] (20\%) \n
+[exams.html Exams] (20\%) \n
+[class_project.html Project] (10\%) \n
+
+
+== Grading Criteria
+4.0 ~  90\%+ \n
+3.5 ~  85\% \n
+3.0 ~  80\% \n
+2.5 ~  75\% \n
+2.0 ~  70\% \n
+1.5 ~  65\% \n
+1.0 ~  60\%- \n
+
+== Course Policy
+
+- Homework assignments are due before midnight on the due date. Late submissions will
+be deducted 25\% of the total possible assignment grade (if submitted after the
+deadline but on the same day) or 50\% (if submitted a day after the deadline).
+Assignments submitted more than one day after the deadline will not be accepted
+(unless you receive permission from the instructor). 
+- Weekly lab exercises are due before midnight on the due date. The three lowest
+grades for the lab exercises will not be included when calculating your final
+grade.
+- You are encouraged to form study groups to learn the materials in class.
+However, all submitted assignments (including computer programs) must be your
+own work. If plagiarism is detected, the students involved will automatically
+receive a 0 for the grade and will be reported to the university. 
+- The instructor reserves the right to modify the course content and class
+schedule during the semester.
+- Make-ups for examinations may be arranged if your absence is caused by
+documented illness or personal emergency. A written explanation (including
+supporting documentation) must be submitted to your lecture instructor; if the
+explanation is acceptable, an alternative to the examination will be arranged.
+When possible, make-up arrangements must be made in advance. 
+- All students are expected to be responsible users of the computer system
+provided for this course. Account usage guidelines published by the Department
+of Computer Science and Engineering are posted at
+[http://www.cse.msu.edu/facility/policy.php].  
+- The Department of Computer Science expects all students to adhere to MSU's
+policy on Integrity of Scholarship and Grades. Information about MSU policy
+regarding academic integrity is available at
+[https://www.msu.edu/~ombud/academic-integrity/index.html].  
+- Students who require accommodation under the Americans with Disabilities Act
+(ADA) with MSU's Resource Centers for Disabilities (RCPD) should bring their
+Verified Individualized Services and Accommodations (VISA) form to the
+instructor at the beginning of the semester as possible.
+
+~~
+
+

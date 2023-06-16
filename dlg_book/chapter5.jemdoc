@@ -1,0 +1,18 @@
+= Chapter 5 Graph Neural Networks
+
+== Introduction
+Graph Neural Networks (GNNs) are a set of methods that aim to apply deep neural networks to graph structured data. The classical deep neural networks cannot be easily generalized to graph structured data as the graph structure is not regular grid. The investigation of graph neural networks can date back to the early of the $21$-st century, when the first Graph Neural Network model was proposed for both node- and graph-focused tasks. It is only when deep learning techniques gain enormous popularity in many areas such as computer vision and natural language processing that researchers start to dedicate more efforts to this research area.     
+== Contents
+ . The General GNN Framework
+ . Graph Filters
+ . Graph Pooling
+ . Parameter Learning for Graph Neural Networks
+ . Conclusion
+ . Further Reading
+
+ 
+
+
+
+
+ 

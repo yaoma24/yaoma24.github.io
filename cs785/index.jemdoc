@@ -1,0 +1,115 @@
+# jemdoc: menu{MENU}{index.html}
+= CS785 Deep Learning on Graphs (Fall 2021)
+
+== General Information
+
+*Course Number*: CS785 \n
+*Lecture Hours*: 10:00 am - 11:20 am, Tuesday and Thursday \n
+*Location*: CKB226 \n
+
+== Instructor
+
+[https://web.njit.edu/~ym329/ Yao Ma] \n
+*Email*: yao dot ma at njit dot edu \n
+*Office*: GITC4204
+
+
+== Course Overview
+Graphs have been leveraged to denote data from various domains ranging from
+social science, linguistics to chemistry, biology, and physics. Meanwhile,
+numerous real-world applications can be treated as computational tasks on
+graphs. To facilitate these applications, a curial step is to learn good
+representations for graphs.  More and more evidence has demonstrated that graph
+deep learning techniques especially graph neural networks (GNNs) have
+tremendously facilitated computational tasks on graphs. The revolutionary
+advances brought by GNNs have also immensely contributed to the depth and
+breadth of the adoption of graph representation learning in real-world
+applications. 
+
+This seminar course covers recent advances in the area of deep learning on
+graphs. More specifically, the following topics will be included: Network
+Embedding, Graph Neural Networks and Their Properties, Applications of GNNs,
+and others. Students are expected to read and discuss literature, make
+presentations, and work on related research projects. 
+
+
+
+
+
+== Book
+Deep Learning on Graphs (Yao Ma, Jiliang Tang), Cambridge University Press, 2021
+- You can get a free pre-print copy [https://web.njit.edu/~ym329/dlg_book/ here].
+- You can pre-order for a physical copy [https://www.cambridge.org/us/academic/subjects/computer-science/pattern-recognition-and-machine-learning/deep-learning-graphs?format=HB here].
+
+
+
+== Paper Presentation
+We will have several paper presentattion sessions through out the semester. Each student is required to present once. 
+- The presentation takes the form of oral presentations at a conference. Specifically, each talk is allocated for 25 minutes (20 minutes for presentation + 5 minutes for Q\&A). 
+- A list of papers (usually on the same topic) will be provided for each session (The list will be released 3 weeks before the date of the corresponding session). You may choose one paper from the provided list for the presentation. You are also welcome to choose papers that are not in the list. Please send an email to me a week before the presentation if you would like to present a paper that are not in the lists.   
+- Please find the paper list at [https://docs.google.com/spreadsheets/d/1EIt7mkzBnoQ0_TQt78sP84XoZEHoSvEboWxZp5hkvvQ/edit?usp=sharing this page] (you need to log in your NJIT account for access). Select the paper you would like to present by fill your name on the right of the paper.  
+
+== Project
+- The project can be carried out by a group of at most 3 students. 
+- You can choose any topics as long as they are related to graphs.
+- Each group is required to submit a project proposal and a final report.
+- Each group is required to give a Proposal Presentation (20 minutes) and a Final Presentation (25 minutes). 
+- More information about the project will be released at [project.html this page].
+
+== Report Review
+- After all project reports are collected, each student will be assigned a report from other groups. The student is required to review this report and provide comments. More information on the review process will be released at [report_review.html this page]. 
+
+== Grading
+- Class participation: 10\%
+- Paper Presentation: 20\%
+- Project: 60\% 
+-- Proposal: 5\%
+-- Intermediate Presentation: 15\%
+-- Final Presentation: 20\% 
+-- Report: 20\% (10\% review from other students + 10\% review from the instructor)
+
+- Report Review: 10\%
+
+  == Tentative Schedule
+
+  ~~
+  {}{table}{Schedule}
+  Date  | Content | Note ||
+  09\/02 | | Canceled due to Hurricane Ida  ||
+  09\/07 | Introduction | ||
+  09\/09 | Introductioin to Graphs |   ||
+  09\/14 | Introduction to Deep Learning | ||
+  09\/16 | Network Embedding | ||
+  09\/21 | Paper Presentation| ||
+  09\/23 | Paper Presentation| ||
+  09\/28 | Graph Neural Networks| ||
+  09\/30 | Paper Presentation | ||
+  10\/05 | Paper Presentation | ||
+  10\/07 | Robustness of GNNs | ||
+  10\/12 | Scalability of GNNs | Project Proposal Due ||
+  10\/14 | Paper Presentation | ||
+  10\/19 | Paper Presentation | ||
+  10\/21 | Project Intermediate Presentation | ||
+  10\/26 | Project Intermediate Presentation | ||
+  10\/28 | Other Deep Models on Graphs | ||
+  11\/02 | GNNs' Application in Natural Language Processing | ||
+  11\/04 | GNNs' Application in Computer Vision| ||
+  11\/09 | Paper Presentation| ||
+  11\/11 | Paper Presentation| || 
+  11\/16 | GNNs' Application in Data Mining| || 
+  11\/18 | GNNs' Application in Healthcare and Bio-Chemistry| ||
+  11\/23 | Paper Presentation| ||
+  11\/25 | |  Thanksgiving: Enjoy Holidays!||
+  11\/30 | Paper Presentation| ||
+  12\/02 | Project Final Presentation| ||
+  12\/07 | Project Final Presentation| ||
+  12\/09 | Project Final Presentation| ||
+  12\/12 | | Project Report Due ||
+  12\/19 | | Report Review Due 
+ ~~
+
+ == Academic Integrity
+ Academic Integrity is the cornerstone of higher education and is central to the ideals of this course and the university. Cheating is strictly prohibited and devalues the degree that you are working on. As a member of the NJIT community, it is your responsibility to protect your educational investment by knowing and following the academic code of integrity policy that is found at:
+ [http://www5.njit.edu/policies/sites/policies/files/academic-integrity-code.pdf  http://www5.njit.edu/policies/sites/policies/files/academic-integrity-code.pdf].
+
+ Please note that it is my professional obligation and responsibility to report any academic misconduct to the Dean of Students Office. *Any student found in violation of the code by cheating, plagiarizing or using any online software inappropriately will result in disciplinary action. This may include a failing grade of F, and/or suspension or dismissal from the university*. If you have any questions about the code of Academic Integrity, please contact the Dean of Students Office at [dos@njit.edu dos@njit.edu]

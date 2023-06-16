@@ -1,0 +1,26 @@
+# jemdoc: menu{MENU}{project.html}
+= Project
+
+- The project can be carried out by a group of at most 3 students.
+
+- You can choose any topics as long as they are related to machine learning.
+
+- Each group is required to submit a project proposal and a final report. You are enouraged to use Latex to compose these reports. [https://www.overleaf.com/project Overleaf] provides a easy-to-use enviroment for composing documents in Latex. If you use Latex, you are encouraged to use the NeurIPs template for your report. You can find it at [https://neurips.cc/Conferences/2021/PaperInformation/StyleFiles this page] 
+
+
+== Project Proposal (Due on 02\/18\/2022) 
+- Project title
+- Team members
+- Description of the problem that you plan to work on
+- Description of the data you plan to use 
+- Your plan towards the completion of the project (you can include a list of milestones)
+- A list of relevant papers 
+
+== Final Report (Due on 05\/02\/2021)
+- Introduction, including a summary of the project, related work/methods, and the results of this project.
+- Problem description, including a detailed description of the problem you address in this project.
+- Methodology, including a detailed description on the methods you developed or used.
+- Experiments, including, experiment setting, results, and your observations.
+- Conclusion and future work, including a summary of the main contributions of this project and potential future directions. 
+- Contributions of each team member 
+

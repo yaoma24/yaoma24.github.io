@@ -1,0 +1,19 @@
+= Chapter 9 Beyond GNNs: More Deep Models on Graphs
+
+== Introduction
+There are a number of traditional deep models such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), deep autoencoders and generative adversarial networks (GANs). These models have been designed for different types of data. For example, CNNs can process regular grid-like data such as images; while RNNs can deal with sequential data such as texts. They have also been designed under different settings. For instance, a large number of labeled data is needed to train good CNNs and RNNs (or the supervised setting); while autoencoders and GANs can extract complex patterns with only unlabeled data (or the unsupervised setting). These different architectures enable deep learning techniques to be applicable to a number of fields such as computer vision, natural language processing, data mining and information retrieval. In the previous chapters, we have introduced various graph neural networks (GNNs) for both simple and complex graphs. However, these models have been developed only for certain graph tasks such as node classification and graph classification; and they often require labeled data for training. Thus, efforts have been made to adopt more deep architectures to graph structured data. For example, autoencoders have been extended to graph structured data for node represenation learning; and deep generative models including variational autoencoder and generative adversarial networks are also adapted to graph structured data for  node representations and graph generations. These deep graph models have facilitated a broader range of graph tasks under different settings that are beyond the capacity of GNNs; and have greatly advanced deep learning techniques on graphs. In this chapter, we aim to cover more deep models on graphs including deep autoencoders, variational autoencoder, recurrent neural networks (RNNs) and generative adversarial networks (GANs). 
+== Contents
+ . Autoencoders on Graphs
+ . Variational Autoencoders on Graphs
+ . Recurrent Neural Networks on Graphs
+ . Generative Adversarial Networks on Graphs
+ . Conclusion
+ . Further Reading
+ 
+
+ 
+
+
+
+
+ 

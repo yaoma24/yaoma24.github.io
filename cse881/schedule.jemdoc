@@ -1,0 +1,77 @@
+# jemdoc: menu{MENU}{schedule.html}
+= Schedule 
+
+~~
+*Lecture slides and materials will be released on this page.*
+
+- Topic 01: Introduction
+-- slides: [slides/1-introduction.pptx 1-introduction.pptx]
+
+- Topic 02: Overview (Linear Algebra)
+-- slides: [slides/2-background1.pptx 2-background1.pptx]
+
+- Topic 03: Overview (Probability, Statistics, Analysis of Algorithms)
+-- slides: [slides/3-background2.pptx 3-background2.pptx]
+
+- Topic 04: Data Quality and Preprocessing
+-- slides: [slides/4-dataQuality.pptx 4-dataQuality.pptx]
+
+- Topic 05: Dimensionality Reduction
+-- slide: [slides/5-dimensionReduction.pptx 5-dimensionReduction.pptx]
+
+- Topic 06: Regression Analysis
+-- slides: [slides/6-regression.pptx 6-regression.pptx]
+
+- Topic 07: Classification (Introduction)
+-- slides: [slides/8-classification.pptx 8-classification.pptx]
+
+- Topic 08: Classification (Linear classifiers)
+-- slides: [slides/9-linearClassifiers.pptx 9-linearClassifiers.pptx]
+
+- Topic 09: Classification (Nonlinear classifiers)
+-- slides: [slides/10-nonlinearClassifiers.pptx 10-non-linearClassifiers]
+
+- Topic 10: Classification (Probabilistic classifiers)
+-- slides: [slides/11-probabilisticClassifiers.pptx 11-probabilisticClassifiers.pptx]
+
+- Topic 11: Classification (Ensemble method)
+-- slides: [slides/13-ensembleMethods.pptx 13-ensembleMethods.pptx]
+
+- Topic 12: Clustering - Introduction
+-- slides: [slides/18-clustering1.pptx 18-clustering1.pptx]
+
+- Topic 13: Clustering - Hierarchical clustering
+-- slides: [slides/19-clustering2.pptx 19-clustering2.pptx]
+
+- Topic 14: Clustering - Density-based Clustering
+-- slides: [slides/20-clustering3_v2.pptx 20-clustering3_v2.pptx]
+
+- Topic 15: Clustering - Graph-based clustering
+-- slides: [slides/21-clustering4_v2.pptx 21-clustering4_v2.pptx]
+
+- Topic 16: Probabilistic-based Clustering
+
+-- slides: [slides/22-clustering5_v2.pptx 22-clustering5_v2.pptx]
+
+- Topic 17: Large Scale Clustering and Clustering Validity
+
+-- slides: [slides/23-clustering6_v2.pptx 23-clustering6_v2.pptx]
+
+- Topic 18: Association Analysis - Introduction
+-- slides: [slides/14-association1.pptx 14-association1.pptx]
+
+- Topic 19: Pattern mining and evaluation
+-- slides: [slides/15-association2.pptx 15-association2.pptx]
+
+- Topic 20: Sequence mining
+
+- Topic 21: Graph mining
+  
+- Topic 22: Anomaly Detection
+
+
+
+
+
+
+~~

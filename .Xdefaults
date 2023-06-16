@@ -1,0 +1,11 @@
+OpenWindows.WorkspaceColor:     bisque1
+OpenWindows.IconLocation:       top
+OpenWindows.MultiClickTimeout:  4
+OpenWindows.SelectDisplaysMenu: False
+OpenWindows.DragRightDistance:  100
+OpenWindows.Beep:       always
+OpenWindows.SetInput:   select
+OpenWindows.ScrollbarPlacement: right
+OpenWindows.PopupJumpCursor:    True
+Scrollbar.JumpCursor:   True
+font.name:      lucidasans-10

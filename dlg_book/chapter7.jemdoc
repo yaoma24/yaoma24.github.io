@@ -1,0 +1,18 @@
+= Chapter 7 Scalable Graph Neural Networks
+
+== Introduction
+Graph Neural Networks suffer from severe scalability issue, which prevents them from being adapted to large-scale graphs. 
+== Contents
+ . Node-wise Sampling based Methods
+ . Layer-wise Sampling based Methods
+ . Subgraph-wise Sampling based Methods
+ . Conclusion
+ . Further Reading
+ 
+
+ 
+
+
+
+
+ 

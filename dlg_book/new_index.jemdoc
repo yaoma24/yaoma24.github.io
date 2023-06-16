@@ -1,0 +1,72 @@
+= Deep Learning on Graphs
+~~
+== Introduction
+~~~
+{}{img_left}{cover_english.png}{Cover of English Version}{214}{331.5}{https://www.cambridge.org/us/academic/subjects/computer-science/pattern-recognition-and-machine-learning/deep-learning-graphs?format=HB}
+
+This book covers comprehensive contents in developing deep learning techniques for graph structured data with a specific focus on Graph Neural Networks (GNNs). The foundation of the GNN models are introduced in detail including the two
+main building operations: graph filtering and pooling operations. We then discuss the robustness and scalability of the GNNs, which are extremely important for utilizing GNNs for real-world applications. To enable deep learning techniques
+to advance more graph tasks under wider settings, we introduce numerous deep graph models beyond GNNs. We also present the most representative applications of GNNs in different areas such as Natural Language Processing, Computer Vision,
+Data Mining and Healthcare. The book is also self-contained, we include chapters for introducing some basics on graphs and also on deep learning. We conclude the book with recent advances of GNNs in both methods and applications.  
+~~~
+
+=== The English verison of the book is available for pre-order! Check [https://www.cambridge.org/us/academic/subjects/computer-science/pattern-recognition-and-machine-learning/deep-learning-graphs?format=HB here] for pre-order. Use the discount code 101095 for a 30% discount.
+=== The Chinese version is officially published.  
+ 
+== Authors 
+#=== *Yao is on the job market looking for a faculty position. Check out his application materials [https://cse.msu.edu/~mayao4/job here].*
+  - English Version: [http://cse.msu.edu/~mayao4/ Yao Ma] and [https://www.cse.msu.edu/~tangjili/ Jiliang Tang]
+  - Chinese Version: [https://www.cse.msu.edu/~wangy206/ Yiqi Wang], [http://www.cse.msu.edu/~jinwei2/ Wei Jin], [http://cse.msu.edu/~mayao4/ Yao Ma] and [https://www.cse.msu.edu/~tangjili/ Jiliang Tang]
+#===  *Yao is on the job market looking for a faculty position. Check out his application materials [https://cse.msu.edu/~mayao4/job here].*  
+== Contents
+This material is officially published by Cambridge University Press as Deep Learning on Graphs by Yao Ma and Jiliang Tang. This pre-publication version is free to view and download for personal use only. Not for re-distribution, re-sale or use
+in derivative works. © Yao Ma and Jiliang Tang 2020
+=== *The Entire Book* \[[dlg_book.pdf preprint]\]
+=== *Table of Contents* \[ [chapters/toc.pdf English Version]\] \[[chapters/toc_Chinese.pdf Chinese Version]\]
+=== *Introduction*
+   - Chapter 1 Deep Learning on Graphs: An Introduction \[[chapter1.html Introduction]\] #\[[chapters/chapter1.pdf preprint]\]
+
+=== *PART 1 Foundations*
+   - Chapter 2 Foundations of Graphs \[[chapter2.html Introduction]\] #\[[chapters/chapter2.pdf preprint]\]
+   - Chapter 3 Foundations of Deep Learning \[[chapter3.html Introduction]\] #\[[chapters/chapter3.pdf preprint]\]
+=== *PART 2 Methods*
+   - Chapter 4 Graph Embedding \[[chapter4.html Introduction]\] #\[[chapters/chapter4.pdf preprint]\]
+   - Chapter 5 Graph Neural Networks \[[chapter5.html Introduction]\] #\[[chapters/chapter5.pdf preprint]\]
+   - Chapter 6 Robust Graph Neural Networks \[[chapter6.html Introduction]\] #\[[chapters/chapter6.pdf preprint]\]
+   - Chapter 7 Scalable Graph Neural Networks \[[chapter7.html Introduction]\] #\[[chapters/chapter7.pdf preprint]\]
+   - Chapter 8 Graph Neural Networks on Complex Graphs \[[chapter8.html Introduction]\] #\[[chapters/chapter8.pdf preprint]\]
+   - Chapter 9 Beyond GNNs: More Deep Models on Graphs \[[chapter9.html Introduction]\] #\[[chapters/chapter9.pdf preprint]\]
+=== *PART 3  Applications*
+   - Chapter 10 Graph Neural Networks in Natural Language Processing \[[chapter10.html Introduction]\] #\[[chapters/chapter10.pdf preprint]\]
+   - Chapter 11 Graph Neural Networks in Computer Vision \[[chapter11.html Introduction]\] #\[[chapters/chapter11.pdf preprint]\]
+   - Chapter 12 Graph Neural Networks in Data Mining \[[chapter12.html Introduction]\] #\[[chapters/chapter12.pdf preprint]\]
+   - Chapter 13 Graph Neural Networks in Biochemistry and Healthcare \[[chapter13.html Introduction]\] #\[[chapters/chapter13.pdf preprint]\]
+=== *PART 4 Advances*
+   - Chapter 14 Advanced Topics in Graph Neural Networks \[[chapter14.html Introduction]\] #\[[chapters/chapter14.pdf preprint]\]
+   - Chapter 15 Advanced Applications in Graph Neural Networks \[[chapter15.html Introduction]\] #\[[chapters/chapter15.pdf preprint]\]
+=== *Bibliography* \[[chapters/references.pdf preprint]\]
+=== *Index* \[[chapters/index.pdf preprint]\]
+
+#Thanks for Prakash Upadhyay for designining nice cover for the book.  The whole book can be found via his [https://github.com/upadhyayprakash/DeepLearningOnGraphs Github].
+
+== Chinese Version
+=== 中文版已经正式发售（[https://item.jd.com/13221338.html?cu=true&utm_source=kong&utm_medium=tuiguang&utm_campaign=t_2009678457_&utm_term=fcda510799ae4c6497dfaca3bc8a0c08 预售链接]）。
+~~~
+{}{img_left}{cover_chinese.png}{Cover of Chinese Version}{702}{284}{https://item.jd.com/13221338.html?cu=true&utm_source=kong&utm_medium=tuiguang&utm_campaign=t_2009678457_&utm_term=fcda510799ae4c6497dfaca3bc8a0c08}
+~~~
+
+== Comments and Feedbacks
+
+Any comments and feedback are welcomed and appreciated! Please send your comments and
+feedback to [mayao4@msu.edu mayao4 at msu dot edu]
+
+== Citing the Book
+To cite the book, please use the followng bibtex entry:
+~~~
+@book{ma2021deep,\n
+    title={Deep Learning on Graphs},\n
+    author={Yao Ma and Jiliang Tang},\n
+    publisher={Cambridge University Press},\n
+    year={2021}\n
+}
+~~~

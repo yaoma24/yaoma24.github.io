@@ -1,0 +1,57 @@
+# jemdoc: menu{MENU}{exercises_homework}
+= Exercises & Homework
+
+~~
+== Exercises
+There will be a lab exercise each week. The lab exercise will be released
+after Tuesday's class and due on the next Monday. The solutions should be
+submitted via [https://handin.cse.msu.edu handin].
+
+=== Exercise 1 (*due on 09\/11\/2017*)
+- [exercises/exercise1/Exercise1_cse482_fall2017.pdf Exercise1] ~ [exercises/exercise1/wiki_edit.txt wiki_edit.txt] ~ [exercises/exercise1/wh.json wh.json]
+
+=== Exercise 2 (*due on 09\/18\/2017*)
+
+- [exercises/exercise2/Exercise2_cse482_fall2017.pdf Exercise2]
+
+=== Exercise 3 (*due on 09\/25\/2017*)
+- [exercises/exercise3/Exercise3_cse482_fall2017.pdf Exercise3] 
+
+=== Exercise 4 (*due on 10\/02\/2017*)
+- [exercises/exercise4/Exercise4_cse482_fall2017.pdf Exercise4] ~
+  [exercises/exercise4/msft.csv msft.csv]
+=== Exercise 5 (*due on 10\/09\/2017*)
+- [exercises/exercise5/Exercise5_cse482_fall2017.pdf Exercise5] ~ [slides/lecture2/vehicle.csv vehicle.csv]
+=== Exercise 6 (*due on 10\/16\/2017*)
+- [exercises/exercise6/Exercise6_cse482_Fall2017.pdf Exercise6] ~
+  [exercises/exercise6/train.csv train.csv] ~ [exercises/exercise6/test.csv
+test.csv]
+=== Exercise7 (*due on 11\/06\/2017*)
+- [exercises/exercise7/Exercise7_cse482_Fall2017.pdf Exercise7] ~
+  [exercises/exercise7/animals.csv animals.csv]
+=== Exercise8 (*due on 11\/13\/2017*)
+- [exercises/exercise8/Exercise8_cse482_Fall2017.pdf Exercise8] ~
+  [exercises/exercise8/tweet.txt tweet.txt]
+== Homework 
+There will be 5-6 homework assignments. For each assignment, you will have 1-4 weeks to finish. 
+
+=== Homework 1 (*due on 09\/26\/2017*)
+- [homework/homework1/homework1_cse482_fall2017.pdf Homework1]
+- Solutions: [homework/homework1/hw1_solution.ipynb Solutions]
+
+=== Homework 2 (*due on 10\/17\/2017*)
+- [homework/homework2/hw2_cse482_fall2017.pdf Homework2]
+- Solutions: [homework/homework2/hw2Solution_fall_2017.pdf Solutions]
+
+=== Homework 3 (*due on 11\/23\/2017*)
+- [homework/homework3/hw3_cse482_fall2017.pdf Homework3]
+- Solutions: [homework/homework3/hw3solution_fall2017.pdf Solutions]
+=== Homework 4 (*due on 12\/12\/2017*)
+- [homework/homework4/hw4_cse482_fall2017.pdf Homework4]
+
+
+
+
+
+
+~~

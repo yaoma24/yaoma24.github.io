@@ -1,0 +1,20 @@
+= Chapter 11 Application in Computer Vision
+
+== Introduction
+Graph structured data widely exists in numerous tasks in the area of computer vision. In the task of Visual Question Answering, where a question is required to be answered based on content in a given image, graphs can be utilized to model the relations among the objects in the image. In the task of skeleton based recognition, where the goal is to predict human action based on the skeleton dynamics, the skeletons can be represented as graphs. In image classification, different categories are related to each other through knowledge graphs or category co-occurrence graphs. Furthermore, point cloud, which is a type of irregular data structure to represent shapes and objects, can also be denoted in terms of graphs. Therefore, graph neural networks can be naturally utilized to extract patterns from these graphs to facilitate the corresponding computer vision tasks. In this chapter, we demonstrate how graph neural networks can be adapted to the aforementioned computer vision tasks with representative algorithms.    
+== Contents
+ . Visual Question Answering
+ . Skeleton-based Action Recognition
+ . Realtion Extraction
+ . Image Classification
+ . Point Clouds Learning
+ . Conclusion
+ . Further Reading
+ 
+
+ 
+
+
+
+
+ 

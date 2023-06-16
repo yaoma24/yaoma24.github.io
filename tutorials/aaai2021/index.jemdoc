@@ -1,0 +1,76 @@
+= Graph Neural Networks: Models and Applications
+~~
+== Time and Location
+*Time:* 15:00 pm - 18:00 pm, EST, Wednsday, February 3, 2021\n 
+
+== Abstract
+Graph structured data such as social networks and molecular graphs are ubiquitous in the real world. It is of great research importance to design advanced algorithms for representation learning on graph structured data so that downstream
+tasks can be facilitated. Graph Neural Networks (GNNs), which generalize the deep neural network models to graph structured data, pave a new way to effectively learn representations for graph-structured data either from the node level or
+the graph level. Thanks to their strong representation learning capability, GNNs have gained practical significance in various applications ranging from recommendation, natural language processing to healthcare. It has become a hot
+research topic and attracted increasing attention from the machine learning and data mining community recently. This tutorial of GNNs is timely for AAAI 2020 and covers relevant and interesting topics, including representation learning
+on graph structured data using GNNs, the robustness of GNNs, the scalability of GNNs and applications based on GNNs.
+
+== Tutorial Syllabus
+. *Introduction*
+   .. Graphs and Graph Structured Data
+   .. Tasks on Graph Structured Data
+   .. Graph neural networks
+. *Foundations*
+   .. Basic Graph Theory
+   .. Graph Fourier Transform
+. *Models*
+   .. Spectral-based GNN layers
+   .. Spatial-based GNN layers
+   .. Pooling Schemes for Graph-level Representation Learning
+   .. Attacks and Robustness of Graph Neural Networks
+   .. Deeper Graph Neural Networks
+   .. Scalable Learning For Graph Neural Networks
+   .. Self-supervised Learing for Graph Neural Networks
+. *Applications*
+   .. Recommendation
+   
+
+== Tutorial slides 
+[https://drive.google.com/file/d/1xTjlp0XYGH41sFz4X_APM3fjX6GRuKSI/view?usp=sharing Slides]
+== Presenters
+~~
+{}{img_left}{images/yao_ma.jpg}{Image of Yao}{238}{238}{images/yao_ma.jpg}
+[http://cse.msu.edu/~mayao4/ *Yao Ma*] is a Ph.D. student of Computer Science and Engineering
+ at Michigan State University. He also works as a research assistant at the Data Science and
+ Engineering lab (DSE lab) led by Dr. Jiliang Tang. His research interests include network
+ embedding and graph neural networks for representation learning on graph-structured data.
+ He has published innovative works in top-tier conferences such as WSDM, ASONAM, ICDM,
+ SDM, WWW, KDD and IJCAI. Before joining Michigan State University, he obtained
+his master’s degree from Eindhoven University of Technology and bachelor’s degree from Zhejiang University.
+~~
+
+~~
+{}{img_left}{images/wei_jin.jpg}{Image of Wei}{238}{238}{images/wei_jin.jpg}
+[https://chandlerbang.github.io/ *Wei Jin*] is a first-year Ph.D. student of 
+Computer Science and Engineering at Michigan State University (MSU), supervised 
+by Dr. Jiliang Tang. His interests lie in Graph Representation Learning. 
+Now I work on the area of graph neural network including its theory foundations, 
+model robustness and applications.
+~~
+
+~~
+{}{img_left}{images/jiliang_tang.jpg}{Image of Jiliang}{238}{276}{images/jiliang_tang.jpg}
+[https://www.cse.msu.edu/~tangjili/ *Jiliang Tang*] is an assistant professor in the computer science and engineering department at Michigan State University since Fall@2016. Before that, he was a research scientist in Yahoo Research and got his PhD from Arizona State
+University in 2015. His research interests including social computing, data mining and machine learning and their applications in education. He was the recipients of 2019 NSF Career Award, the 2015 KDD Best Dissertation runner up and 6
+best paper awards (or runner-ups) including WSDM2018 and KDD2016. He serves as conference organizers (e.g., KDD, WSDM and SDM) and journal editors (e.g., TKDD). He has published his research in highly ranked journals and top conference
+proceedings, which received thousands of citations and extensive media coverage.
+~~
+
+~~
+{}{img_left}{images/YiqiWang.jpg}{Image of Yiqi}{238}{178}{images/YiqiWang.jpg}
+[https://www.cse.msu.edu/~wangy206/ *Yiqi Wang*] is a Ph.D. student in the Computer Science and Engineering Department at Michigan State University. She is working on graph neural networks including fundamental algorithms, robustness
+and applications. She is one of the key contributors to the survey and empirical study on adversarial attacks and defenses on graphs with the developed repository.
+~~
+
+~
+{}{img_left}{images/TylerDerr.png}{Image of Tyler}{238}{262}{images/TylerDerr.png}
+[https://tylersnetwork.github.io/ *Tyler Derr*] is an Assistant Professor at Vanderbilt University in the Electrical Engineering and Computer Science department. He received his PhD in Computer Science from Michigan State University in
+2020. His research is in network analysis and representation learning. He has published and serves as a program committee member at the top conferences in these domains and co-organized the Deep Graph Learning workshop at IEEE
+BigData’19. He received the Best Reviewer Award at ICWSM’19 and Best Student Poster Award at SDM’19. 
+~
+
