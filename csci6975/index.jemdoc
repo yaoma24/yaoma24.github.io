@@ -1,0 +1,111 @@
+# jemdoc: menu{MENU}{index.html}
+= CSCI 4975/6975 Deep Learning on Graphs (Fall 2023)
+
+== General Information
+
+*Course Number*: CSCI 4975/6975 \n
+*Lecture Hours*: 2:00 pm - 3:50 pm, Monday and Thursday \n
+*Location*: Troy 2012 \n
+
+== Instructor
+
+[https://yaoma24.github.io/ Yao Ma] \n
+*Email*: may13@rpi.edu \n
+*Office*: MRC 304
+
+
+== Course Overview
+Graphs have been leveraged to denote data from various domains ranging from
+social science, linguistics to chemistry, biology, and physics. Meanwhile,
+numerous real-world applications can be treated as computational tasks on
+graphs. To facilitate these applications, a curial step is to learn good
+representations for graphs.  More and more evidence has demonstrated that graph
+deep learning techniques especially graph neural networks (GNNs) have
+tremendously facilitated computational tasks on graphs. The revolutionary
+advances brought by GNNs have also immensely contributed to the depth and
+breadth of the adoption of graph representation learning in real-world
+applications. 
+
+This seminar course covers recent advances in the area of deep learning on
+graphs. More specifically, the following topics will be included: Network
+Embedding, Graph Neural Networks and Their Properties, Applications of GNNs,
+and others. Students are expected to read and discuss literature, make
+presentations, and work on related research projects. 
+
+
+
+
+
+== Book
+Deep Learning on Graphs (Yao Ma, Jiliang Tang), Cambridge University Press, 2021
+- You can get a free pre-print copy [https://yaoma24.github.io/dlg_book/ here].
+- You can pre-order for a physical copy [https://www.cambridge.org/us/academic/subjects/computer-science/pattern-recognition-and-machine-learning/deep-learning-graphs?format=HB here].
+
+
+
+== Paper Presentation
+We will have several paper presentattion sessions through out the semester. Each student is required to present three times. 
+- The presentation takes the form of oral presentations at a conference. Specifically, each talk is allocated for 30 minutes (20 minutes for presentation + 10 minutes for Q\&A). 
+- A list of papers (usually on the same topic) will be provided for each session (The list will be released 3 weeks before the date of the corresponding session). You may choose one paper from the provided list for the presentation. You are also welcome to choose papers that are not in the list. Please send an email to me a week before the presentation if you would like to present a paper that are not in the lists.   
+- Please find the paper list at [https://docs.google.com/spreadsheets/d/1EIt7mkzBnoQ0_TQt78sP84XoZEHoSvEboWxZp5hkvvQ/edit?usp=sharing this page] (you need to log in your NJIT account for access). Select the paper you would like to present by fill your name on the right of the paper.  
+
+== Project
+- The project can be carried out by a group of at most 2 students. 
+- You can choose any topics as long as they are related to graphs.
+- Each group is required to submit a project proposal and a final report.
+- Each group is required to give a Proposal Presentation (15 minutes) and a Final Presentation (30 minutes). 
+- More information about the project will be released at [project.html this page]. 
+
+== Report Review
+- After all project reports are collected, each student will be assigned a report from other groups. The student is required to review this report and provide comments. More information on the review process will be released at [report_review.html this page]. 
+
+== Grading
+- Class participation: 5\%
+- Paper Presentation: 30\%
+- Project: 55\% 
+-- Proposal: 5\%
+-- Intermediate Presentation: 10\%
+-- Final Presentation: 20\% 
+-- Report: 20\% (10\% review from other students + 10\% review from the instructor)
+
+- Report Review: 10\%
+
+  == Tentative Schedule
+
+  ~~
+  {}{table}{Schedule}
+  Date  | Content | Note ||
+  08\/28 | Introduction | ||
+  08\/31 | Introductioin to Graphs |   ||
+  09\/05 | Introduction to Deep Learning | ||
+  09\/07 | Network Embedding | ||
+  09\/11 | Paper Presentation| ||
+  09\/14 | Paper Presentation| ||
+  09\/18 | Graph Neural Networks| ||
+  09\/21 | Paper Presentation | ||
+  09\/25 | Paper Presentation | ||
+  09\/28 | Robustness of GNNs | ||
+  10\/02 | Scalability of GNNs | Project Proposal Due ||
+  10\/05 | Paper Presentation | ||
+  10\/12 | Paper Presentation | ||
+  10\/16 | Project Intermediate Presentation | ||
+  10\/19 | Other Deep Models on Graphs | ||
+  10\/23 | GNNs' Application in Natural Language Processing | ||
+  10\/26 | GNNs' Application in Computer Vision| ||
+  10\/30 | Paper Presentation| ||
+  11\/02 | Paper Presentation| || 
+  11\/06 | GNNs' Application in Data Mining| || 
+  11\/09 | GNNs' Application in Healthcare and Bio-Chemistry| ||
+  11\/13 | Paper Presentation| ||
+  11\/16 | Paper Presentation| ||
+  11\/20 | Recent Advances| ||
+  11\/27 | Paper Presentation| ||
+  11\/30 | Paper Presentation| ||
+  12\/04 | Project Final Presentation| ||
+  12\/07 | Project Final Presentation| ||
+  12\/11 | | Project Report Due ||
+  12\/15 | | Report Review Due ||
+ ~~
+
+ == Academic Integrity
+
