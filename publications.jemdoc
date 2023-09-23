@@ -21,7 +21,6 @@ Cambridge University Press, 2021
 Book Chapter in *Feature Engineering for Machine Learning and Data Analytics*, CRC Press, 2017
 
 == Preprints
-
 - Yiqi Wang, Yao Ma, Charu Aggarwal, Jiliang Tang\n
 [https://arxiv.org/pdf/2005.12386.pdf *Non-IID Graph Neural Networks*]\n
 arXiv:2005.12386
@@ -39,32 +38,38 @@ arXiv:1808.06170
 [https://arxiv.org/pdf/1710.07266.pdf *Preserving Local and Global Inoformation for Network Embedding*]\n
 arXiv:1710.07266
 
+
+
 == Conference and Journal Publications
 - Haitao Mao, Zhikai Chen, Wei Jin, Haoyu Han, Yao Ma, Tong Zhao, Neil Shah, Jiliang Tang\n
-[https://arxiv.org/pdf/2306.01323.pdf Demystifying Structural Disparity in Graph Neural Networks: Can One Size Fit All?]\n
+[https://arxiv.org/pdf/2306.01323.pdf *Demystifying Structural Disparity in Graph Neural Networks: Can One Size Fit All?*]\n
 To Appear in Thirty-seventh Conference on Neural Information Processing Systems, Orleans, United States, 2023
 
 
 - Juanhui Li, Harry Shomer, Haitao Mao, Shenglai Zeng, Yao Ma, Neil Shah, Jiliang Tang, Dawei Yin\n
-[https://arxiv.org/pdf/2306.10453.pdf Evaluating Graph Neural Networks for Link Prediction: Current Pitfalls and New Benchmarking]\n
+[https://arxiv.org/pdf/2306.10453.pdf *Evaluating Graph Neural Networks for Link Prediction: Current Pitfalls and New Benchmarking*]\n
 To Appear in Thirty-seventh Conference on Neural Information Processing Systems, Orleans, United States, 2023
+
+- Zhimeng Guo, Jialiang Li, Teng Xiao, Yao Ma, and Suhang Wang\n
+[https://arxiv.org/pdf/2307.04937.pdf *Towards Fair Graph Neural Networks via Graph Counterfactual*]\n
+To Appear in Proceedings of 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)
 
 - Mahmoud Nazzal, Issa Khalil, Abdallah Khreishah, NhatHai Phan, Yao Ma\n
 [https://arxiv.org/pdf/2308.11754.pdf *Multi-Instance Adversarial Attack on GNN-Based Malicious Domain Detection*]\n
 To Appear in the 45th IEEE Symposium on Security and Privacy, May 20-23, 2024. 
 
 - Harry Shomer, Wei Jin, Juanhui Li, and Yao Ma, Jiliang Tang\n
-[https://arxiv.org/pdf/2208.14322.pdf Learning Representations for Hyper-Relational Knowledge Graphs]\n
+[https://arxiv.org/pdf/2208.14322.pdf *Learning Representations for Hyper-Relational Knowledge Graphs*]\n
 The 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Marrakesh, Morocco, 6-9 November 2023
 
 
 - Juanhui Li, Harry Shomer, Jiayuan Ding, and Yiqi Wang, Yao Ma, Neil Shah, Jiliang Tang, Dawei Yin\n
-[https://arxiv.org/pdf/2205.10652.pdf Are Graph Neural Networks Really Helpful for Knowledge Graph Completion?]\n
+[https://arxiv.org/pdf/2205.10652.pdf *Are Graph Neural Networks Really Helpful for Knowledge Graph Completion?*]\n
 Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics, ACL 2023, Toronto, Cananda, 2023
 
 
 - Juanhui Li, Yao Ma, Wei Zeng, Suqi Cheng, Jiliang Tang, Shuaiqiang Wang, Dawei Yin\n
-[https://arxiv.org/pdf/2204.06522.pdf Graph Enhanced BERT for Query Understanding]\n
+[https://arxiv.org/pdf/2204.06522.pdf *Graph Enhanced BERT for Query Understanding*]\n
 Proceedings of the 46th International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2023. 
 
 - Khang Tran, Phung Lai, NhatHai Phan, Yao Ma, Abdallah Khreishah, Issa
