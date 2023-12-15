@@ -41,18 +41,22 @@ arXiv:1710.07266
 
 
 == Conference and Journal Publications
+- Hongliang Chi, Cong Qi, Suhang Wang, Yao Ma\n
+[ *Active Learning for Graphs with Noisy Structures*]\n
+In Proceedings of SIAM International Conference on Data Mining (SDM), 2024  
+
 - Haitao Mao, Zhikai Chen, Wei Jin, Haoyu Han, Yao Ma, Tong Zhao, Neil Shah, Jiliang Tang\n
 [https://arxiv.org/pdf/2306.01323.pdf *Demystifying Structural Disparity in Graph Neural Networks: Can One Size Fit All?*]\n
-To Appear in Thirty-seventh Conference on Neural Information Processing Systems, Orleans, United States, 2023
+In Thirty-seventh Conference on Neural Information Processing Systems, Orleans, United States, 2023
 
 
 - Juanhui Li, Harry Shomer, Haitao Mao, Shenglai Zeng, Yao Ma, Neil Shah, Jiliang Tang, Dawei Yin\n
 [https://arxiv.org/pdf/2306.10453.pdf *Evaluating Graph Neural Networks for Link Prediction: Current Pitfalls and New Benchmarking*]\n
-To Appear in Thirty-seventh Conference on Neural Information Processing Systems, Orleans, United States, 2023
+In Thirty-seventh Conference on Neural Information Processing Systems, Orleans, United States, 2023
 
 - Zhimeng Guo, Jialiang Li, Teng Xiao, Yao Ma, and Suhang Wang\n
 [https://arxiv.org/pdf/2307.04937.pdf *Towards Fair Graph Neural Networks via Graph Counterfactual*]\n
-To Appear in Proceedings of 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)
+In Proceedings of 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)
 
 - Mahmoud Nazzal, Issa Khalil, Abdallah Khreishah, NhatHai Phan, Yao Ma\n
 [https://arxiv.org/pdf/2308.11754.pdf *Multi-Instance Adversarial Attack on GNN-Based Malicious Domain Detection*]\n
