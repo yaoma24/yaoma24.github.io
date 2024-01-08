@@ -27,16 +27,16 @@ The course loosely follows [https://d2l.ai/ Dive into Deep Learning]. In additio
 == Course Contents (Tentative)
 
 - Basics 
- . Probablity and Statistics
- . Algebra
+ -- Probablity and Statistics
+ -- Algebra
 - Machine Learning Basics 
-  . Linear Regression
-  . Perceptron
-  . Logistic Regression
+  -- Linear Regression
+  -- Perceptron
+  -- Logistic Regression
 - Deep Networks 
-  . Feedforward Neural Networks 
-  . Convolutional Neural Networks
-  . Recurrent Neural Networks 
+  -- Feedforward Neural Networks 
+  -- Convolutional Neural Networks
+  -- Recurrent Neural Networks 
 - Transfomer and Foundation Models
   
 
