@@ -2,7 +2,7 @@
 
 for file in *.jemdoc; do
     echo "updating $file"
-    /Users/mayao/jemdoc_mathjax/jemdoc $file
+    python3 /Users/may13/Documents/jemdoc_mathjax-master/jemdoc $file
 done
 chmod 755 cse482
 chmod 644 *.html

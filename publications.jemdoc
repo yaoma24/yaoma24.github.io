@@ -21,27 +21,44 @@ Cambridge University Press, 2021
 Book Chapter in *Feature Engineering for Machine Learning and Data Analytics*, CRC Press, 2017
 
 == Preprints
+- Qian Ma, Hongliang Chi, Hengrui Zhang, Kay Liu, Zhiwei Zhang, Lu Cheng, Suhang Wang, Philip S. Yu, Yao Ma\n
+[https://arxiv.org/abs/2402.15680 *Overcoming Pitfalls in Graph Contrastive Learning Evaluation: Toward Comprehensive Benchmarks*]
+
+- Hongliang Chi, Jin Wei, Charu Aggarwal, Yao Ma\n
+[https://arxiv.org/abs/2402.01943 *Precedence-Constrained Winter Value for Effective Graph Data Valuation*]
+
+- Haitao Mao, Zhikai Chen, Wenzhuo Tang, Jianan Zhao, Yao Ma, Tong Zhao, Neil Shah, Mikhail Galkin, Jiliang Tang\n
+[https://arxiv.org/pdf/2402.02216.pdf Graph Foundation Models]
+
+- Haitao Mao, Guangliang Liu, Yao Ma, Rongrong Wang, Jiliang Tang\n
+[https://arxiv.org/pdf/2402.02212.pdf *A Data Generation Perspective to the Mechanism of In-Context Learning*]
+
+- Hongjia Xu, Liangliang Zhang, Yao Ma, Sheng Zhou, Zhuonan Zheng, Bu Jiajun\n
+[https://arxiv.org/pdf/2402.02000.pdf *A Survey on Graph Condensation*]
+
+- Tianyi Zhao, Liangliang Zhang, Yao Ma, Lu Cheng\n
+[https://arxiv.org/pdf/2402.05355.pdf *A Survey on Safe Multi-Modal Learning System*]
+
 - Yiqi Wang, Yao Ma, Charu Aggarwal, Jiliang Tang\n
-[https://arxiv.org/pdf/2005.12386.pdf *Non-IID Graph Neural Networks*]\n
-arXiv:2005.12386
+[https://arxiv.org/pdf/2005.12386.pdf *Non-IID Graph Neural Networks*]
+
 
 - Zhiwei Wang, Yao Ma, Zitao Liu, Jiliang Tang\n
-[https://arxiv.org/pdf/1907.05572.pdf *R-Transformer: Recurrent Neural Network Enhanced Transformer]* \[[https://github.com/DSE-MSU/R-transformer code]\]\n
-arXiv:1907.05572
+[https://arxiv.org/pdf/1907.05572.pdf *R-Transformer: Recurrent Neural Network Enhanced Transformer]* \[[https://github.com/DSE-MSU/R-transformer code]\]
+
 
 
 - Zhiwei Wang, Yao Ma, Dawei Yin, Jiliang Tang\n
-[https://arxiv.org/pdf/1808.06170.pdf *Linked Reccurent Neural Networks*]\n
-arXiv:1808.06170
+[https://arxiv.org/pdf/1808.06170.pdf *Linked Reccurent Neural Networks*]
+
 
 - Yao Ma, Suhang Wang, Zhaochun Ren, Dawei Yin, Jiliang Tang\n
-[https://arxiv.org/pdf/1710.07266.pdf *Preserving Local and Global Inoformation for Network Embedding*]\n
-arXiv:1710.07266
+[https://arxiv.org/pdf/1710.07266.pdf *Preserving Local and Global Inoformation for Network Embedding*]
+
 
 
 
 == Conference and Journal Publications
-
 - Hongliang Chi, Cong Qi, Suhang Wang, Yao Ma\n
 *Active Learning for Graphs with Noisy Structures*\n
 In Proceedings of SIAM International Conference on Data Mining (SDM), 2024  
