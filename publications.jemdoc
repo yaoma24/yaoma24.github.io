@@ -27,8 +27,7 @@ Book Chapter in *Feature Engineering for Machine Learning and Data Analytics*, C
 - Hongliang Chi, Jin Wei, Charu Aggarwal, Yao Ma\n
 [https://arxiv.org/abs/2402.01943 *Precedence-Constrained Winter Value for Effective Graph Data Valuation*]
 
-- Haitao Mao, Zhikai Chen, Wenzhuo Tang, Jianan Zhao, Yao Ma, Tong Zhao, Neil Shah, Mikhail Galkin, Jiliang Tang\n
-[https://arxiv.org/pdf/2402.02216.pdf Graph Foundation Models]
+
 
 - Haitao Mao, Guangliang Liu, Yao Ma, Rongrong Wang, Jiliang Tang\n
 [https://arxiv.org/pdf/2402.02212.pdf *A Data Generation Perspective to the Mechanism of In-Context Learning*]
@@ -59,6 +58,31 @@ Book Chapter in *Feature Engineering for Machine Learning and Data Analytics*, C
 
 
 == Conference and Journal Publications
+
+- Xiaowei Qian, Zhimeng Guo, Jialiang Li, Haitao Mao, Bingheng Li, Suhang Wang, Yao Ma\n
+Addressing Shortcomings in Fair Graph Learning Datasets: Towards a New Benchmark.\n
+In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining(SIGKDD), 2024
+
+- Harry Shomer, Yao Ma, Haitao Mao, Juanhui Li, Bo Wu, Jiliang Tang\n
+LPFormer: An Adaptive Graph Transformer for Link Prediction.\n
+In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining(SIGKDD), 2024
+
+- Hongliang Chi, Yao Ma\n
+Enhancing Graph Contrastive Learning with Node Similarity.\n
+In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining(SIGKDD), 2024
+
+- Haitao Mao, Zhikai Chen, Wenzhuo Tang, Jianan Zhao, Yao Ma, Tong Zhao, Neil Shah, Mikhail Galkin, Jiliang Tang\n
+[https://arxiv.org/pdf/2402.02216.pdf Graph Foundation Models]\n
+In Proceedings of the 41th International Conference on Machine Learning (ICML), 2024.
+
+- Bingheng Li, Linxin Yang, Yupeng Chen, Senmiao Wang, Qian Chen, Haitao Mao, Yao Ma, Akang Wang, Tian Ding, Jiliang Tang, Ruoyu Sun\n
+PDHG-Unrolled Learning-to-Optimize Method for Large-Scale Linear Programming.\n
+In Proceedings of the 41th International Conference on Machine Learning (ICML), 2024.
+
+- Lin Wang, Wenqi Fan, Jiatong Li, Yao Ma, Qing Li\n
+Fast Graph Condensation with Structure-based Neural Tangent Kernel\n
+In The Web Conference (WWW 2024), 2024.
+
 - Hongliang Chi, Cong Qi, Suhang Wang, Yao Ma\n
 *Active Learning for Graphs with Noisy Structures*\n
 In Proceedings of SIAM International Conference on Data Mining (SDM), 2024  
