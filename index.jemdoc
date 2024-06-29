@@ -46,6 +46,8 @@ BS (2015) in Mathematics and Applied Mathematics at [http://www.zju.edu.cn/engli
 #=== Our recent tutorial: Graph Neural Networks: Models and Applications ([https://web.njit.edu/~ym329/tutorials/aaai2021/ Video/Slides]).
 #=== Our book: [https://web.njit.edu/~ym329/dlg_book/ Deep Learning on Graphs] ([https://web.njit.edu/~ym329/dlg_book/dlg_book.pdf Preprint]).
 == News ([news.html more])
+- 05/2024 We are presenting a tutorial on Safe Multi-Modal Learning at KDD2024. Check out the details [https://sites.google.com/view/kdd-tutorial/safe-multi-modal here].  
+- 05/2024 Our survey [https://arxiv.org/abs/2402.05355 A Survey on Safe Multi-Modal Learning System] is accepted by *KDD2024*.
 - 05/2024 Three papers accepted by *KDD2024*. 
 - 05/2024 Two papers accepted by *ICML2024*.
 - 02/2024 Check out our preprints on [https://arxiv.org/pdf/2402.01943.pdf Graph Data Valuation], [https://arxiv.org/pdf/2402.02216.pdf Graph Foundation Model], [https://arxiv.org/pdf/2402.02212.pdf Mechanism of In-contex Learning], [https://arxiv.org/pdf/2402.02000.pdf Graph Condensation], [https://arxiv.org/pdf/2402.05355.pdf Safe Multi-Modal Learning System], and [https://arxiv.org/abs/2402.15680 Graph Contrastive Learning Benchmarks]! 
