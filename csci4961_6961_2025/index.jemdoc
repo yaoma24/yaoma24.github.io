@@ -1,0 +1,79 @@
+# jemdoc: menu{MENU}{index.html}
+= CSCI 4961/6961 Deep Learning (Spring 2025)
+
+== General Information
+
+*Course Number*: CSCI 4961/6961 \n
+*Lecture Hours*: 2:00 pm - 3:50 pm, Monday and Thursday \n
+*Location*: JONSSN 4309 \n
+
+== Instructor
+
+[https://yaoma24.github.io/ Yao Ma] \n
+*Email*: may13@rpi.edu \n
+*Office*: MRC 304
+
+
+== Course Overview
+This course delves deeply into the transformative world of deep learning. Throughout the semester, we will cover (1) Essential architectures: feedforward neural networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), and Transformers. (2) Fundamental concepts and algorithms:  backpropagation, loss functions, optimization strategies, regularization, data augmentation. (3) Diverse applications: computer vision, natural language processing.
+
+
+== Book
+The course loosely follows [https://d2l.ai/ Dive into Deep Learning]. In addition, there are a few other books we may refer to. 
+
+- Christopher Bishop, Pattern Recognition and Machine Learning. Springer 2007.
+- Ian Goodfellow and Yoshua Bengio and Aaron Courville, Deep Learning. MIT Press 2016. 
+
+== Course Contents (Tentative)
+
+- Basics 
+ -- Probability and Statistics
+ -- Algebra
+- Machine Learning Basics 
+  -- Linear Regression
+  -- Perceptron
+  -- Logistic Regression
+  -- Support Vector Machine
+- Deep Networks 
+  -- Feedforward Neural Networks 
+  -- Convolutional Neural Networks
+  -- Recurrent Neural Networks 
+- Transformer and Foundation Models
+  
+
+== Assignments 
+There will be 4-6 assigments throughout the semester. Each assignment consists of several small tasks where selected code needs to be completed. Each assignment has its own detailed instructions. In addition, some research on the details of the implementation needs to be conducted. Each assignment needs to be completed in 7-14 days and submitted via Canvas.
+
+
+
+
+== Project
+- The project can be carried out by a group of at most 3 students. 
+- You can choose any topics as long as they are related to deep learning.
+- Each group is required to submit a project proposal and a final report.
+- Each group is required to give a Proposal Presentation (15 minutes) and a Final Presentation (30 minutes). 
+- More information about the project will be released at [project.html this page]. 
+
+
+== Grading
+- Class participation: 10\%
+- Assignments: 30\%
+- Project: 30\% 
+- Midterm Exam: 15%
+- Final Exam: 15% 
+
+
+== Late Policy 
+
+- 1 day: -20%
+- 2 days: -50%
+- 3 days: -100%
+
+
+
+
+ == Academic Integrity
+
+Students must work independently on all course assignments. You may consult other members of the class on the assignments, but you must submit your own work. For instance you may discuss general approaches to solving a problem, but you must implement the solution on your own (similarity detection software may be used). Anytime you borrow material from the web or elsewhere, you must acknowledge the source. Copying and pasting from published sources or the internet is considered plagiarism and is not acceptable. Plagiarized work will receive an automatic grade of zero.
+
+Student-teacher relationships are built on trust. Acts which violate this trust undermine the educational process. The Rensselaer Handbook of Student Rights and Responsibilities and The Rensselaer Graduate Student Supplement define various forms of Academic Dishonesty and procedures for responding to them. Submission of any assignment that is in violation with these policies will result in a penalty that is deemed by the instructor to be appropriate to the infraction ranging from a grade of zero on the assignment in question, to failure of the class as a whole. The student will also be reported to the Dean of Students or the Dean of Graduate Education as appropriate. Note that academic dishonesty will be dealt with severely and will be reported to the Dean of Students. If you have any questions concerning this policy before submitting an assignment, please ask for clarification.
