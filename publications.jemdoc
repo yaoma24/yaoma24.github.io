@@ -24,19 +24,14 @@ Book Chapter in *Feature Engineering for Machine Learning and Data Analytics*, C
 - Qian Ma, Hongliang Chi, Hengrui Zhang, Kay Liu, Zhiwei Zhang, Lu Cheng, Suhang Wang, Philip S. Yu, Yao Ma\n
 [https://arxiv.org/abs/2402.15680 *Overcoming Pitfalls in Graph Contrastive Learning Evaluation: Toward Comprehensive Benchmarks*]
 
-- Hongliang Chi, Jin Wei, Charu Aggarwal, Yao Ma\n
-[https://arxiv.org/abs/2402.01943 *Precedence-Constrained Winter Value for Effective Graph Data Valuation*]
 
 
 
-- Haitao Mao, Guangliang Liu, Yao Ma, Rongrong Wang, Jiliang Tang\n
-[https://arxiv.org/pdf/2402.02212.pdf *A Data Generation Perspective to the Mechanism of In-Context Learning*]
 
 - Hongjia Xu, Liangliang Zhang, Yao Ma, Sheng Zhou, Zhuonan Zheng, Bu Jiajun\n
 [https://arxiv.org/pdf/2402.02000.pdf *A Survey on Graph Condensation*]
 
-- Tianyi Zhao, Liangliang Zhang, Yao Ma, Lu Cheng\n
-[https://arxiv.org/pdf/2402.05355.pdf *A Survey on Safe Multi-Modal Learning System*]
+
 
 - Yiqi Wang, Yao Ma, Charu Aggarwal, Jiliang Tang\n
 [https://arxiv.org/pdf/2005.12386.pdf *Non-IID Graph Neural Networks*]
@@ -58,6 +53,8 @@ Book Chapter in *Feature Engineering for Machine Learning and Data Analytics*, C
 
 
 == Conference and Journal Publications
+
+
 - Hongliang Chi, Wei Jin, Charu C. Aggarwal, Yao Ma.\n
 Precedence-Constrained Winter Value for Effective Graph Data Valuation.\n
 International Conference on Learning Representations (ICLR 2025)
@@ -65,6 +62,11 @@ International Conference on Learning Representations (ICLR 2025)
 - Hongliang Chi, Qiong Wu, Zhengyi Zhou, Yao Ma.\n
 Shapley-Guided Utility Learning for Effective Graph Inference Data Valuation. \n
 International Conference on Learning Representations (ICLR 2025)
+
+- Haitao Mao, Guangliang Liu, Yao Ma, Rongrong Wang, Jiliang Tang\n
+[https://arxiv.org/pdf/2402.02212.pdf *A Data Generation Perspective to the Mechanism of In-Context Learning*]\n
+2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)
+
 
 
 - Qian Ma, Haitao Mao, Jingzhe Liu, Zhehua Zhang, Chunlin Feng, Yu Song, Yihan Shao, Yao Ma. \n
