@@ -1,0 +1,113 @@
+# jemdoc: menu{MENU}{index.html}
+= CSCI 4975/6975 Deep Learning on Graphs (Fall 2024)
+
+== General Information
+
+*Course Number*: CSCI 4975/6975 \n
+*Lecture Hours*: 4:00 pm - 5:50 pm, Monday and Thursday \n
+*Location*: Ricketts Building 208 \n
+
+== Instructor
+
+[https://yaoma24.github.io/ Yao Ma] \n
+*Email*: may13@rpi.edu \n
+*Office*: MRC 304
+
+
+== Course Overview
+Graphs have been leveraged to denote data from various domains ranging from
+social science, linguistics to chemistry, biology, and physics. Meanwhile,
+numerous real-world applications can be treated as computational tasks on
+graphs. To facilitate these applications, a curial step is to learn good
+representations for graphs.  More and more evidence has demonstrated that graph
+deep learning techniques especially graph neural networks (GNNs) have
+tremendously facilitated computational tasks on graphs. The revolutionary
+advances brought by GNNs have also immensely contributed to the depth and
+breadth of the adoption of graph representation learning in real-world
+applications. 
+
+This seminar course covers recent advances in the area of deep learning on
+graphs. More specifically, the following topics will be included: Network
+Embedding, Graph Neural Networks and Their Properties, Applications of GNNs,
+and others. Students are expected to read and discuss literature, make
+presentations, and work on related research projects. 
+
+
+
+
+
+== Book
+Deep Learning on Graphs (Yao Ma, Jiliang Tang), Cambridge University Press, 2021
+- You can get a free pre-print copy [https://yaoma24.github.io/dlg_book/ here].
+- You can pre-order for a physical copy [https://www.cambridge.org/us/academic/subjects/computer-science/pattern-recognition-and-machine-learning/deep-learning-graphs?format=HB here].
+
+
+
+== Paper Presentation
+We will have several paper presentattion sessions through out the semester. Each student is required to present three times. 
+- The presentation takes the form of oral presentations at a conference. Specifically, each talk is allocated for 20 minutes (15 minutes for presentation + 10 minutes for Q\&A). 
+- A list of papers (usually on the same topic) will be provided for each session (The list will be released 2 weeks before the date of the corresponding session). You may choose one paper from the provided list for the presentation. You are also welcome to choose papers that are not in the list. Please send an email to me a week before the presentation if you would like to present a paper that are not in the lists.   
+- Please find the paper list at [https://rpiexchange-my.sharepoint.com/:x:/g/personal/may13_rpi_edu/ESk19f4JfThNiw3j2skUTLsB5SUR-azMhf2PB-ZlgDR5fg?e=ZGZE9U this page] (you need to log in your RPI account for access ). Select the paper you would like to present by fill your name on the right of the paper.  
+
+== Project
+- The project can be carried out by a group of at most 3 students. 
+- You can choose any topics as long as they are related to graphs.
+- Each group is required to submit a project proposal and a final report.
+- Each group is required to give a Proposal Presentation (15 minutes) and a Final Presentation (20 minutes). 
+- More information about the project will be released at [project.html this page]. 
+
+== Report Review
+- After all project reports are collected, each student will be assigned a report from other groups. The student is required to review this report and provide comments. More information on the review process will be released at [report_review.html this page]. 
+
+== Grading
+- Class participation: 5\%
+- Paper Presentation: 30\%
+- Project: 55\% 
+-- Proposal: 5\%
+-- Intermediate Presentation: 10\%
+-- Final Presentation: 20\% 
+-- Report: 20\% (10\% review from other students + 10\% review from the instructor)
+
+- Report Review: 10\%
+
+  == Tentative Schedule
+
+  ~~
+  {}{table}{Schedule}
+  Date  | Content | Note ||
+  08\/28 | Introduction | ||
+  09\/04 | Introductioin to Graphs |   ||
+  09\/08 | Introduction to Deep Learning | ||
+  09\/11 | Network Embedding | ||
+  09\/15 | Paper Presentation| ||
+  09\/18 | Paper Presentation| ||
+  09\/22 | Graph Neural Networks| ||
+  09\/25 | Paper Presentation | ||
+  09\/29 | Paper Presentation | ||
+  10\/02 | Robustness of GNNs | ||
+  10\/06 | Scalability of GNNs | Project Proposal Due ||
+  10\/09 | Paper Presentation | ||
+  10\/13 | Paper Presentation | ||
+  10\/16 | Project Intermediate Presentation | ||
+  10\/20 | Other Deep Models on Graphs | ||
+  10\/23 | GNNs' Application in Natural Language Processing | ||
+  10\/27 | GNNs' Application in Computer Vision| ||
+  10\/30 | Paper Presentation| ||
+  11\/03 | Paper Presentation| || 
+  11\/06 | GNNs' Application in Data Mining| || 
+  11\/10 | GNNs' Application in Healthcare and Bio-Chemistry| ||
+  11\/13 | Paper Presentation| ||
+  11\/17 | Paper Presentation| ||
+  11\/20 | Paper Presentation| ||
+  12\/01 | Paper Presentation| ||
+  12\/04 | Project Final Presentation| ||
+  12\/08 | Project Final Presentation| ||
+  12\/11 | | Project Report Due ||
+  12\/18 | | Report Review Due ||
+ ~~
+
+ == Academic Integrity
+
+Students must work independently on all course assignments. You may consult other members of the class on the assignments, but you must submit your own work. For instance you may discuss general approaches to solving a problem, but you must implement the solution on your own (similarity detection software may be used). Anytime you borrow material from the web or elsewhere, you must acknowledge the source. Copying and pasting from published sources or the internet is considered plagiarism and is not acceptable. Plagiarized work will receive an automatic grade of zero.
+
+Student-teacher relationships are built on trust. Acts which violate this trust undermine the educational process. The Rensselaer Handbook of Student Rights and Responsibilities and The Rensselaer Graduate Student Supplement define various forms of Academic Dishonesty and procedures for responding to them. Submission of any assignment that is in violation with these policies will result in a penalty that is deemed by the instructor to be appropriate to the infraction ranging from a grade of zero on the assignment in question, to failure of the class as a whole. The student will also be reported to the Dean of Students or the Dean of Graduate Education as appropriate. Note that academic dishonesty will be dealt with severely and will be reported to the Dean of Students. If you have any questions concerning this policy before submitting an assignment, please ask for clarification.
