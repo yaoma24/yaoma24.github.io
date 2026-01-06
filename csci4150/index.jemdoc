@@ -1,5 +1,5 @@
 # jemdoc: menu{MENU}{index.html}
-= CSCI 4150 Introduction to Artificial Intelligence (Spring 2025)
+= CSCI 4150 Introduction to Artificial Intelligence (Spring 2026)
 
 == General Information
 
@@ -66,35 +66,39 @@ Student-teacher relationships are built on trust. Acts which violate this trust 
 == Course Content and Tentative Schedule 
 
 
- ~~
-  {}{table}{Schedule}
-  Date  | Content | Note ||
-  08\/28 | Introduction | ||
-  09\/04 | Introductioin to Graphs |   ||
-  09\/08 | Introduction to Deep Learning | ||
-  09\/11 | Network Embedding | ||
-  09\/15 | Paper Presentation| ||
-  09\/18 | Paper Presentation| ||
-  09\/22 | Graph Neural Networks| ||
-  09\/25 | Graph Neural Networks | ||
-  09\/29 | Paper Presentation | ||
-  10\/02 | Paper Presentation | ||
-  10\/06 | Robustness of GNNs |  Project Proposal Due  ||
-  10\/09 | Scalability of GNNs| ||
-  10\/16 | Paper Presentation | ||
-  10\/20 | Paper Presentation | ||
-  10\/23 | Project Intermediate Presentation | ||
-  10\/27 | Other Deep Models on Graphs | ||
-  10\/30 | Paper Presentation| ||
-  11\/03 | GNNs' Application in Natural Language Processing | ||
-  11\/06 | GNNs' Application in Computer Vision| ||
-  11\/10 | Paper Presentation| ||
-  11\/13 | GNNs' Application in Data Mining| || 
-  11\/17 | GNNs' Application in Healthcare and Bio-Chemistry| ||
-  11\/20 | Paper Presentation| ||
-  12\/01 | Paper Presentation| ||
-  12\/04 | Project Final Presentation| ||
-  12\/08 | Project Final Presentation| ||
-  12\/11 | | Project Report Due ||
-  12\/18 | | Report Review Due ||
- ~~
+~~
+{}{table}{CSCI 4150 - Intro to AI - Spring 2026}
+Date | Topic | Note ||
+01/12 | Course Introduction; History and Foundations of AI | ||
+01/15 | Search I | ||
+01/19 | | MLK Day - no classes ||
+01/22 | Search II | ||
+01/26 | Constraint Satisfaction Problems | ||
+01/29 | Logic | ||
+02/02 | Game Trees I | ||
+02/05 | Game Trees II | ||
+02/09 | Markov Decision Processes Intro | ||
+02/12 | Markov Decision Processes I | ||
+02/16 | | Presidents' Day - no classes ||
+02/17 | Markov Decision Processes II | Follow a Monday class schedule today ||
+02/19 | Reinforcement Learning I | ||
+02/23 | Recap for Exam 1 | ||
+02/26 | In-class Exam 1 | ||
+03/02 | | Spring Break - no classes ||
+03/05 | | Spring Break - no classes ||
+03/09 | Introduction to Probability | ||
+03/12 | Bayes Nets I | ||
+03/16 | Bayes Nets II | ||
+03/19 | Bayes Nets III | ||
+03/23 | Decision Networks and Value of Information | GM Week ||
+03/26 | Hidden Markov Models | GM Week ||
+03/30 | Machine Learning I | ||
+04/02 | Machine Learning II | ||
+04/06 | Machine Learning III | ||
+04/09 | AI Applications | ||
+04/13 | AI Ethics, Safety, and Security | ||
+04/16 | Recap for Exam 2 | ||
+04/20 | In-class Exam 2 | ||
+04/23 | Wrap-up / Project Presentations / Buffer | ||
+04/27 | Overflow / Guest Lecture / Poster-style Project Demo | ||
+~~
