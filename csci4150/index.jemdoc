@@ -66,37 +66,35 @@ Student-teacher relationships are built on trust. Acts which violate this trust 
 == Course Content and Tentative Schedule 
 
 
+ ~~
   {}{table}{Schedule}
-| Date | Day | Topic / Activity | ||
-| Jan 12, 2026 | Mon | Course intro; History & Foundations of AI |||
-| Jan 15, 2026 | Thu | Search I | ||
-| Jan 19, 2026 | Mon | **No class (MLK Day)** |
-| Jan 22, 2026 | Thu | Search II |
-| Jan 26, 2026 | Mon | Constraint Satisfaction Problems |
-| Jan 29, 2026 | Thu | Logic |
-| Feb 2, 2026 | Mon | Game Trees I |
-| Feb 5, 2026 | Thu | Game Trees II |
-| Feb 9, 2026 | Mon | Markov Decision Processes (MDP) Intro |
-| Feb 12, 2026 | Thu | MDP I |
-| Feb 16, 2026 | Mon | **No class (Presidents’ Day)** |
-| Feb 17, 2026 | Tue | MDP II (**Follow a Monday schedule today**) |
-| Feb 19, 2026 | Thu | Reinforcement Learning I |
-| Feb 23, 2026 | Mon | **Recap for Exam 1** |
-| Feb 26, 2026 | Thu | **In-class Exam 1** |
-| Mar 2, 2026 | Mon | **No class (Spring Break)** |
-| Mar 5, 2026 | Thu | **No class (Spring Break)** |
-| Mar 9, 2026 | Mon | Introduction to Probability |
-| Mar 12, 2026 | Thu | Bayes Nets I |
-| Mar 16, 2026 | Mon | Bayes Nets II |
-| Mar 19, 2026 | Thu | Bayes Nets III |
-| Mar 23, 2026 | Mon | Decision Networks; Value of Information |
-| Mar 26, 2026 | Thu | Hidden Markov Models |
-| Mar 30, 2026 | Mon | Machine Learning I |
-| Apr 2, 2026 | Thu | Machine Learning II  |
-| Apr 6, 2026 | Mon | Machine Learning III |
-| Apr 9, 2026 | Thu | AI Applications |
-| Apr 13, 2026 | Mon | AI Ethics, Safety, and Security |
-| Apr 16, 2026 | Thu | Wrap-up / buffer / guest lecture |
-| Apr 20, 2026 | Thu | **Recap for Exam 2** |
-| Apr 23, 2026 | Mon | **In-class Exam 2** |
-
+  Date  | Content | Note ||
+  08\/28 | Introduction | ||
+  09\/04 | Introductioin to Graphs |   ||
+  09\/08 | Introduction to Deep Learning | ||
+  09\/11 | Network Embedding | ||
+  09\/15 | Paper Presentation| ||
+  09\/18 | Paper Presentation| ||
+  09\/22 | Graph Neural Networks| ||
+  09\/25 | Graph Neural Networks | ||
+  09\/29 | Paper Presentation | ||
+  10\/02 | Paper Presentation | ||
+  10\/06 | Robustness of GNNs |  Project Proposal Due  ||
+  10\/09 | Scalability of GNNs| ||
+  10\/16 | Paper Presentation | ||
+  10\/20 | Paper Presentation | ||
+  10\/23 | Project Intermediate Presentation | ||
+  10\/27 | Other Deep Models on Graphs | ||
+  10\/30 | Paper Presentation| ||
+  11\/03 | GNNs' Application in Natural Language Processing | ||
+  11\/06 | GNNs' Application in Computer Vision| ||
+  11\/10 | Paper Presentation| ||
+  11\/13 | GNNs' Application in Data Mining| || 
+  11\/17 | GNNs' Application in Healthcare and Bio-Chemistry| ||
+  11\/20 | Paper Presentation| ||
+  12\/01 | Paper Presentation| ||
+  12\/04 | Project Final Presentation| ||
+  12\/08 | Project Final Presentation| ||
+  12\/11 | | Project Report Due ||
+  12\/18 | | Report Review Due ||
+ ~~
