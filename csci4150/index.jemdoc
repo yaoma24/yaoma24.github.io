@@ -23,39 +23,24 @@ This course provides an introduction to the principles and practices of Artifici
 [https://aima.cs.berkeley.edu/ Artificial Intelligence: A Modern Approach, 4th Edition by Stuart Russell and Peter Norvig]
 Most content can also be found at [https://inst.eecs.berkeley.edu/~cs188/textbook/  Introduction to Artificial Intelligence]
 
-== Course Contents (Tentative)
 
-- Basics 
- -- Probability and Statistics
- -- Algebra
-- Machine Learning Basics 
-  -- Linear Regression
-  -- Perceptron
-  -- Logistic Regression
-- Deep Networks 
-  -- Feedforward Neural Networks 
-  -- Convolutional Neural Networks
-  -- Recurrent Neural Networks 
-- Transformer and Foundation Models
+== Homework Assignments
+
+There will be 3-4 homework assignments. 
   
-
-== Assignments 
-There will be 4-6 assigments throughout the semester. Each assignment consists of several small tasks where selected code needs to be completed. Each assignment has its own detailed instructions. In addition, some research on the details of the implementation needs to be conducted. Each assignment needs to be completed in 7-14 days and submitted via Canvas.
-
-
 
 
 == Project
-- The project can be carried out by a group of at most 3 students. 
-- You can choose any topics as long as they are related to deep learning.
-- Each group is required to submit a project proposal and a final report.
-- Each group is required to give a Proposal Presentation (15 minutes) and a Final Presentation (30 minutes). 
-- More information about the project will be released at [project.html this page]. 
+There will be about 4 projects. You are expected to program in python for these projects.
+
+== Exams
+
+There will be two in-class exams. 
 
 
 == Grading
 - Class participation: 10\%
-- Assignments: 30\%
+- Homework Assignments: 30\%
 - Project: 30\% 
 - Midterm Exam: 15%
 - Final Exam: 15% 
@@ -75,3 +60,41 @@ There will be 4-6 assigments throughout the semester. Each assignment consists o
 Students must work independently on all course assignments. You may consult other members of the class on the assignments, but you must submit your own work. For instance you may discuss general approaches to solving a problem, but you must implement the solution on your own (similarity detection software may be used). Anytime you borrow material from the web or elsewhere, you must acknowledge the source. Copying and pasting from published sources or the internet is considered plagiarism and is not acceptable. Plagiarized work will receive an automatic grade of zero.
 
 Student-teacher relationships are built on trust. Acts which violate this trust undermine the educational process. The Rensselaer Handbook of Student Rights and Responsibilities and The Rensselaer Graduate Student Supplement define various forms of Academic Dishonesty and procedures for responding to them. Submission of any assignment that is in violation with these policies will result in a penalty that is deemed by the instructor to be appropriate to the infraction ranging from a grade of zero on the assignment in question, to failure of the class as a whole. The student will also be reported to the Dean of Students or the Dean of Graduate Education as appropriate. Note that academic dishonesty will be dealt with severely and will be reported to the Dean of Students. If you have any questions concerning this policy before submitting an assignment, please ask for clarification.
+
+
+== Course Content and Tentative Schedule 
+
+| Date | Day | Topic / Activity |
+|---|---|---|
+| Jan 12, 2026 | Mon | Course intro; History & Foundations of AI |
+| Jan 15, 2026 | Thu | Search I |
+| Jan 19, 2026 | Mon | **No class (MLK Day)** |
+| Jan 22, 2026 | Thu | Search II |
+| Jan 26, 2026 | Mon | Constraint Satisfaction Problems |
+| Jan 29, 2026 | Thu | Logic |
+| Feb 2, 2026 | Mon | Game Trees I |
+| Feb 5, 2026 | Thu | Game Trees II |
+| Feb 9, 2026 | Mon | Markov Decision Processes (MDP) Intro |
+| Feb 12, 2026 | Thu | MDP I |
+| Feb 16, 2026 | Mon | **No class (Presidents’ Day)** |
+| Feb 17, 2026 | Tue | MDP II (**Follow a Monday schedule today**) |
+| Feb 19, 2026 | Thu | Reinforcement Learning I |
+| Feb 23, 2026 | Mon | **Recap for Exam 1** |
+| Feb 26, 2026 | Thu | **In-class Exam 1** |
+| Mar 2, 2026 | Mon | **No class (Spring Break)** |
+| Mar 5, 2026 | Thu | **No class (Spring Break)** |
+| Mar 9, 2026 | Mon | Introduction to Probability |
+| Mar 12, 2026 | Thu | Bayes Nets I |
+| Mar 16, 2026 | Mon | Bayes Nets II |
+| Mar 19, 2026 | Thu | Bayes Nets III |
+| Mar 23, 2026 | Mon | Decision Networks; Value of Information |
+| Mar 26, 2026 | Thu | Hidden Markov Models |
+| Mar 30, 2026 | Mon | Machine Learning I |
+| Apr 2, 2026 | Thu | Machine Learning II  |
+| Apr 6, 2026 | Mon | Machine Learning III |
+| Apr 9, 2026 | Thu | AI Applications |
+| Apr 13, 2026 | Mon | AI Ethics, Safety, and Security |
+| Apr 16, 2026 | Thu | Wrap-up / buffer / guest lecture |
+| Apr 20, 2026 | Thu | **Recap for Exam 2** |
+| Apr 23, 2026 | Mon | **In-class Exam 2** |
+
