@@ -10,7 +10,7 @@ Project 0 will cover the following:
 - A mini-tutorial on Python.
 - A mini-tutorial on the autograder.
 
-Files to Edit: You will fill in portions of {{{addition.py}}}, {{{buyLotsOfFruit.py}}} and {{{shopSmart.py}}} during this assignment. You will submit these files.
+Files to Edit: You will fill in portions of /addition.py/, /buyLotsOfFruit.py/ and /shopSmart.py/ in [https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQBFQiLs0NrgRpOwSQYRrPIGAdKHkZyYOIUMddBjKbgTzhM?e=SZyfeZ tutorial.zip] during this assignment. 
 
 Evaluation : Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
 
@@ -41,4 +41,19 @@ You will need some dependencies. In the project directory, run:
 ~~~
 python3 -m pip install -r requirements.txt
 ~~~
+
+
+==== Troubleshooting
+
+If you run into issues, make sure:
+
+- You are using Python 3.6+.
+- Your \pip\ corresponds to the same Python installation as \python3\.
+- Your environment (Conda/venv) is activated if you are using one.
+
+If you still have problems, ask on the course forum (link placeholder) or attend office hours (link placeholder).
+
+
+
+
 
