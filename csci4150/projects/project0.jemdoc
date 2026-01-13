@@ -48,11 +48,80 @@ python3 -m pip install -r requirements.txt
 If you run into issues, make sure:
 
 - You are using Python 3.6+.
-- Your \pip\ corresponds to the same Python installation as \python3\.
+- Your \spip\ corresponds to the same Python installation as \python3\.
 - Your environment (Conda/venv) is activated if you are using one.
 
 If you still have problems, ask on the course forum (link placeholder) or attend office hours (link placeholder).
 
+
+
+== Workflow and Setup 
+
+This project includes a quick workflow setup guide.
+
+You will typically:
+
+- Download the project starter code.
+- Edit the required files.
+- Run the autograder locally.
+- Submit your final code.
+
+
+== Autograding
+
+You could use an autograder to test your solutions.
+
+Typical usage pattern:
+
+~~~
+python3 autograder.py
+~~~
+
+You could also run a specific question using flags such as:
+
+~~~
+python3 autograder.py -q q1
+~~~
+
+
+===  Q1: Addition
+
+In \addition.py\, implement a simple addition function.
+
+The intended goal is to confirm:
+
+- You can edit Python files correctly
+- You can run the autograder to perform evaluation 
+
+
+=== Q2: buyLotsOfFruit function
+
+In {{{buyLotsOfFruit.py}}}, implement {{{buyLotsOfFruit(orderList)}}}.
+
+The function should:
+
+- Take a list of (fruit, pounds) tuples.
+- Compute and return the total cost.
+- Use the provided fruit prices dictionary.
+
+Be sure not to change function signatures. You can run the autograder to perform evaluation. 
+
+
+=== Q3: shopSmart function
+
+In {{{shopSmart.py}}}, implement {{{shopSmart(orderList, fruitShops)}}}.
+
+The function should:
+
+- Compare total cost of an order across multiple shops.
+- Return the shop that offers the lowest total cost.
+
+
+=== Autograding
+Rerun the autograder to evalulate all three questions. 
+~~~
+python3 autograder.py
+~~~
 
 
 
