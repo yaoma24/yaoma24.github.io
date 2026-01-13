@@ -48,7 +48,7 @@ python3 -m pip install -r requirements.txt
 If you run into issues, make sure:
 
 - You are using Python 3.6+.
-- Your \spip\ corresponds to the same Python installation as \python3\.
+- Your {pip} corresponds to the same Python installation as {python3}.
 - Your environment (Conda/venv) is activated if you are using one.
 
 If you still have problems, ask on the course forum (link placeholder) or attend office hours (link placeholder).
