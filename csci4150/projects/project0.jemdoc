@@ -1,0 +1,44 @@
+= Project 0: Python, Setup, & Autograder Tutorial
+
+== Introduction
+
+Projects in this class use Python 3.
+
+Project 0 will cover the following:
+
+- Instructions on how to set up Python and Work on assignments.
+- A mini-tutorial on Python.
+- A mini-tutorial on the autograder.
+
+Files to Edit: You will fill in portions of {{{addition.py}}}, {{{buyLotsOfFruit.py}}} and {{{shopSmart.py}}} during this assignment. You will submit these files.
+
+Evaluation : Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
+
+
+
+
+
+== Python Installation
+
+You need a Python (3.6 or higher) distribution. If you already have Python, please check that it is in the correct version range.
+
+To check if you meet our requirements, you can run:
+
+~~~
+python3 --version
+~~~
+
+If you need to install things, we recommend using a package manager (such as Conda) or the official installers for your OS.
+
+On Windows either Windows Python or WSL2 is fine.
+
+If you choose to use Conda via Anaconda (recommended), you can follow their installation instructions.
+
+=== Dependencies installation
+
+You will need some dependencies. In the project directory, run:
+
+~~~
+python3 -m pip install -r requirements.txt
+~~~
+
