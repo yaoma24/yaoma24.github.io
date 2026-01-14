@@ -1,4 +1,4 @@
-= Project 0: Python, Setup, & Autograder Tutorial
+= Project 0: Python and Autograder Tutorial
 
 == Introduction
 
@@ -10,7 +10,7 @@ Project 0 will cover the following:
 - A mini-tutorial on Python.
 - A mini-tutorial on the autograder.
 
-Files to Edit: You will fill in portions of /addition.py/, /buyLotsOfFruit.py/ and /shopSmart.py/ in [https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQBFQiLs0NrgRpOwSQYRrPIGAdKHkZyYOIUMddBjKbgTzhM?e=SZyfeZ tutorial.zip] during this assignment. 
+Files to Edit: You will fill in portions of +addition.py+, +buyLotsOfFruit.py+ and +shopSmart.py+ in [https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQBFQiLs0NrgRpOwSQYRrPIGAdKHkZyYOIUMddBjKbgTzhM?e=SZyfeZ tutorial.zip] during this assignment. 
 
 Evaluation : Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
 
@@ -51,7 +51,7 @@ If you run into issues, make sure:
 - Your {pip} corresponds to the same Python installation as {python3}.
 - Your environment (Conda/venv) is activated if you are using one.
 
-If you still have problems, ask on the course forum (link placeholder) or attend office hours (link placeholder).
+If you still have problems, ask on the course forum via Submitty or attend office hours.
 
 
 
@@ -59,7 +59,7 @@ If you still have problems, ask on the course forum (link placeholder) or attend
 
 This project includes a quick workflow setup guide.
 
-You will typically:
+For any later project, you will typically:
 
 - Download the project starter code.
 - Edit the required files.
@@ -86,7 +86,7 @@ python3 autograder.py -q q1
 
 ===  Q1: Addition
 
-In \addition.py\, implement a simple addition function.
+In +addition.py+, implement a simple addition function.
 
 The intended goal is to confirm:
 
@@ -96,7 +96,7 @@ The intended goal is to confirm:
 
 === Q2: buyLotsOfFruit function
 
-In {{{buyLotsOfFruit.py}}}, implement {{{buyLotsOfFruit(orderList)}}}.
+In +buyLotsOfFruit.py+, implement +buyLotsOfFruit(orderList)+.
 
 The function should:
 
@@ -109,7 +109,7 @@ Be sure not to change function signatures. You can run the autograder to perform
 
 === Q3: shopSmart function
 
-In {{{shopSmart.py}}}, implement {{{shopSmart(orderList, fruitShops)}}}.
+In +shopSmart.py+, implement +shopSmart(orderList, fruitShops)+.
 
 The function should:
 
@@ -118,11 +118,15 @@ The function should:
 
 
 === Autograding
-Rerun the autograder to evalulate all three questions. 
+Now, you can run the autograder to evalulate all three questions. 
 ~~~
 python3 autograder.py
 ~~~
 
+
+== Acknowledgements
+
+This project is part of the [https://inst.eecs.berkeley.edu/~cs188/fa25/ CS 188] projects created by John DeNero, Dan Klein, Pieter Abbeel, and many others.
 
 
 
