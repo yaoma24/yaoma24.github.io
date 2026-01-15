@@ -12,7 +12,9 @@ Project 0 will cover the following:
 
 Files to Edit: You will fill in portions of +addition.py+, +buyLotsOfFruit.py+ and +shopSmart.py+ in [https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQBFQiLs0NrgRpOwSQYRrPIGAdKHkZyYOIUMddBjKbgTzhM?e=SZyfeZ tutorial.zip] during this assignment. 
 
-Evaluation : Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
+Evaluation: Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
+
+Submission: You are not required to submit this project. However, there is a gradable available in Submitty.  
 
 
 
@@ -20,32 +22,25 @@ Evaluation : Your code will be autograded for technical correctness. Please do n
 
 == Python Installation
 
-You need a Python (3.6 or higher) distribution. If you already have Python, please check that it is in the correct version range.
+Install Python 3.9. If you already have Python, please check that it is in the correct version.
 
 To check if you meet our requirements, you can run:
 
 ~~~
-python3 --version
+python3 -V
 ~~~
 
 If you need to install things, we recommend using a package manager (such as Conda) or the official installers for your OS.
 
 If you choose to use Conda via Anaconda (recommended), you can follow their installation instructions.
 
-=== Dependencies installation
-
-You will need some dependencies. In the project directory, run:
-
-~~~
-python3 -m pip install -r requirements.txt
-~~~
 
 
 ==== Troubleshooting
 
 If you run into issues, make sure:
 
-- You are using Python 3.6+.
+- You are using Python 3.9.
 - Your +pip+ corresponds to the same Python installation as +python3+.
 - Your environment (Conda/venv) is activated if you are using one.
 
@@ -75,12 +70,6 @@ Typical usage pattern:
 python3 autograder.py
 ~~~
 
-You could also run a specific question using flags such as:
-
-~~~
-python3 autograder.py -q q1
-~~~
-
 
 ===  Q1: Addition
 
@@ -98,11 +87,12 @@ In +buyLotsOfFruit.py+, implement +buyLotsOfFruit(orderList)+.
 
 The function should:
 
-- Take a list of (fruit, pounds) tuples.
+- Take a list of (fruit, numPounds) tuples.
 - Compute and return the total cost.
 - Use the provided fruit prices dictionary.
+- If there is some +fruit+ in the list which doesn’t appear in +fruitPrices+ it should print an error message and return None.
 
-Be sure not to change function signatures. You can run the autograder to perform evaluation. 
+Please do not change the +fruitPrices+ variable. You can run the autograder to perform evaluation. 
 
 
 === Q3: shopSmart function

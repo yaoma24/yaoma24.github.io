@@ -30,35 +30,29 @@
 </ul>
 <p>Files to Edit: You will fill in portions of <tt>addition.py</tt>, <tt>buyLotsOfFruit.py</tt> and <tt>shopSmart.py</tt> in <a href="https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQBFQiLs0NrgRpOwSQYRrPIGAdKHkZyYOIUMddBjKbgTzhM?e=SZyfeZ" target=&ldquo;blank&rdquo;>tutorial.zip</a> during this assignment. 
 </p>
-<p>Evaluation : Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
+<p>Evaluation: Your code will be autograded for technical correctness. Please do not change the names of any provided functions or classes within the code; otherwise, the autograder will not be able to grade your work. Additionally, please do not add any imports.
+</p>
+<p>Submission: You are not required to submit this project. However, there is a gradable available in Submitty.  
 </p>
 <h2>Python Installation</h2>
-<p>You need a Python (3.6 or higher) distribution. If you already have Python, please check that it is in the correct version range.
+<p>Install Python 3.9. If you already have Python, please check that it is in the correct version.
 </p>
 <p>To check if you meet our requirements, you can run:
 </p>
 <div class="infoblock">
 <div class="blockcontent">
-<p>python3 &ndash;version
+<p>python3 -V
 </p>
 </div></div>
 <p>If you need to install things, we recommend using a package manager (such as Conda) or the official installers for your OS.
 </p>
 <p>If you choose to use Conda via Anaconda (recommended), you can follow their installation instructions.
 </p>
-<h3>Dependencies installation</h3>
-<p>You will need some dependencies. In the project directory, run:
-</p>
-<div class="infoblock">
-<div class="blockcontent">
-<p>python3 -m pip install -r requirements.txt
-</p>
-</div></div>
 <h4>Troubleshooting</h4>
 <p>If you run into issues, make sure:
 </p>
 <ul>
-<li><p>You are using Python 3.6+.
+<li><p>You are using Python 3.9.
 </p>
 </li>
 <li><p>Your <tt>pip</tt> corresponds to the same Python installation as <tt>python3</tt>.
@@ -99,13 +93,6 @@
 <p>python3 autograder.py
 </p>
 </div></div>
-<p>You could also run a specific question using flags such as:
-</p>
-<div class="infoblock">
-<div class="blockcontent">
-<p>python3 autograder.py -q q1
-</p>
-</div></div>
 <h3>Q1: Addition</h3>
 <p>In <tt>addition.py</tt>, implement a simple addition function.
 </p>
@@ -125,7 +112,7 @@
 <p>The function should:
 </p>
 <ul>
-<li><p>Take a list of (fruit, pounds) tuples.
+<li><p>Take a list of (fruit, numPounds) tuples.
 </p>
 </li>
 <li><p>Compute and return the total cost.
@@ -134,8 +121,11 @@
 <li><p>Use the provided fruit prices dictionary.
 </p>
 </li>
+<li><p>If there is some <tt>fruit</tt> in the list which doesn’t appear in <tt>fruitPrices</tt> it should print an error message and return None.
+</p>
+</li>
 </ul>
-<p>Be sure not to change function signatures. You can run the autograder to perform evaluation. 
+<p>Please do not change the <tt>fruitPrices</tt> variable. You can run the autograder to perform evaluation. 
 </p>
 <h3>Q3: shopSmart function</h3>
 <p>In <tt>shopSmart.py</tt>, implement <tt>shopSmart(orderList, fruitShops)</tt>.
@@ -163,7 +153,7 @@
 </p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-01-13 22:48:59 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-01-14 22:21:53 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
