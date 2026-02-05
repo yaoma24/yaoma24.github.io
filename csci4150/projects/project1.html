@@ -210,9 +210,77 @@ Now it's time to write full-fledged generic search functions to help Pacman plan
 </p>
 <p>Our implementation of <tt>breadthFirstSearch</tt> expands just under 2000 search nodes on <tt>mediumCorners</tt>. However, heuristics (used with A* search) can reduce the amount of searching required.
 </p>
+<h2>Question 6 (3 points)</h2>
+<p>Implement a non-trivial, <b>consistent heuristic</b> for the <tt>CornersProblem</tt> in <tt>cornersHeuristic</tt>. Grading: inconsistent heuristics will get no credit. 1 point for any non-trivial consistent heuristic. 1 point for expanding fewer than 1600 nodes. 1 point for expanding fewer than 1200 nodes. Expand fewer than 800, and you're doing great!
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+</p>
+</div></div>
+<p><b>Note</b>: <tt>AStarCornersAgent</tt> is a shortcut for <tt>-p SearchAgent -a fn=aStarSearch,prob=CornersProblem,heuristic=cornersHeuristic</tt>.
+</p>
+<p><b>Admissibility vs. Consistency</b>: Remember, heuristics are just functions that take search states and return numbers that estimate the cost to a nearest goal. More effective heuristics will return values closer to the actual goal costs. To be admissible, the heuristic values must be lower bounds on the actual shortest path cost to the nearest goal (and non-negative). To be consistent, it must additionally hold that if an action has cost c, then taking that action can only cause a drop in heuristic of at most c.
+</p>
+<p>Remember that admissibility <b>isn't enough</b> to guarantee correctness in <b>graph search</b> &ndash; you need the stronger condition of consistency. However, admissible heuristics are usually also consistent, especially if they are derived from problem relaxations. Therefore it is usually easiest to start out by brainstorming admissible heuristics. Once you have an admissible heuristic that works well, you can check whether it is indeed consistent, too. The only way to guarantee consistency is with a proof. However, inconsistency can often be detected by verifying that for each node you expand, its successor nodes are equal or higher in in f-value. Morevoer, if UCS and A* ever return paths of different lengths, your heuristic is inconsistent. This stuff is tricky! If you need help, don't hesitate to ask the course staff.
+</p>
+<p><b>Non-Trivial Heuristics</b>: The trivial heuristics are the ones that return zero everywhere (UCS) and the heuristic which computes the true completion cost. The former won't save you any time, while the latter will timeout the autograder. You want a heuristic which reduces total compute time, though for this assignment the autograder will only check node counts (aside from enforcing a reasonable time limit).
+</p>
+<p>Additionally, any heuristic should always be non-negative, and should return a value of 0 at every goal state (technically this is a requirement for admissibility!). We will deduct 1 point for any heuristic that returns negative values, or doesn't behave properly at goal states.
+</p>
+<h2>Eating All The Dots</h2>
+<p>Now we'll solve a hard search problem: eating all the Pacman food in as few steps as possible. For this, we'll need a new search problem definition which formalizes the food-clearing problem: <tt>FoodSearchProblem</tt> in <tt>searchAgents.py</tt> (implemented for you). A solution is defined to be a path that collects all of the food in the Pacman world. For the present project, solutions do not take into account any ghosts or power pellets; solutions only depend on the placement of walls, regular food and Pacman. (Of course ghosts can ruin the execution of a solution!) If you have written your general search methods correctly, A* with a null heuristic (equivalent to uniform-cost search) should quickly find an optimal solution to <tt>testSearch</tt> with no code change on your part (total cost of 7).
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l testSearch -p AStarFoodSearchAgent
+</p>
+</div></div>
+<p><b>Note</b> : <tt>AStarFoodSearchAgent</tt> is a shortcut for <tt>-p SearchAgent -a fn=astar,prob=FoodSearchProblem,heuristic=foodHeuristic</tt>.
+</p>
+<p>You should find that UCS starts to slow down even for the seemingly simple <tt>tinySearch</tt>. As a reference, our implementation takes 2.5 seconds to find a path of length 27 after expanding 4902 search nodes.
+</p>
+<h3>Question 7 (5 points) </h3>
+<p>Fill in <tt>foodHeuristic</tt> in <tt>searchAgents.py</tt> with a <b>consistent heuristic</b> for the <tt>FoodSearchProblem</tt>. Try your agent on the <tt>trickySearch</tt> board:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l trickySearch -p AStarFoodSearchAgent
+</p>
+</div></div>
+<p>Any non-trivial consistent heuristic will receive 1 point. You will receive the following additional points, depending on how few nodes your heuristic expands.
+</p>
+<table>
+<tr class="r1"><td class="c1">Fewer nodes than </td><td class="c2"> Points </td></tr>
+<tr class="r2"><td class="c1">15000 </td><td class="c2"> 1 </td></tr>
+<tr class="r3"><td class="c1">12000 </td><td class="c2"> 2 </td></tr>
+<tr class="r4"><td class="c1">9000  </td><td class="c2"> 3 (medium) </td></tr>
+<tr class="r5"><td class="c1">7000  </td><td class="c2"> 4 (hard) </td></tr>
+<tr class="r6"><td class="c1">
+</td></tr></table>
+<p><b>Important Note</b>: If your heuristic is <b>inconsistent</b>, you will receive no credit, so be careful! Can you solve <tt>mediumSearch</tt> in a short time? If so, we're either very, very impressed, or your heuristic is inconsistent.
+</p>
+<p>We will deduct 1 point for any heuristic that returns negative values, or does not return 0 at every goal state.
+</p>
+<h2>Suboptimal Search</h2>
+<p>Sometimes, even with A* and a good heuristic, finding the optimal path through all the dots is hard. In these cases, we'd still like to find a reasonably good path, quickly. In this section, you'll write an agent that always greedily eats the closest dot. <tt>ClosestDotSearchAgent</tt> is implemented for you in <tt>searchAgents.py</tt>, but it's missing a key function that finds a path to the closest dot.
+</p>
+<h3>Question 8 (2 points)  Implement the function <tt>findPathToClosestDot</tt> in <tt>searchAgents.py</tt>. Our agent solves this maze (suboptimally!) in under a second with a path cost of 350:</h3>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5 
+</p>
+</div></div>
+<p><b>Hint</b>: The quickest way to complete <tt>findPathToClosestDot</tt> is to fill in the <tt>AnyFoodSearchProblem</tt>, which is missing its goal test. Then, solve that problem with an appropriate search function. The solution should be very short!
+</p>
+<p>Your <tt>ClosestDotSearchAgent</tt> won't always find the shortest possible path through the maze.
+</p>
+<h2>Submission</h2>
+<p>Submit only <tt>search.py</tt> and <tt>searchAgents.py</tt> to Submitty. 
+</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-02-05 16:23:25 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-02-05 16:49:19 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
