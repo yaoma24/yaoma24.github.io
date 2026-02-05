@@ -86,9 +86,121 @@ Now it's time to write full-fledged generic search functions to help Pacman plan
 
 *Hint*: Each algorithm is very similar. Algorithms for DFS, BFS, UCS, and A\* differ only in the details of how the fringe is managed. So, concentrate on getting DFS right and the rest should be relatively straightforward. Indeed, one possible implementation requires only a single generic search method which is configured with an algorithm-specific queuing strategy. (Your implementation need not be of this form to receive full credit).
 
-*Hint*: Make sure to check out the *Stack*, *Queue* and *PriorityQueue* types provided to you in *util.py*!
+*Hint*: Make sure to check out the +Stack+, +Queue+ and +PriorityQueue+ types provided to you in +util.py+!
 
 === Question 1 (2 points) 
+Implement the depth-first search (DFS) algorithm in the +depthFirstSearch+ function in +search.py+. To make your algorithm complete, write the graph search version of DFS, which avoids expanding any already visited states (check slides of lec03 for the +Graph Search+ part).
+
+Your code should quickly find a solution for:
+
+~~~
+python pacman.py -l tinyMaze -p SearchAgent
+~~~
+
+~~~
+python pacman.py -l mediumMaze -p SearchAgent
+~~~
+
+~~~
+python pacman.py -l bigMaze -z .5 -p SearchAgent
+~~~
+
+The Pacman board will show an overlay of the states explored, and the order in which they were explored (brighter red means earlier exploration). Is the exploration order what you would have expected? Does Pacman actually go to all the explored squares on his way to the goal?
+
+*Hint*: If you use a +Stack+ as your data structure, the solution found by your DFS algorithm for +mediumMaze+ should have a length of 130 (provided you push successors onto the fringe in the order provided by +getSuccessors+; you might get 244 if you push them in the reverse order). Is this a least cost solution? If not, think about what depth-first search is doing wrong.
+
+
+=== Question 2 (2 points)
+
+ Implement the breadth-first search (BFS) algorithm in the +breadthFirstSearch+ function in +search.py+. Again, write a *graph search* algorithm that avoids expanding any already visited states. Test your code the same way you did for depth-first search.
+
+ ~~~
+python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+ ~~~
+
+ ~~~
+python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+ ~~~
+
+Does BFS find a least cost solution? If not, check your implementation.
+
+*Hint*: If Pacman moves too slowly for you, try the option -+-frameTime 0+.
+
+Note: If you've written your search code generically, your code should work equally well for the eight-puzzle search problem without any changes.
+
+~~~
+python eightpuzzle.py
+~~~
+
+
+
+== Varying the Cost Function
+
+While BFS will find a fewest-actions path to the goal, we might want to find paths that are "best" in other senses. Consider +mediumDottedMaze+ and +mediumScaryMaze+. By changing the cost function, we can encourage Pacman to find different paths. For example, we can charge more for dangerous steps in ghost-ridden areas or less for steps in food-rich areas, and a rational Pacman agent should adjust its behavior in response.
+
+=== Question 3 (2 points) 
+
+ Implement the uniform-cost graph search algorithm in the +uniformCostSearch+ function in +search.py+. We encourage you to look through +util.py+ for some data structures that may be useful in your implementation. You should now observe successful behavior in all three of the following layouts, where the agents below are all UCS agents that differ only in the cost function they use (the agents and cost functions are written for you):
+
+~~~
+python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+~~~
+
+~~~
+python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+~~~
+
+~~~
+python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+~~~
+
+*Note*:  You should get very low and very high path costs for the +StayEastSearchAgent+ and +StayWestSearchAgent+ respectively, due to their exponential cost functions (see +searchAgents.py+ for details).
+
+
+== A\* Search
+
+=== Question 4 (3 points)
+
+Implement A\* *graph search* in the empty function +aStarSearch+ in +search.py+. A\* takes a heuristic function as an argument. Heuristics take two arguments: a state in the search problem (the main argument), and the problem itself (for reference information). The +nullHeuristic+ heuristic function in +search.py+ is a trivial example.
+
+You can test your A\* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as +manhattanHeuristic+ in +searchAgents.py+).
+
+~~~
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+~~~
+
+You should see that A\* finds the optimal solution slightly faster than uniform cost search (about 549 vs. 620 search nodes expanded in our implementation, but ties in priority may make your numbers differ slightly). What happens on +openMaze+ for the various search strategies?
+
+== Finding All the Corners
+
+The real power of A\* will only be apparent with a more challenging search problem. Now, it's time to formulate a new problem and design a heuristic for it.
+
+In corner mazes, there are four dots, one in each corner. Our new search problem is to find the shortest path through the maze that touches all four corners (whether the maze actually has food there or not). Note that for some mazes like +tinyCorners+, the shortest path does not always go to the closest food first! 
+
+*Hint*: the shortest path through +tinyCorners+ takes 28 steps.
+
+=== Question 5 (2 points) 
+ Implement the +CornersProblem+ search problem in +searchAgents.py+. You will need to choose a state representation that encodes all the information necessary to detect whether all four corners have been reached. Now, your search agent should solve:
+
+ ~~~
+ python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+ ~~~
+
+ ~~~
+ python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+ ~~~
+
+To receive full credit, you need to define an abstract state representation that does not encode irrelevant information (like the position of ghosts, where extra food is, etc.). In particular, do not use a Pacman +GameState+ as a search state. Your code will be very, very slow if you do (and also wrong).
+
+*Hint*: The only parts of the game state you need to reference in your implementation are the starting Pacman position and the location of the four corners.
+
+Our implementation of +breadthFirstSearch+ expands just under 2000 search nodes on +mediumCorners+. However, heuristics (used with A\* search) can reduce the amount of searching required.
+
+
+
+
+
+
 
 
 

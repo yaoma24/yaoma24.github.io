@@ -98,12 +98,121 @@ Now it's time to write full-fledged generic search functions to help Pacman plan
 </p>
 <p><b>Hint</b>: Each algorithm is very similar. Algorithms for DFS, BFS, UCS, and A* differ only in the details of how the fringe is managed. So, concentrate on getting DFS right and the rest should be relatively straightforward. Indeed, one possible implementation requires only a single generic search method which is configured with an algorithm-specific queuing strategy. (Your implementation need not be of this form to receive full credit).
 </p>
-<p><b>Hint</b>: Make sure to check out the <b>Stack</b>, <b>Queue</b> and <b>PriorityQueue</b> types provided to you in <b>util.py</b>!
+<p><b>Hint</b>: Make sure to check out the <tt>Stack</tt>, <tt>Queue</tt> and <tt>PriorityQueue</tt> types provided to you in <tt>util.py</tt>!
 </p>
 <h3>Question 1 (2 points) </h3>
+<p>Implement the depth-first search (DFS) algorithm in the <tt>depthFirstSearch</tt> function in <tt>search.py</tt>. To make your algorithm complete, write the graph search version of DFS, which avoids expanding any already visited states (check slides of lec03 for the <tt>Graph Search</tt> part).
+</p>
+<p>Your code should quickly find a solution for:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l tinyMaze -p SearchAgent
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumMaze -p SearchAgent
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l bigMaze -z .5 -p SearchAgent
+</p>
+</div></div>
+<p>The Pacman board will show an overlay of the states explored, and the order in which they were explored (brighter red means earlier exploration). Is the exploration order what you would have expected? Does Pacman actually go to all the explored squares on his way to the goal?
+</p>
+<p><b>Hint</b>: If you use a <tt>Stack</tt> as your data structure, the solution found by your DFS algorithm for <tt>mediumMaze</tt> should have a length of 130 (provided you push successors onto the fringe in the order provided by <tt>getSuccessors</tt>; you might get 244 if you push them in the reverse order). Is this a least cost solution? If not, think about what depth-first search is doing wrong.
+</p>
+<h3>Question 2 (2 points)</h3>
+<p>Implement the breadth-first search (BFS) algorithm in the <tt>breadthFirstSearch</tt> function in <tt>search.py</tt>. Again, write a <b>graph search</b> algorithm that avoids expanding any already visited states. Test your code the same way you did for depth-first search.
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+</p>
+</div></div>
+<p>Does BFS find a least cost solution? If not, check your implementation.
+</p>
+<p><b>Hint</b>: If Pacman moves too slowly for you, try the option -<tt>-frameTime 0</tt>.
+</p>
+<p>Note: If you've written your search code generically, your code should work equally well for the eight-puzzle search problem without any changes.
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python eightpuzzle.py
+</p>
+</div></div>
+<h2>Varying the Cost Function</h2>
+<p>While BFS will find a fewest-actions path to the goal, we might want to find paths that are &ldquo;best&rdquo; in other senses. Consider <tt>mediumDottedMaze</tt> and <tt>mediumScaryMaze</tt>. By changing the cost function, we can encourage Pacman to find different paths. For example, we can charge more for dangerous steps in ghost-ridden areas or less for steps in food-rich areas, and a rational Pacman agent should adjust its behavior in response.
+</p>
+<h3>Question 3 (2 points) </h3>
+<p>Implement the uniform-cost graph search algorithm in the <tt>uniformCostSearch</tt> function in <tt>search.py</tt>. We encourage you to look through <tt>util.py</tt> for some data structures that may be useful in your implementation. You should now observe successful behavior in all three of the following layouts, where the agents below are all UCS agents that differ only in the cost function they use (the agents and cost functions are written for you):
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+</p>
+</div></div>
+<p><b>Note</b>:  You should get very low and very high path costs for the <tt>StayEastSearchAgent</tt> and <tt>StayWestSearchAgent</tt> respectively, due to their exponential cost functions (see <tt>searchAgents.py</tt> for details).
+</p>
+<h2>A* Search</h2>
+<h3>Question 4 (3 points)</h3>
+<p>Implement A* <b>graph search</b> in the empty function <tt>aStarSearch</tt> in <tt>search.py</tt>. A* takes a heuristic function as an argument. Heuristics take two arguments: a state in the search problem (the main argument), and the problem itself (for reference information). The <tt>nullHeuristic</tt> heuristic function in <tt>search.py</tt> is a trivial example.
+</p>
+<p>You can test your A* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as <tt>manhattanHeuristic</tt> in <tt>searchAgents.py</tt>).
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+</p>
+</div></div>
+<p>You should see that A* finds the optimal solution slightly faster than uniform cost search (about 549 vs. 620 search nodes expanded in our implementation, but ties in priority may make your numbers differ slightly). What happens on <tt>openMaze</tt> for the various search strategies?
+</p>
+<h2>Finding All the Corners</h2>
+<p>The real power of A* will only be apparent with a more challenging search problem. Now, it's time to formulate a new problem and design a heuristic for it.
+</p>
+<p>In corner mazes, there are four dots, one in each corner. Our new search problem is to find the shortest path through the maze that touches all four corners (whether the maze actually has food there or not). Note that for some mazes like <tt>tinyCorners</tt>, the shortest path does not always go to the closest food first! 
+</p>
+<p><b>Hint</b>: the shortest path through <tt>tinyCorners</tt> takes 28 steps.
+</p>
+<h3>Question 5 (2 points) </h3>
+<p>Implement the <tt>CornersProblem</tt> search problem in <tt>searchAgents.py</tt>. You will need to choose a state representation that encodes all the information necessary to detect whether all four corners have been reached. Now, your search agent should solve:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+</p>
+</div></div>
+<p>To receive full credit, you need to define an abstract state representation that does not encode irrelevant information (like the position of ghosts, where extra food is, etc.). In particular, do not use a Pacman <tt>GameState</tt> as a search state. Your code will be very, very slow if you do (and also wrong).
+</p>
+<p><b>Hint</b>: The only parts of the game state you need to reference in your implementation are the starting Pacman position and the location of the four corners.
+</p>
+<p>Our implementation of <tt>breadthFirstSearch</tt> expands just under 2000 search nodes on <tt>mediumCorners</tt>. However, heuristics (used with A* search) can reduce the amount of searching required.
+</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-02-05 16:01:57 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-02-05 16:23:25 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
