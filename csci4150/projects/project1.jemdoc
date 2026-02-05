@@ -48,7 +48,7 @@ After downloading the code ([https://rpiexchange-my.sharepoint.com/:u:/g/persona
 python pacman.py
 ~~~
 
-Note: if you get error messages regarding +python-tk+, use your package manager to install +python-tk+, or see [http://tkinter.unpythonic.net/wiki/How_to_install_Tkinter this page] for more detailed instructions. Pacman lives in a shiny blue world of twisting corridors and tasty round treats. Navigating this world efficiently will be Pacman's first step in mastering his domain.
+Pacman lives in a shiny blue world of twisting corridors and tasty round treats. Navigating this world efficiently will be Pacman's first step in mastering his domain.
 
 The simplest agent in +searchAgents.py+ is called the +GoWestAgent+, which always goes West (a trivial reflex agent). This agent can occasionally win:
 
