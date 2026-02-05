@@ -81,9 +81,29 @@
 <p>python pacman.py -h
 </p>
 </div></div>
+<p>Also, all of the commands that appear in this project also appear in <tt>commands.txt</tt>, for easy copying and pasting. In UNIX/Mac OS X, you can even run all these commands in order with <tt>bash commands.txt</tt>.
+</p>
+<h2>Finding a Fixed Food Dot using Search Algorithms</h2>
+<p>In <tt>searchAgents.py</tt>, you'll find a fully implemented <tt>SearchAgent</tt>, which plans out a path through Pacman's world and then executes that path step-by-step. The search algorithms for formulating a plan are not implemented &ndash; that's your job. As you work through the following questions, you might need to refer to this glossary of objects in the code. First, test that the <tt>SearchAgent</tt> is working correctly by running:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+</p>
+</div></div>
+<p>The command above tells the <tt>SearchAgent</tt> to use <tt>tinyMazeSearch</tt> as its search algorithm, which is implemented in <tt>search.py</tt>. Pacman should navigate the maze successfully.
+Now it's time to write full-fledged generic search functions to help Pacman plan routes! Pseudocode for the search algorithms you'll write can be found in the lecture slides. Remember that a search node must contain not only a state but also the information necessary to reconstruct the path (plan) which gets to that state.
+</p>
+<p><b>Important note</b>: All of your search functions need to return a list of actions that will lead the agent from the start to the goal. These actions all have to be legal moves (valid directions, no moving through walls).
+</p>
+<p><b>Hint</b>: Each algorithm is very similar. Algorithms for DFS, BFS, UCS, and A* differ only in the details of how the fringe is managed. So, concentrate on getting DFS right and the rest should be relatively straightforward. Indeed, one possible implementation requires only a single generic search method which is configured with an algorithm-specific queuing strategy. (Your implementation need not be of this form to receive full credit).
+</p>
+<p><b>Hint</b>: Make sure to check out the <b>Stack</b>, <b>Queue</b> and <b>PriorityQueue</b> types provided to you in <b>util.py</b>!
+</p>
+<h3>Question 1 (2 points) </h3>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-02-05 15:54:58 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-02-05 16:01:57 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
