@@ -29,10 +29,48 @@ Category | File | Description ||
  | +layout.py+ | Code for reading layout files and storing their contents. ||
 ~~
 
-== What to submit
+=== What to submit
 You will fill in portions of +search.py+ and +searchAgents.py+ during the assignment. You should submit these two files (only).
 
-== Evaluation 
+=== Evaluation 
 Your code will be autograded for technical correctness. Please *do not* change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation -- not the autograder's output -- will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.
+
+=== Academic Dishonesty
+We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; please don't let us down.
+
+=== Getting Help 
+You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours and Submitty forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask. One more piece of advice: if you don't know what a variable does or what kind of values it takes, print it out.
+
+== Welcome to Pacman
+After downloading the code ([https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQA0HKRUwOzDTJ2KKmczyd_5ARj2zasqrhYSnBOTUsCKI84?e=IYP56H search.zip]), unzipping it and changing to the search directory, you should be able to play a game of Pacman by typing the following at the command line:
+
+~~~
+python pacman.py
+~~~
+
+Note: if you get error messages regarding +python-tk+, use your package manager to install +python-tk+, or see [http://tkinter.unpythonic.net/wiki/How_to_install_Tkinter this page] for more detailed instructions. Pacman lives in a shiny blue world of twisting corridors and tasty round treats. Navigating this world efficiently will be Pacman's first step in mastering his domain.
+
+The simplest agent in +searchAgents.py+ is called the +GoWestAgent+, which always goes West (a trivial reflex agent). This agent can occasionally win:
+
+~~~
+python pacman.py --layout testMaze --pacman GoWestAgent
+~~~ 
+
+But, things get ugly for this agent when turning is required:
+
+~~~
+python pacman.py --layout tinyMaze --pacman GoWestAgent
+~~~
+
+If pacman gets stuck, you can exit the game by typing +CTRL-c+ into your terminal. Soon, your agent will solve not only +tinyMaze+, but any maze you want. Note that +pacman.py+ supports a number of options that can each be expressed in a long way (e.g., +--layout+) or a short way (e.g., +-l+). You can see the list of all options and their default values via:
+
+~~~
+python pacman.py -h
+~~~
+
+
+
+
+
 
 

@@ -38,15 +38,52 @@
 <tr class="r15"><td class="c1"></td><td class="c2"> <tt>layout.py</tt> </td><td class="c3"> Code for reading layout files and storing their contents. </td></tr>
 <tr class="r16"><td class="c1">
 </td></tr></table>
-<h2>What to submit</h2>
+<h3>What to submit</h3>
 <p>You will fill in portions of <tt>search.py</tt> and <tt>searchAgents.py</tt> during the assignment. You should submit these two files (only).
 </p>
-<h2>Evaluation </h2>
+<h3>Evaluation </h3>
 <p>Your code will be autograded for technical correctness. Please <b>do not</b> change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation &ndash; not the autograder's output &ndash; will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.
 </p>
+<h3>Academic Dishonesty</h3>
+<p>We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; please don't let us down.
+</p>
+<h3>Getting Help </h3>
+<p>You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours and Submitty forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask. One more piece of advice: if you don't know what a variable does or what kind of values it takes, print it out.
+</p>
+<h2>Welcome to Pacman</h2>
+<p>After downloading the code (<a href="https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQA0HKRUwOzDTJ2KKmczyd_5ARj2zasqrhYSnBOTUsCKI84?e=IYP56H" target=&ldquo;blank&rdquo;>search.zip</a>), unzipping it and changing to the search directory, you should be able to play a game of Pacman by typing the following at the command line:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py
+</p>
+</div></div>
+<p>Note: if you get error messages regarding <tt>python-tk</tt>, use your package manager to install <tt>python-tk</tt>, or see <a href="http://tkinter.unpythonic.net/wiki/How_to_install_Tkinter" target=&ldquo;blank&rdquo;>this page</a> for more detailed instructions. Pacman lives in a shiny blue world of twisting corridors and tasty round treats. Navigating this world efficiently will be Pacman's first step in mastering his domain.
+</p>
+<p>The simplest agent in <tt>searchAgents.py</tt> is called the <tt>GoWestAgent</tt>, which always goes West (a trivial reflex agent). This agent can occasionally win:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py &ndash;layout testMaze &ndash;pacman GoWestAgent
+</p>
+</div></div>
+<p>But, things get ugly for this agent when turning is required:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py &ndash;layout tinyMaze &ndash;pacman GoWestAgent
+</p>
+</div></div>
+<p>If pacman gets stuck, you can exit the game by typing <tt>CTRL-c</tt> into your terminal. Soon, your agent will solve not only <tt>tinyMaze</tt>, but any maze you want. Note that <tt>pacman.py</tt> supports a number of options that can each be expressed in a long way (e.g., <tt>&ndash;layout</tt>) or a short way (e.g., <tt>-l</tt>). You can see the list of all options and their default values via:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -h
+</p>
+</div></div>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-02-05 15:22:50 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-02-05 15:54:58 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
