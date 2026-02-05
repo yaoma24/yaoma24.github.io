@@ -197,7 +197,7 @@ To receive full credit, you need to define an abstract state representation that
 Our implementation of +breadthFirstSearch+ expands just under 2000 search nodes on +mediumCorners+. However, heuristics (used with A\* search) can reduce the amount of searching required.
 
 
-== Question 6 (3 points)
+=== Question 6 (3 points)
  Implement a non-trivial, *consistent heuristic* for the +CornersProblem+ in +cornersHeuristic+. Grading: inconsistent heuristics will get no credit. 1 point for any non-trivial consistent heuristic. 1 point for expanding fewer than 1600 nodes. 1 point for expanding fewer than 1200 nodes. Expand fewer than 800, and you're doing great!
 
  ~~~
