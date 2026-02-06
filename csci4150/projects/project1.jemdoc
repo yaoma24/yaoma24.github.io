@@ -89,7 +89,7 @@ Now it's time to write full-fledged generic search functions to help Pacman plan
 *Hint*: Make sure to check out the +Stack+, +Queue+ and +PriorityQueue+ types provided to you in +util.py+!
 
 === Question 1 (2 points) 
-Implement the depth-first search (DFS) algorithm in the +depthFirstSearch+ function in +search.py+. To make your algorithm complete, write the graph search version of DFS, which avoids expanding any already visited states (check slides of lec03 for the +Graph Search+ part).
+Implement the depth-first search (DFS) algorithm in the +depthFirstSearch+ function in +search.py+. To make your algorithm complete, write the *graph search* version of DFS, which avoids expanding any already visited states (check slides of lec03 for the +Graph Search+ part).
 
 Your code should quickly find a solution for:
 
@@ -276,7 +276,7 @@ Your +ClosestDotSearchAgent+ won't always find the shortest possible path throug
 
 == Submission
 
-Submit only +search.py+ and +searchAgents.py+ to Submitty. 
+Submit only +search.py+ and +searchAgents.py+ to Submitty. You can use the +autograder+ to evaluate your implementations before submission. You may refer to Project 0 on how to use autograder.   
 
 
 
