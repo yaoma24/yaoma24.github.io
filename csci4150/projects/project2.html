@@ -98,10 +98,44 @@
 </p>
 <p>Note: The evaluation function you're writing is evaluating state-action pairs; in later parts of the project, you'll be evaluating states.
 </p>
-<p>Options: Default ghosts are random; you can also play for fun with slightly smarter directional ghosts using <tt>-g DirectionalGhost</tt>. If the randomness is preventing you from telling whether your agent is improving, you can use <tt>-f</tt> to run with a fixed random seed (same random choices every game). You can also play multiple games in a row with <tt>-n</tt>. Turn off graphics with <tt>-q</tt> to run lots of games quickly.</p>
+<p>Options: Default ghosts are random; you can also play for fun with slightly smarter directional ghosts using <tt>-g DirectionalGhost</tt>. If the randomness is preventing you from telling whether your agent is improving, you can use <tt>-f</tt> to run with a fixed random seed (same random choices every game). You can also play multiple games in a row with <tt>-n</tt>. Turn off graphics with <tt>-q</tt> to run lots of games quickly.
+</p>
+<p>Grading: we will run your agent on the <tt>openClassic</tt> layout 10 times. You will receive 0 points if your agent times out, or never wins. You will receive 1 point if your agent wins at least 5 times. You will receive an addition 1 point if your agent's average score is greater than 500, or 2 points if it is greater than 1000. You can try your agent out under these conditions with
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p ReflexAgent -l openClassic -n 10 -q
+</p>
+</div></div>
+<p>Don't spend too much time on this question, though, as the meat of the project lies ahead.
+</p>
+<h3>Question 2 (4 points) </h3>
+<p>Now you will write an adversarial search agent in the provided <tt>MinimaxAgent</tt> class stub in <tt>multiAgents.py</tt>. Your minimax agent should work with any number of ghosts, so you'll have to write an algorithm that is slightly more general than what appears in the textbook. In particular, your minimax tree will have multiple min layers (one for each ghost) for every max layer.
+</p>
+<p>Your code should also expand the game tree to an arbitrary depth. Score the leaves of your minimax tree with the supplied <tt>self.evaluationFunction</tt>, which defaults to <tt>scoreEvaluationFunction</tt>. <tt>MinimaxAgent</tt> extends <tt>MultiAgentAgent</tt>, which gives access to <tt>self.depth</tt> and <tt>self.evaluationFunction</tt>. Make sure your minimax code makes reference to these two variables where appropriate as these variables are populated in response to command line options.
+</p>
+<p>Important: A single search ply is considered to be one Pacman move and all the ghosts&rsquo; responses, so depth 2 search will involve Pacman and each ghost moving two times.
+</p>
+<p>Grading: We will be checking your code to determine whether it explores the correct number of game states. This is the only way reliable way to detect some very subtle bugs in implementations of minimax. As a result, the autograder will be very picky about how many times you call <tt>GameState.getLegalActions</tt>. If you call it any more or less than necessary, the autograder will complain. Note, however, that the autograder will accept solutions both with and without the <tt>Directions.STOP</tt> action available.
+</p>
+<p><b>Hints and Observations</b> 
+</p>
+<ul>
+<li><p>The evaluation function in this part is already written (<tt>self.evaluationFunction</tt>). You shouldn't change this function, but recognize that now we're evaluating <b>states</b> rather than actions, as we were for the reflex agent. Look-ahead agents evaluate future states whereas reflex agents evaluate actions from the current state.
+</p>
+</li>
+<li><p>The minimax values of the initial state in the <tt>minimaxClassic</tt> layout are 9, 8, 7, -492 for depths 1, 2, 3 and 4 respectively. Note that your minimax agent will often win (665/1000 games for us) despite the dire prediction of depth 4 minimax.
+</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=4
+</p>
+</div></div>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-03-12 21:24:47 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-03-12 21:30:57 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
