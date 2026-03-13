@@ -117,3 +117,47 @@ Grading: We will be checking your code to determine whether it explores the corr
 ~~~
 python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=4
 ~~~
+ 
+-  To increase the search depth achievable by your agent, remove the +Directions.STOP+ action from Pacman's list of possible actions. Depth 2 should be pretty quick, but depth 3 or 4 will be slow. Don't worry, the next question will speed up the search somewhat.
+
+- Pacman is always agent 0, and the agents move in order of increasing agent index.
+
+- All states in minimax should be +GameStates+, either passed in to +getAction+ or generated via +GameState.generateSuccessor+. In this project, you will not be abstracting to simplified states.
+
+- On larger boards such as +openClassic+ and +mediumClassic+ (the default), you'll find Pacman to be good at not dying, but quite bad at winning. He'll often thrash around without making progress. He might even thrash around right next to a dot without eating it because he doesn't know where he'd go after eating that dot. Don't worry if you see this behavior, question 5 will clean up all of these issues.
+
+- When Pacman believes that his death is unavoidable, he will try to end the game as soon as possible because of the constant penalty for living. Sometimes, this is the wrong thing to do with random ghosts, but minimax agents always assume the worst:
+~~~
+python pacman.py -p MinimaxAgent -l trappedClassic -a depth=3
+~~~
+
+
+=== Question 3 (4 points) 
+
+Make a new agent that uses alpha-beta pruning to more efficiently explore the minimax tree, in +AlphaBetaAgent+. Again, your algorithm will be slightly more general than the pseudo-code in the textbook, so part of the challenge is to extend the alpha-beta pruning logic appropriately to multiple minimizer agents.
+
+You should see a speed-up (perhaps depth 3 alpha-beta will run as fast as depth 2 minimax). Ideally, depth 3 on +smallClassic+ should run in just a few seconds per move or faster.
+
+~~~
+python pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic
+~~~
+
+The +AlphaBetaAgent+ minimax values should be identical to the +MinimaxAgent+ minimax values, although the actions it selects can vary because of different tie-breaking behavior. Again, the minimax values of the initial state in the +minimaxClassic+ layout are 9, 8, 7 and -492 for depths 1, 2, 3 and 4 respectively.
+
+Grading: Because we check your code to determine whether it explores the correct number of states, it is important that you perform alpha-beta pruning without reordering children. In other words, successor states should always be processed in the order returned by +GameState.getLegalActions+.
+
+
+
+=== Question 4 (4 points) 
+
+Random ghosts are of course not optimal minimax agents, and so modeling them with minimax search may not be appropriate. Fill in +ExpectimaxAgent+, where your agent agent will no longer take the min over all ghost actions, but the expectation according to your agent's model of how the ghosts act. To simplify your code, assume you will only be running against RandomGhost ghosts, which choose amongst their +getLegalActions+ uniformly at random.
+
+You should now observe a more cavalier approach in close quarters with ghosts. In particular, if Pacman perceives that he could be trapped but might escape to grab a few more pieces of food, he'll at least try. Investigate the results of these two scenarios:
+
+~~~
+python pacman.py -p AlphaBetaAgent -l trappedClassic -a depth=3 -q -n 10
+python pacman.py -p ExpectimaxAgent -l trappedClassic -a depth=3 -q -n 10
+~~~
+
+You should find that your +ExpectimaxAgent+ wins about half the time, while your +AlphaBetaAgent+ always loses. Make sure you understand why the behavior here differs from the minimax case.
+

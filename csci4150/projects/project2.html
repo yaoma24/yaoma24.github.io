@@ -133,9 +133,66 @@
 <p>python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=4
 </p>
 </div></div>
+<ul>
+<li><p>To increase the search depth achievable by your agent, remove the <tt>Directions.STOP</tt> action from Pacman's list of possible actions. Depth 2 should be pretty quick, but depth 3 or 4 will be slow. Don't worry, the next question will speed up the search somewhat.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>Pacman is always agent 0, and the agents move in order of increasing agent index.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>All states in minimax should be <tt>GameStates</tt>, either passed in to <tt>getAction</tt> or generated via <tt>GameState.generateSuccessor</tt>. In this project, you will not be abstracting to simplified states.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>On larger boards such as <tt>openClassic</tt> and <tt>mediumClassic</tt> (the default), you'll find Pacman to be good at not dying, but quite bad at winning. He'll often thrash around without making progress. He might even thrash around right next to a dot without eating it because he doesn't know where he'd go after eating that dot. Don't worry if you see this behavior, question 5 will clean up all of these issues.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>When Pacman believes that his death is unavoidable, he will try to end the game as soon as possible because of the constant penalty for living. Sometimes, this is the wrong thing to do with random ghosts, but minimax agents always assume the worst:
+</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p MinimaxAgent -l trappedClassic -a depth=3
+</p>
+</div></div>
+<h3>Question 3 (4 points) </h3>
+<p>Make a new agent that uses alpha-beta pruning to more efficiently explore the minimax tree, in <tt>AlphaBetaAgent</tt>. Again, your algorithm will be slightly more general than the pseudo-code in the textbook, so part of the challenge is to extend the alpha-beta pruning logic appropriately to multiple minimizer agents.
+</p>
+<p>You should see a speed-up (perhaps depth 3 alpha-beta will run as fast as depth 2 minimax). Ideally, depth 3 on <tt>smallClassic</tt> should run in just a few seconds per move or faster.
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic
+</p>
+</div></div>
+<p>The <tt>AlphaBetaAgent</tt> minimax values should be identical to the <tt>MinimaxAgent</tt> minimax values, although the actions it selects can vary because of different tie-breaking behavior. Again, the minimax values of the initial state in the <tt>minimaxClassic</tt> layout are 9, 8, 7 and -492 for depths 1, 2, 3 and 4 respectively.
+</p>
+<p>Grading: Because we check your code to determine whether it explores the correct number of states, it is important that you perform alpha-beta pruning without reordering children. In other words, successor states should always be processed in the order returned by <tt>GameState.getLegalActions</tt>.
+</p>
+<h3>Question 4 (4 points) </h3>
+<p>Random ghosts are of course not optimal minimax agents, and so modeling them with minimax search may not be appropriate. Fill in <tt>ExpectimaxAgent</tt>, where your agent agent will no longer take the min over all ghost actions, but the expectation according to your agent's model of how the ghosts act. To simplify your code, assume you will only be running against RandomGhost ghosts, which choose amongst their <tt>getLegalActions</tt> uniformly at random.
+</p>
+<p>You should now observe a more cavalier approach in close quarters with ghosts. In particular, if Pacman perceives that he could be trapped but might escape to grab a few more pieces of food, he'll at least try. Investigate the results of these two scenarios:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p AlphaBetaAgent -l trappedClassic -a depth=3 -q -n 10
+python pacman.py -p ExpectimaxAgent -l trappedClassic -a depth=3 -q -n 10
+</p>
+</div></div>
+<p>You should find that your <tt>ExpectimaxAgent</tt> wins about half the time, while your <tt>AlphaBetaAgent</tt> always loses. Make sure you understand why the behavior here differs from the minimax case.
+</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-03-12 21:30:57 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-03-12 21:37:48 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
