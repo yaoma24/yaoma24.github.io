@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Project 2: Search in Pacman (Due Date: Mar 23)</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Project 2: Search in Pacman (Due Date: Mar 23)</h1>
+</div>
+<h2>Acknowledgements</h2>
+<p>This project is part of the <a href="https://inst.eecs.berkeley.edu/~cs188/fa25/" target=&ldquo;blank&rdquo;>CS 188 projects</a> created by John DeNero, Dan Klein, Pieter Abbeel, and many others.
+</p>
+<h2>Introduction</h2>
+<p>In this project, you will design agents for the classic version of Pacman, including ghosts. Along the way, you will implement both minimax and expectimax search and try your hand at evaluation function design.
+</p>
+<p>The code base has not changed much from the previous project, but please start with a fresh installation, rather than intermingling files from project 1. You can, however, use your <tt>search.py</tt> and <tt>searchAgents.py</tt> in any way you want.
+</p>
+<p>The code for this project consists of several Python files, some of which you will need to read and understand in order to complete the assignment, and some of which you can ignore. You can download all the code and supporting files, <b>including the autograder</b> in <a href="https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQARV5cfmlsKS6QTWnbkuHV0Ace-4Ax4ww-MnZkaVYcODAM?e=FIaFEJ" target=&ldquo;blank&rdquo;>multiagent.zip</a>.
+</p>
+<table id="Pacman Project Files">
+<tr class="r1"><td class="c1">Category </td><td class="c2"> File </td><td class="c3"> Description </td></tr>
+<tr class="r2"><td class="c1"><b>Key files to read</b> </td><td class="c2">  </td><td class="c3">  </td></tr>
+<tr class="r3"><td class="c1"></td><td class="c2"> <tt>multiAgents.py</tt> </td><td class="c3"> Where all of your multi-agent search agents will reside. </td></tr>
+<tr class="r4"><td class="c1"></td><td class="c2"> <tt>pacman.py</tt> </td><td class="c3"> The main file that runs Pacman games. This file also describes a Pacman <tt>GameState</tt> type, which you will use extensively in this project. </td></tr>
+<tr class="r5"><td class="c1"></td><td class="c2"> <tt>game.py</tt> </td><td class="c3"> The logic behind how the Pacman world works. This file describes several supporting types like AgentState, Agent, Direction, and Grid. </td></tr>
+<tr class="r6"><td class="c1"></td><td class="c2"> <tt>util.py</tt> </td><td class="c3"> Useful data structures for implementing search algorithms. </td></tr>
+<tr class="r7"><td class="c1">
+<b>Supporting files you can ignore</b> </td><td class="c2">  </td><td class="c3">  </td></tr>
+<tr class="r8"><td class="c1"></td><td class="c2"> <tt>graphicsDisplay.py</tt> </td><td class="c3"> Graphics for Pacman. </td></tr>
+<tr class="r9"><td class="c1"></td><td class="c2"> <tt>graphicsUtils.py</tt> </td><td class="c3"> Support for Pacman graphics. </td></tr>
+<tr class="r10"><td class="c1"></td><td class="c2"> <tt>textDisplay.py</tt> </td><td class="c3"> ASCII graphics for Pacman. </td></tr>
+<tr class="r11"><td class="c1"></td><td class="c2"> <tt>ghostAgents.py</tt> </td><td class="c3"> Agents to control ghosts. </td></tr>
+<tr class="r12"><td class="c1"></td><td class="c2"> <tt>keyboardAgents.py</tt> </td><td class="c3"> Keyboard interfaces to control Pacman. </td></tr>
+<tr class="r13"><td class="c1"></td><td class="c2"> <tt>layout.py</tt> </td><td class="c3"> Code for reading layout files and storing their contents. </td></tr>
+<tr class="r14"><td class="c1">
+</td></tr></table>
+<h3>What to submit</h3>
+<p>You will fill in portions of <tt>multiAgents.py</tt> during the assignment. You should submit this file with your code and comments. You may also submit supporting files (like <tt>search.py</tt>, etc.) that you use in your code. Please do not change the other files in this distribution or submit any of our original files other than <tt>multiAgents.py</tt>.
+</p>
+<h3>Evaluation </h3>
+<p>Your code will be autograded for technical correctness. Please <b>do not</b> change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation &ndash; not the autograder's output &ndash; will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.
+</p>
+<h3>Academic Dishonesty</h3>
+<p>We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; please don't let us down.
+</p>
+<h3>Getting Help </h3>
+<p>You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours and Submitty forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask. One more piece of advice: if you don't know what a variable does or what kind of values it takes, print it out.
+</p>
+<h2>Multi-Agent Pacman</h2>
+<p>After downloading the code (<a href="https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQARV5cfmlsKS6QTWnbkuHV0Ace-4Ax4ww-MnZkaVYcODAM?e=FIaFEJ" target=&ldquo;blank&rdquo;>multiAgents.zip</a>), unzipping it and changing to the search directory, you should be able to play a game of Pacman by typing the following at the command line:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py
+</p>
+</div></div>
+<p>Now, run the provided <tt>ReflexAgent</tt> in <tt>multiAgents.py</tt>:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p ReflexAgent
+</p>
+</div></div>
+<p>Note that it plays quite poorly even on simple layouts:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p ReflexAgent -l testClassic
+</p>
+</div></div>
+<h3>Question 1 (3 points) Improve the <tt>ReflexAgent</tt> in <tt>multiAgents.py</tt> to play respectably. The provided reflex agent code provides some helpful examples of methods that query the <tt>GameState</tt> for information. A capable reflex agent will have to consider both food locations and ghost locations to perform well. Your agent should easily and reliably clear the <tt>testClassic</tt> layout:</h3>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py -p ReflexAgent -l testClassic
+</p>
+</div></div>
+<p>Try out your reflex agent on the default <tt>mediumClassic</tt> layout with one ghost or two (and animation off to speed up the display):
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python pacman.py --frameTime 0 -p ReflexAgent -k 1
+</p>
+</div></div>
+<p>python pacman.py --frameTime 0 -p ReflexAgent -k 2
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>How does your agent fare? It will likely often die with 2 ghosts on the default board, unless your evaluation function is quite good.
+</p>
+<p>Note: you can never have more ghosts than the <tt>layout</tt> permits.
+</p>
+<p>Note: As features, try the reciprocal of important values (such as distance to food) rather than just the values themselves.
+</p>
+<p>Note: The evaluation function you're writing is evaluating state-action pairs; in later parts of the project, you'll be evaluating states.
+</p>
+<p>Options: Default ghosts are random; you can also play for fun with slightly smarter directional ghosts using <tt>-g DirectionalGhost</tt>. If the randomness is preventing you from telling whether your agent is improving, you can use <tt>-f</tt> to run with a fixed random seed (same random choices every game). You can also play multiple games in a row with <tt>-n</tt>. Turn off graphics with <tt>-q</tt> to run lots of games quickly.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-03-12 21:22:50 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</div>
+</body>
+</html>

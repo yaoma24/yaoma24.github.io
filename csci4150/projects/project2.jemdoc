@@ -1,0 +1,88 @@
+= Project 2: Search in Pacman (Due Date: Mar 23)
+
+== Acknowledgements
+
+This project is part of the [https://inst.eecs.berkeley.edu/~cs188/fa25/ CS 188 projects] created by John DeNero, Dan Klein, Pieter Abbeel, and many others.
+
+== Introduction
+In this project, you will design agents for the classic version of Pacman, including ghosts. Along the way, you will implement both minimax and expectimax search and try your hand at evaluation function design.
+
+The code base has not changed much from the previous project, but please start with a fresh installation, rather than intermingling files from project 1. You can, however, use your +search.py+ and +searchAgents.py+ in any way you want.
+
+
+The code for this project consists of several Python files, some of which you will need to read and understand in order to complete the assignment, and some of which you can ignore. You can download all the code and supporting files, *including the autograder* in [https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQARV5cfmlsKS6QTWnbkuHV0Ace-4Ax4ww-MnZkaVYcODAM?e=FIaFEJ multiagent.zip].
+
+
+~~
+{}{table}{Pacman Project Files}
+Category | File | Description ||
+*Key files to read* |  |  ||
+ | +multiAgents.py+ | Where all of your multi-agent search agents will reside. ||
+ | +pacman.py+ | The main file that runs Pacman games. This file also describes a Pacman +GameState+ type, which you will use extensively in this project. ||
+ | +game.py+ | The logic behind how the Pacman world works. This file describes several supporting types like AgentState, Agent, Direction, and Grid. ||
+ | +util.py+ | Useful data structures for implementing search algorithms. ||
+
+*Supporting files you can ignore* |  |  ||
+ | +graphicsDisplay.py+ | Graphics for Pacman. ||
+ | +graphicsUtils.py+ | Support for Pacman graphics. ||
+ | +textDisplay.py+ | ASCII graphics for Pacman. ||
+ | +ghostAgents.py+ | Agents to control ghosts. ||
+ | +keyboardAgents.py+ | Keyboard interfaces to control Pacman. ||
+ | +layout.py+ | Code for reading layout files and storing their contents. ||
+~~
+
+=== What to submit
+You will fill in portions of +multiAgents.py+ during the assignment. You should submit this file with your code and comments. You may also submit supporting files (like +search.py+, etc.) that you use in your code. Please do not change the other files in this distribution or submit any of our original files other than +multiAgents.py+.
+
+=== Evaluation 
+Your code will be autograded for technical correctness. Please *do not* change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation -- not the autograder's output -- will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.
+
+=== Academic Dishonesty
+We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; please don't let us down.
+
+=== Getting Help 
+You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours and Submitty forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask. One more piece of advice: if you don't know what a variable does or what kind of values it takes, print it out.
+
+== Multi-Agent Pacman
+After downloading the code ([https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQARV5cfmlsKS6QTWnbkuHV0Ace-4Ax4ww-MnZkaVYcODAM?e=FIaFEJ multiAgents.zip]), unzipping it and changing to the search directory, you should be able to play a game of Pacman by typing the following at the command line:
+
+~~~
+python pacman.py
+~~~
+
+Now, run the provided +ReflexAgent+ in +multiAgents.py+:
+
+~~~
+python pacman.py -p ReflexAgent
+~~~
+
+Note that it plays quite poorly even on simple layouts:
+
+~~~
+python pacman.py -p ReflexAgent -l testClassic
+~~~
+
+=== Question 1 (3 points) Improve the +ReflexAgent+ in +multiAgents.py+ to play respectably. The provided reflex agent code provides some helpful examples of methods that query the +GameState+ for information. A capable reflex agent will have to consider both food locations and ghost locations to perform well. Your agent should easily and reliably clear the +testClassic+ layout:
+
+~~~
+python pacman.py -p ReflexAgent -l testClassic
+~~~
+
+Try out your reflex agent on the default +mediumClassic+ layout with one ghost or two (and animation off to speed up the display):
+
+~~~
+python pacman.py \-\-frameTime 0 -p ReflexAgent -k 1
+~~~
+~~~
+python pacman.py \-\-frameTime 0 -p ReflexAgent -k 2
+~~~
+
+How does your agent fare? It will likely often die with 2 ghosts on the default board, unless your evaluation function is quite good.
+
+Note: you can never have more ghosts than the +layout+ permits.
+
+Note: As features, try the reciprocal of important values (such as distance to food) rather than just the values themselves.
+
+Note: The evaluation function you're writing is evaluating state-action pairs; in later parts of the project, you'll be evaluating states.
+
+Options: Default ghosts are random; you can also play for fun with slightly smarter directional ghosts using +-g DirectionalGhost+. If the randomness is preventing you from telling whether your agent is improving, you can use +-f+ to run with a fixed random seed (same random choices every game). You can also play multiple games in a row with +-n+. Turn off graphics with +-q+ to run lots of games quickly.
