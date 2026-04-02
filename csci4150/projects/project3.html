@@ -20,7 +20,7 @@
 </p>
 <p>In this project, you will design Pacman agents that use sensors to locate and eat invisible ghosts. You'll advance from locating single, stationary ghosts to hunting packs of multiple moving ghosts with ruthless efficiency.
 </p>
-<p>The code for this project contains the following files, available as a <a href="ss" target=&ldquo;blank&rdquo;>zip archive</a>. 
+<p>The code for this project contains the following files, available in <a href="https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQD63QXTipyyTpmIeKATgZNPAQ6ZylDBwakTnXQCD99AFVw?e=DmwDLb" target=&ldquo;blank&rdquo;>ghostbusters.zip</a>. 
 </p>
 <table id="Ghostbusters Project Files">
 <tr class="r1"><td class="c1">Category </td><td class="c2"> File </td><td class="c3"> Description </td></tr>
@@ -160,7 +160,7 @@
 </div></div>
 <p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
 </p>
-<h2>Question 1 (2 points): Observation Probability</h2>
+<h3>Question 1 (2 points): Observation Probability</h3>
 <p>In this question, you will implement the <tt>getObservationProb</tt> method in the <tt>InferenceModule</tt> base class in <tt>inference.py</tt>. This method takes in an observation (which is a noisy reading of the distance to the ghost), Pacman's position, the ghost's position, and the position of the ghost's jail, and returns the probability of the noisy distance reading given Pacman's position and the ghost's position. In other words, we want to return <tt>P(noisyDistance | pacmanPosition, ghostPosition)</tt>.
 </p>
 <p>The distance sensor has a probability distribution over distance readings given the true distance from Pacman to the ghost. This distribution is modeled by the function <tt>busters.getObservationProbability(noisyDistance, trueDistance)</tt>, which returns <tt>P(noisyDistance | trueDistance)</tt> and is provided for you. You should use this function to help you solve the problem, and use the provided <tt>manhattanDistance</tt> function to find the distance between Pacman's location and the ghost's location.
@@ -176,7 +176,7 @@
 </div></div>
 <p>As a general note, it is possible for some of the autograder tests to take a long time to run for this project, and you will have to exercise patience. As long as the autograder doesn't time out, you should be fine (provided that you actually pass the tests).
 </p>
-<h2>Question 2 (3 points): Exact Inference Observation</h2>
+<h3>Question 2 (3 points): Exact Inference Observation</h3>
 <p>In this question, you will implement the <tt>observeUpdate</tt> method in <tt>ExactInference</tt> class of <tt>inference.py</tt> to correctly update the agent's belief distribution over ghost positions given an observation from Pacman's sensors. You are implementing the online belief update for observing new evidence. The <tt>observe</tt> method should, for this problem, update the belief at every position on the map after receiving a sensor reading. You should iterate your updates over the variable <tt>self.allPositions</tt> which includes all legal positions plus the special jail position. Beliefs represent the probability that the ghost is at a particular location, and are stored as a <tt>DiscreteDistribution</tt> object in a field called <tt>self.beliefs</tt>, which you should update.
 </p>
 <p>Before typing any code, write down the equation of the inference problem you are trying to solve. You should use the function <tt>self.getObservationProb</tt> that you wrote in the last question, which returns the probability of an observation given Pacman's position, a potential ghost position, and the jail position. You can obtain Pacman's position using <tt>gameState.getPacmanPosition()</tt>, and the jail position using <tt>self.getJailPosition()</tt>.
@@ -201,7 +201,7 @@
 </div></div>
 <p><b>IMPORTANT</b>: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>--no-graphics</tt> flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.
 </p>
-<h2>Question 3 (3 points): Exact Inference with Time Elapse</h2>
+<h3>Question 3 (3 points): Exact Inference with Time Elapse</h3>
 <p>In the previous question you implemented belief updates for Pacman based on his observations. Fortunately, Pacman's observations are not his only source of knowledge about where a ghost may be. Pacman also has knowledge about the ways that a ghost may move; namely that the ghost can not move through a wall or more than one space in one time step.
 </p>
 <p>To understand why this is useful to Pacman, consider the following scenario in which there is Pacman and one Ghost. Pacman receives many observations which indicate the ghost is very near, but then one which indicates the ghost is very far. The reading indicating the ghost is very far is likely to be the result of a buggy sensor. Pacman's prior knowledge of how the ghost may move will decrease the impact of this reading since Pacman knows the ghost could not move so far in only one move.
@@ -239,7 +239,7 @@
 </p>
 <p>As you watch the autograder output, remember that lighter squares indicate that pacman believes a ghost is more likely to occupy that location, and darker squares indicate a ghost is less likely to occupy that location. For which of the test cases do you notice differences emerging in the shading of the squares? Can you explain why some squares get lighter and some squares get darker?
 </p>
-<h2>Question 4 (2 points): Exact Inference Full Test</h2>
+<h3>Question 4 (2 points): Exact Inference Full Test</h3>
 <p>Now that Pacman knows how to use both his prior knowledge and his observations when figuring out where a ghost is, he is ready to hunt down ghosts on his own. This question will use your <tt>observeUpdate</tt> and <tt>elapseTime</tt> implementations together, along with a simple greedy hunting strategy which you will implement for this question. In the simple greedy strategy, Pacman assumes that each ghost is in its most likely position according to his beliefs, then moves toward the closest ghost. Up to this point, Pacman has moved by randomly selecting a valid action.
 </p>
 <p>Implement the <tt>chooseAction</tt> method in <tt>GreedyBustersAgent</tt> in <tt>bustersAgents.py</tt>. Your agent should first find the most likely position of each remaining uncaptured ghost, then choose an action that minimizes the maze distance to the closest ghost.
@@ -272,7 +272,7 @@
 <p><b>NOTE</b>: The state of the belief about a ghost after it is put in the jail position can be counterintuitive. But, the autograder expects a belief with zero probability for all possible positions, including the jail position. Keep this mind while implementation.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:52:11 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 18:01:02 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>

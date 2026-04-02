@@ -10,7 +10,7 @@ Pacman spends his life running from ghosts, but things were not always so. Legen
 
 In this project, you will design Pacman agents that use sensors to locate and eat invisible ghosts. You'll advance from locating single, stationary ghosts to hunting packs of multiple moving ghosts with ruthless efficiency.
 
-The code for this project contains the following files, available as a [ss zip archive]. 
+The code for this project contains the following files, available in [https://rpiexchange-my.sharepoint.com/:u:/g/personal/may13_rpi_edu/IQD63QXTipyyTpmIeKATgZNPAQ6ZylDBwakTnXQCD99AFVw?e=DmwDLb ghostbusters.zip]. 
 
 ~~~
 {}{table}{Ghostbusters Project Files}
@@ -149,7 +149,7 @@ python -m doctest -v inference.py
 
 Note that, depending on the implementation details of the +sample+ method, sometimes the provided doctests may not pass. But you can make sure that the +sample+ method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
 
-== Question 1 (2 points): Observation Probability
+=== Question 1 (2 points): Observation Probability
 
 In this question, you will implement the +getObservationProb+ method in the +InferenceModule+ base class in +inference.py+. This method takes in an observation (which is a noisy reading of the distance to the ghost), Pacman's position, the ghost's position, and the position of the ghost's jail, and returns the probability of the noisy distance reading given Pacman's position and the ghost's position. In other words, we want to return +P(noisyDistance | pacmanPosition, ghostPosition)+.
 
@@ -166,7 +166,7 @@ python autograder.py -q q1
 As a general note, it is possible for some of the autograder tests to take a long time to run for this project, and you will have to exercise patience. As long as the autograder doesn't time out, you should be fine (provided that you actually pass the tests).
 
 
-== Question 2 (3 points): Exact Inference Observation
+=== Question 2 (3 points): Exact Inference Observation
 
 In this question, you will implement the +observeUpdate+ method in +ExactInference+ class of +inference.py+ to correctly update the agent's belief distribution over ghost positions given an observation from Pacman's sensors. You are implementing the online belief update for observing new evidence. The +observe+ method should, for this problem, update the belief at every position on the map after receiving a sensor reading. You should iterate your updates over the variable +self.allPositions+ which includes all legal positions plus the special jail position. Beliefs represent the probability that the ghost is at a particular location, and are stored as a +DiscreteDistribution+ object in a field called +self.beliefs+, which you should update.
 
@@ -191,7 +191,7 @@ python autograder.py -q q2 \-\-no-graphics
 *IMPORTANT*: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the +\-\-no-graphics+ flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.
 
 
-== Question 3 (3 points): Exact Inference with Time Elapse
+=== Question 3 (3 points): Exact Inference with Time Elapse
 
 In the previous question you implemented belief updates for Pacman based on his observations. Fortunately, Pacman's observations are not his only source of knowledge about where a ghost may be. Pacman also has knowledge about the ways that a ghost may move; namely that the ghost can not move through a wall or more than one space in one time step.
 
@@ -229,7 +229,7 @@ As you watch the autograder output, remember that lighter squares indicate that 
 
 
 
-== Question 4 (2 points): Exact Inference Full Test
+=== Question 4 (2 points): Exact Inference Full Test
 
 Now that Pacman knows how to use both his prior knowledge and his observations when figuring out where a ghost is, he is ready to hunt down ghosts on his own. This question will use your +observeUpdate+ and +elapseTime+ implementations together, along with a simple greedy hunting strategy which you will implement for this question. In the simple greedy strategy, Pacman assumes that each ghost is in its most likely position according to his beliefs, then moves toward the closest ghost. Up to this point, Pacman has moved by randomly selecting a valid action.
 
