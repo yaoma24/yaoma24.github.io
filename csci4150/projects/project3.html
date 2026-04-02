@@ -174,10 +174,35 @@
 <p>python autograder.py -q q1
 </p>
 </div></div>
-<p>As a general note, it is possible for some of the autograder tests to take a long time to run for this project, and you will have to exercise patience. As long as the autograder doesn't time out, you should be fine (provided that you actually pass the tests).</p>
+<p>As a general note, it is possible for some of the autograder tests to take a long time to run for this project, and you will have to exercise patience. As long as the autograder doesn't time out, you should be fine (provided that you actually pass the tests).
+</p>
+<h2>Question 2 (3 points): Exact Inference Observation</h2>
+<p>In this question, you will implement the <tt>observeUpdate</tt> method in <tt>ExactInference</tt> class of <tt>inference.py</tt> to correctly update the agent's belief distribution over ghost positions given an observation from Pacman's sensors. You are implementing the online belief update for observing new evidence. The <tt>observe</tt> method should, for this problem, update the belief at every position on the map after receiving a sensor reading. You should iterate your updates over the variable <tt>self.allPositions</tt> which includes all legal positions plus the special jail position. Beliefs represent the probability that the ghost is at a particular location, and are stored as a <tt>DiscreteDistribution</tt> object in a field called <tt>self.beliefs</tt>, which you should update.
+</p>
+<p>Before typing any code, write down the equation of the inference problem you are trying to solve. You should use the function <tt>self.getObservationProb</tt> that you wrote in the last question, which returns the probability of an observation given Pacman's position, a potential ghost position, and the jail position. You can obtain Pacman's position using <tt>gameState.getPacmanPosition()</tt>, and the jail position using <tt>self.getJailPosition()</tt>.
+</p>
+<p>In the Pacman display, high posterior beliefs are represented by bright colors, while low beliefs are represented by dim colors. You should start with a large cloud of belief that shrinks over time as more evidence accumulates. As you watch the test cases, be sure that you understand how the squares converge to their final coloring.
+</p>
+<p>Note: your busters agents have a separate inference module for each ghost they are tracking. That's why if you print an observation inside the update function, you'll only see a single number even though there may be multiple ghosts on the board.
+</p>
+<p>To run the autograder for this question and visualize the output:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python autograder.py -q q2
+</p>
+</div></div>
+<p>If you want to run this test (or any of the other tests) without graphics you can add the following flag:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python autograder.py -q q2 --no-graphics
+</p>
+</div></div>
+<p><b>IMPORTANT</b>: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>--no-graphics</tt> flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:41:35 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:43:10 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
