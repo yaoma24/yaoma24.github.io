@@ -57,9 +57,9 @@ While watching and debugging your code with the autograder, it will be helpful t
 As you implement and debug your code, you may find it useful to run a single test at a time. In order to do this you will need to use the +-t+ flag with the autograder. For example if you only want to run the first test of question 1, use:
 
 ~~~
-python autograder.py -t test_cases/q1/1-ObsProb
+python autograder.py -t test_cases\/q1\/1-ObsProb
 ~~~
 
-In general, all test cases can be found inside +test_cases/q*+.
+In general, all test cases can be found inside +test_cases\/q*+.
 
 For this project, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the +--no-graphics+ flag. If the autograder passes with this flag, then you will receive full points, even if the autograder times out with graphics.
