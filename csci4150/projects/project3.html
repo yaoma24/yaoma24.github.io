@@ -103,11 +103,11 @@
 </p>
 <p>[('a&rsquo;, 0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0)]
 </p>
-<p>&gt;&gt;&gt; dist<a href="'e'" target=&ldquo;blank&rdquo;>'e'</a> = 4
+<p>&gt;&gt;&gt; dist['e&rsquo;] = 4
 </p>
 <p>&gt;&gt;&gt; list(sorted(dist.items()))
 </p>
-<p><a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0), ('e&rsquo;, 4)</a>
+<p>[('a&rsquo;, 0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0), ('e&rsquo;, 4)]
 </p>
 <p>&gt;&gt;&gt; empty = DiscreteDistribution()
 </p>
@@ -151,10 +151,6 @@
 <p>0.0
 </p>
 </div></div>
-<p>python -m doctest -v inference.py
-</p>
-<p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
-</p>
 <div class="infoblock">
 <div class="blockcontent">
 <p>python -m doctest -v inference.py
@@ -163,7 +159,7 @@
 <p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:36:12 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:38:23 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>

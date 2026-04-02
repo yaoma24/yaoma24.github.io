@@ -93,11 +93,11 @@ There are no autograder tests for this question, but the correctness of your imp
 
 \[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)\]
 
->>> dist['e'] = 4
+>>> dist\['e'\] = 4
 
 >>> list(sorted(dist.items()))
 
-[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0), ('e', 4)]
+\[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0), ('e', 4)\]
 
 >>> empty = DiscreteDistribution()
 
@@ -140,12 +140,7 @@ Then use the following for testing +sample+.
 
 0.0
 ~~~
-We have provided these as Python doctests in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
-
-
-python -m doctest -v inference.py
-
-Note that, depending on the implementation details of the +sample+ method, sometimes the provided doctests may not pass. But you can make sure that the +sample+ method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
+We have provided these as [https://docs.python.org/2/library/doctest.html Python doctests] in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
 
 ~~~
 python -m doctest -v inference.py
