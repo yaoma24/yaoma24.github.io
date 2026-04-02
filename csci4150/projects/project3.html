@@ -237,10 +237,42 @@
 </div></div>
 <p><b>IMPORTANT</b>: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>--no-graphics</tt> flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.
 </p>
-<p>As you watch the autograder output, remember that lighter squares indicate that pacman believes a ghost is more likely to occupy that location, and darker squares indicate a ghost is less likely to occupy that location. For which of the test cases do you notice differences emerging in the shading of the squares? Can you explain why some squares get lighter and some squares get darker?</p>
+<p>As you watch the autograder output, remember that lighter squares indicate that pacman believes a ghost is more likely to occupy that location, and darker squares indicate a ghost is less likely to occupy that location. For which of the test cases do you notice differences emerging in the shading of the squares? Can you explain why some squares get lighter and some squares get darker?
+</p>
+<h2>Question 4 (2 points): Exact Inference Full Test</h2>
+<p>Now that Pacman knows how to use both his prior knowledge and his observations when figuring out where a ghost is, he is ready to hunt down ghosts on his own. This question will use your <tt>observeUpdate</tt> and <tt>elapseTime</tt> implementations together, along with a simple greedy hunting strategy which you will implement for this question. In the simple greedy strategy, Pacman assumes that each ghost is in its most likely position according to his beliefs, then moves toward the closest ghost. Up to this point, Pacman has moved by randomly selecting a valid action.
+</p>
+<p>Implement the <tt>chooseAction</tt> method in <tt>GreedyBustersAgent</tt> in <tt>bustersAgents.py</tt>. Your agent should first find the most likely position of each remaining uncaptured ghost, then choose an action that minimizes the maze distance to the closest ghost.
+</p>
+<p>To find the maze distance between any two positions <tt>pos1</tt> and <tt>pos2</tt>, use <tt>self.distancer.getDistance(pos1, pos2)</tt>. To find the successor position of a position after an action:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>successorPosition = Actions.getSuccessor(position, action)
+</p>
+</div></div>
+<p>You are provided with <tt>livingGhostPositionDistributions</tt>, a list of <tt>DiscreteDistribution</tt> objects representing the position belief distributions for each of the ghosts that are still uncaptured.
+</p>
+<p>If correctly implemented, your agent should win the game in <tt>q4/3-gameScoreTest</tt> with a score greater than <tt>700</tt> at least <tt>8</tt> out of <tt>10</tt> times. Note: the autograder will also check the correctness of your inference directly, but the outcome of games is a reasonable sanity check.
+</p>
+<p>To run the autograder for this question and visualize the output:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python autograder.py -q q4
+</p>
+</div></div>
+<p>If you want to run this test (or any of the other tests) without graphics you can add the following flag:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python autograder.py -q q4 --no-graphics
+</p>
+</div></div>
+<p><b>NOTE</b>: The state of the belief about a ghost after it is put in the jail position can be counterintuitive. But, the autograder expects a belief with zero probability for all possible positions, including the jail position. Keep this mind while implementation.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:46:06 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:47:46 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>

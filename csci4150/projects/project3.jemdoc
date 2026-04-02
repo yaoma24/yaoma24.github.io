@@ -226,3 +226,35 @@ python autograder.py -q q3 \-\-no-graphics
 *IMPORTANT*: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the +\-\-no-graphics+ flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.
 
 As you watch the autograder output, remember that lighter squares indicate that pacman believes a ghost is more likely to occupy that location, and darker squares indicate a ghost is less likely to occupy that location. For which of the test cases do you notice differences emerging in the shading of the squares? Can you explain why some squares get lighter and some squares get darker?
+
+
+
+== Question 4 (2 points): Exact Inference Full Test
+
+Now that Pacman knows how to use both his prior knowledge and his observations when figuring out where a ghost is, he is ready to hunt down ghosts on his own. This question will use your +observeUpdate+ and +elapseTime+ implementations together, along with a simple greedy hunting strategy which you will implement for this question. In the simple greedy strategy, Pacman assumes that each ghost is in its most likely position according to his beliefs, then moves toward the closest ghost. Up to this point, Pacman has moved by randomly selecting a valid action.
+
+Implement the +chooseAction+ method in +GreedyBustersAgent+ in +bustersAgents.py+. Your agent should first find the most likely position of each remaining uncaptured ghost, then choose an action that minimizes the maze distance to the closest ghost.
+
+To find the maze distance between any two positions +pos1+ and +pos2+, use +self.distancer.getDistance(pos1, pos2)+. To find the successor position of a position after an action:
+
+~~~
+successorPosition = Actions.getSuccessor(position, action)
+~~~
+
+You are provided with +livingGhostPositionDistributions+, a list of +DiscreteDistribution+ objects representing the position belief distributions for each of the ghosts that are still uncaptured.
+
+If correctly implemented, your agent should win the game in +q4/3-gameScoreTest+ with a score greater than +700+ at least +8+ out of +10+ times. Note: the autograder will also check the correctness of your inference directly, but the outcome of games is a reasonable sanity check.
+
+To run the autograder for this question and visualize the output:
+
+~~~
+python autograder.py -q q4
+~~~
+
+If you want to run this test (or any of the other tests) without graphics you can add the following flag:
+
+~~~
+python autograder.py -q q4 \-\-no-graphics
+~~~
+
+*NOTE*: The state of the belief about a ghost after it is put in the jail position can be counterintuitive. But, the autograder expects a belief with zero probability for all possible positions, including the jail position. Keep this mind while implementation.
