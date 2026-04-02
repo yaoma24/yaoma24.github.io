@@ -140,6 +140,7 @@ Then use the following for testing +sample+.
 
 0.0
 ~~~
+
 We have provided these as [https://docs.python.org/2/library/doctest.html Python doctests] in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
 
 ~~~
