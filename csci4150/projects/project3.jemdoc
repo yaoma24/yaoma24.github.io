@@ -76,45 +76,73 @@ Second, the +sample+ method draws a sample from the distribution, where the prob
 
 There are no autograder tests for this question, but the correctness of your implementation can be easily checked. You can use the following tests for +normalize+.
 
-~ 
+~~~
 >>> dist = DiscreteDistribution()
->>> dist['a'] = 1
->>> dist['b'] = 2
->>> dist['c'] = 2
->>> dist['d'] = 0
->>> dist.normalize()
->>> list(sorted(dist.items()))
-[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)]
->>> dist['e'] = 4
->>> list(sorted(dist.items()))
-[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0), ('e', 4)]
->>> empty = DiscreteDistribution()
->>> empty.normalize()
->>> empty
-{}
 
+>>> dist['a'] = 1
+
+>>> dist['b'] = 2
+
+>>> dist['c'] = 2
+
+>>> dist['d'] = 0
+
+>>> dist.normalize()
+
+>>> list(sorted(dist.items()))
+
+[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)]
+
+>>> dist['e'] = 4
+
+>>> list(sorted(dist.items()))
+
+[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0), ('e', 4)]
+
+>>> empty = DiscreteDistribution()
+
+>>> empty.normalize()
+
+>>> empty
+
+\{\}
+~~~
 Then use the following for testing +sample+.
 
-~ 
+~~~
 >>> dist = DiscreteDistribution()
->>> dist['a'] = 1
->>> dist['b'] = 2
->>> dist['c'] = 2
->>> dist['d'] = 0
->>> N = 100000.0
->>> samples = [dist.sample() for _ in range(int(N))]
->>> round(samples.count('a') * 1.0/N, 1)  # proportion of 'a'
-0.2
->>> round(samples.count('b') * 1.0/N, 1)
-0.4
->>> round(samples.count('c') * 1.0/N, 1)
-0.4
->>> round(samples.count('d') * 1.0/N, 1)
-0.0
 
+>>> dist['a'] = 1
+
+>>> dist['b'] = 2
+
+>>> dist['c'] = 2
+
+>>> dist['d'] = 0
+
+>>> N = 100000.0
+
+>>> samples = [dist.sample() for _ in range(int(N))]
+
+>>> round(samples.count('a') \* 1.0/N, 1)  # proportion of 'a'
+
+0.2
+
+>>> round(samples.count('b') \* 1.0/N, 1)
+
+0.4
+
+>>> round(samples.count('c') \* 1.0/N, 1)
+
+0.4
+
+>>> round(samples.count('d') \* 1.0/N, 1)
+
+0.0
+~~~
 We have provided these as Python doctests in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
 
-~ 
+
 python -m doctest -v inference.py
 
 Note that, depending on the implementation details of the +sample+ method, sometimes the provided doctests may not pass. But you can make sure that the +sample+ method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
