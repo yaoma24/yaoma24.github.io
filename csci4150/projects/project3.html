@@ -213,7 +213,7 @@
 <p>newPosDist = self.getPositionDistribution(gameState, oldPos)
 </p>
 </div></div>
-<p>Where <tt>oldPos</tt> refers to the previous ghost position. <tt>newPosDist</tt> is a <tt>DiscreteDistribution</tt> object, where for each position <tt>p</tt> in <tt>self.allPositions</tt>, <tt>newPosDist<a href="p" target=&ldquo;blank&rdquo;>p</a></tt> is the probability that the ghost is at position <tt>p</tt> at time <tt>t </tt> 1<tt>, given that the ghost is at position </tt>oldPos<tt> at time </tt>t<tt>. Note that this call can be fairly expensive, so if your code is timing out, one thing to think about is whether or not you can reduce the number of calls to </tt>self.getPositionDistribution+.
+<p>Where <tt>oldPos</tt> refers to the previous ghost position. <tt>newPosDist</tt> is a <tt>DiscreteDistribution</tt> object, where for each position <tt>p</tt> in <tt>self.allPositions</tt>, <tt>newPosDist[p]</tt> is the probability that the ghost is at position <tt>p</tt> at time <tt>t + 1</tt>, given that the ghost is at position <tt>oldPos</tt> at time <tt>t</tt>. Note that this call can be fairly expensive, so if your code is timing out, one thing to think about is whether or not you can reduce the number of calls to <tt>self.getPositionDistribution</tt>.
 </p>
 <p>Before typing any code, write down the equation of the inference problem you are trying to solve. In order to test your predict implementation separately from your update implementation in the previous question, this question will not make use of your update implementation.
 </p>
@@ -272,7 +272,7 @@
 <p><b>NOTE</b>: The state of the belief about a ghost after it is put in the jail position can be counterintuitive. But, the autograder expects a belief with zero probability for all possible positions, including the jail position. Keep this mind while implementation.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:47:46 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:48:52 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>

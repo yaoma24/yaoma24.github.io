@@ -203,7 +203,7 @@ In this question, you will implement the +elapseTime+ method in +ExactInference+
 newPosDist = self.getPositionDistribution(gameState, oldPos)
 ~~~
 
-Where +oldPos+ refers to the previous ghost position. +newPosDist+ is a +DiscreteDistribution+ object, where for each position +p+ in +self.allPositions+, +newPosDist[p]+ is the probability that the ghost is at position +p+ at time +t + 1+, given that the ghost is at position +oldPos+ at time +t+. Note that this call can be fairly expensive, so if your code is timing out, one thing to think about is whether or not you can reduce the number of calls to +self.getPositionDistribution+.
+Where +oldPos+ refers to the previous ghost position. +newPosDist+ is a +DiscreteDistribution+ object, where for each position +p+ in +self.allPositions+, +newPosDist\[p\]+ is the probability that the ghost is at position +p+ at time +t \+ 1+, given that the ghost is at position +oldPos+ at time +t+. Note that this call can be fairly expensive, so if your code is timing out, one thing to think about is whether or not you can reduce the number of calls to +self.getPositionDistribution+.
 
 Before typing any code, write down the equation of the inference problem you are trying to solve. In order to test your predict implementation separately from your update implementation in the previous question, this question will not make use of your update implementation.
 
