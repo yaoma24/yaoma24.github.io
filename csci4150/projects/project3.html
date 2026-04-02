@@ -74,10 +74,69 @@
 </div></div>
 <p>In general, all test cases can be found inside <tt>test_cases/q*</tt>.
 </p>
-<p>For this project, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>&ndash;no-graphics</tt> flag. If the autograder passes with this flag, then you will receive full points, even if the autograder times out with graphics.</p>
+<p>For this project, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>&ndash;no-graphics</tt> flag. If the autograder passes with this flag, then you will receive full points, even if the autograder times out with graphics.
+</p>
+<h3>Question 0 (0 points): Using the <tt>DiscreteDistribution</tt> Class</h3>
+<p>Throughout this project, we will be using the <tt>DiscreteDistribution</tt> class defined in <tt>inference.py</tt> to model belief distributions and weight distributions. This class is an extension of the built-in Python dictionary class, where the keys are the different discrete elements of our distribution, and the corresponding values are proportional to the belief or weight that the distribution assigns that element. We have filled in this function for you, but we advise you to take some time and test the class now (even though this question itself is worth no points).
+</p>
+<p>The <tt>normalize</tt> method normalizes the values in the distribution to sum to one, but keeps the proportions of the values the same. It uses the <tt>total</tt> method to find the sum of the values in the distribution. For an empty distribution or a distribution where all of the values are zero, it does nothing. Note that this method modifies the distribution directly, rather than returning a new distribution.
+</p>
+<p>Second, the <tt>sample</tt> method draws a sample from the distribution, where the probability that a key is sampled is proportional to its corresponding value. Assume that the distribution is not empty, and not all of the values are zero. Note that the distribution does not necessarily have to be normalized prior to calling this method. It uses Python's built-in <tt>random.random()</tt> function.
+</p>
+<p>There are no autograder tests for this question, but the correctness of your implementation can be easily checked. You can use the following tests for <tt>normalize</tt>.
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>&gt;&gt;&gt; dist = DiscreteDistribution()
+&gt;&gt;&gt; dist<a href="'a'" target=&ldquo;blank&rdquo;>'a'</a> = 1
+&gt;&gt;&gt; dist<a href="'b'" target=&ldquo;blank&rdquo;>'b'</a> = 2
+&gt;&gt;&gt; dist<a href="'c'" target=&ldquo;blank&rdquo;>'c'</a> = 2
+&gt;&gt;&gt; dist<a href="'d'" target=&ldquo;blank&rdquo;>'d'</a> = 0
+&gt;&gt;&gt; dist.normalize()
+&gt;&gt;&gt; list(sorted(dist.items()))
+<a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0)</a>
+&gt;&gt;&gt; dist<a href="'e'" target=&ldquo;blank&rdquo;>'e'</a> = 4
+&gt;&gt;&gt; list(sorted(dist.items()))
+<a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0), ('e&rsquo;, 4)</a>
+&gt;&gt;&gt; empty = DiscreteDistribution()
+&gt;&gt;&gt; empty.normalize()
+&gt;&gt;&gt; empty
+</p>
+<p>{}
+</p>
+</div></div>
+<p>Then use the following for testing <tt>sample</tt>.
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>&gt;&gt;&gt; dist = DiscreteDistribution()
+&gt;&gt;&gt; dist<a href="'a'" target=&ldquo;blank&rdquo;>'a'</a> = 1
+&gt;&gt;&gt; dist<a href="'b'" target=&ldquo;blank&rdquo;>'b'</a> = 2
+&gt;&gt;&gt; dist<a href="'c'" target=&ldquo;blank&rdquo;>'c'</a> = 2
+&gt;&gt;&gt; dist<a href="'d'" target=&ldquo;blank&rdquo;>'d'</a> = 0
+&gt;&gt;&gt; N = 100000.0
+&gt;&gt;&gt; samples = <a href="dist.sample()" target=&ldquo;blank&rdquo;>for _ in range(int(N))</a>
+&gt;&gt;&gt; round(samples.count('a&rsquo;) <b> 1.0<i>N, 1)
+0.2
+&gt;&gt;&gt; round(samples.count('b&rsquo;) </b> 1.0</i>N, 1)
+0.4
+&gt;&gt;&gt; round(samples.count('c&rsquo;) <b> 1.0<i>N, 1)
+0.4
+&gt;&gt;&gt; round(samples.count('d&rsquo;) </b> 1.0</i>N, 1)
+0.0
+</p>
+</div></div>
+<p>We have provided these as Python doctests in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python -m doctest -v inference.py
+</p>
+</div></div>
+<p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:14:35 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:18:32 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
