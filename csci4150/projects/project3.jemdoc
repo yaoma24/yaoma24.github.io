@@ -62,7 +62,7 @@ python autograder.py -t test_cases\/q1\/1-ObsProb
 
 In general, all test cases can be found inside +test_cases\/q*+.
 
-For this project, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the +--no-graphics+ flag. If the autograder passes with this flag, then you will receive full points, even if the autograder times out with graphics.
+For this project, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the +\-\-no-graphics+ flag. If the autograder passes with this flag, then you will receive full points, even if the autograder times out with graphics.
 
 
 === Question 0 (0 points): Using the +DiscreteDistribution+ Class
@@ -75,43 +75,39 @@ Second, the +sample+ method draws a sample from the distribution, where the prob
 
 There are no autograder tests for this question, but the correctness of your implementation can be easily checked. You can use the following tests for +normalize+.
 
-~~~
->>> dist = DiscreteDistribution()
->>> dist['a'] = 1
->>> dist['b'] = 2
->>> dist['c'] = 2
->>> dist['d'] = 0
->>> dist.normalize()
->>> list(sorted(dist.items()))
-[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)]
->>> dist['e'] = 4
->>> list(sorted(dist.items()))
-[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0), ('e', 4)]
->>> empty = DiscreteDistribution()
->>> empty.normalize()
->>> empty
-{}
-~~~
+    >>> dist = DiscreteDistribution()
+    >>> dist['a'] = 1
+    >>> dist['b'] = 2
+    >>> dist['c'] = 2
+    >>> dist['d'] = 0
+    >>> dist.normalize()
+    >>> list(sorted(dist.items()))
+    [('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)]
+    >>> dist['e'] = 4
+    >>> list(sorted(dist.items()))
+    [('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0), ('e', 4)]
+    >>> empty = DiscreteDistribution()
+    >>> empty.normalize()
+    >>> empty
+    {}
 
 Then use the following for testing +sample+.
 
-~~~
->>> dist = DiscreteDistribution()
->>> dist['a'] = 1
->>> dist['b'] = 2
->>> dist['c'] = 2
->>> dist['d'] = 0
->>> N = 100000.0
->>> samples = [dist.sample() for _ in range(int(N))]
->>> round(samples.count('a') * 1.0/N, 1)  # proportion of 'a'
-0.2
->>> round(samples.count('b') * 1.0/N, 1)
-0.4
->>> round(samples.count('c') * 1.0/N, 1)
-0.4
->>> round(samples.count('d') * 1.0/N, 1)
-0.0
-~~~
+    >>> dist = DiscreteDistribution()
+    >>> dist['a'] = 1
+    >>> dist['b'] = 2
+    >>> dist['c'] = 2
+    >>> dist['d'] = 0
+    >>> N = 100000.0
+    >>> samples = [dist.sample() for _ in range(int(N))]
+    >>> round(samples.count('a') * 1.0/N, 1)  # proportion of 'a'
+    0.2
+    >>> round(samples.count('b') * 1.0/N, 1)
+    0.4
+    >>> round(samples.count('c') * 1.0/N, 1)
+    0.4
+    >>> round(samples.count('d') * 1.0/N, 1)
+    0.0
 
 We have provided these as Python doctests in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
 
