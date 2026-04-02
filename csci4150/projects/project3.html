@@ -88,55 +88,82 @@
 <div class="infoblock">
 <div class="blockcontent">
 <p>&gt;&gt;&gt; dist = DiscreteDistribution()
-&gt;&gt;&gt; dist<a href="'a'" target=&ldquo;blank&rdquo;>'a'</a> = 1
-&gt;&gt;&gt; dist<a href="'b'" target=&ldquo;blank&rdquo;>'b'</a> = 2
-&gt;&gt;&gt; dist<a href="'c'" target=&ldquo;blank&rdquo;>'c'</a> = 2
-&gt;&gt;&gt; dist<a href="'d'" target=&ldquo;blank&rdquo;>'d'</a> = 0
-&gt;&gt;&gt; dist.normalize()
-&gt;&gt;&gt; list(sorted(dist.items()))
-<a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0)</a>
-&gt;&gt;&gt; dist<a href="'e'" target=&ldquo;blank&rdquo;>'e'</a> = 4
-&gt;&gt;&gt; list(sorted(dist.items()))
-<a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0), ('e&rsquo;, 4)</a>
-&gt;&gt;&gt; empty = DiscreteDistribution()
-&gt;&gt;&gt; empty.normalize()
-&gt;&gt;&gt; empty
+</p>
+<p>&gt;&gt;&gt; dist<a href="'a'" target=&ldquo;blank&rdquo;>'a'</a> = 1
+</p>
+<p>&gt;&gt;&gt; dist<a href="'b'" target=&ldquo;blank&rdquo;>'b'</a> = 2
+</p>
+<p>&gt;&gt;&gt; dist<a href="'c'" target=&ldquo;blank&rdquo;>'c'</a> = 2
+</p>
+<p>&gt;&gt;&gt; dist<a href="'d'" target=&ldquo;blank&rdquo;>'d'</a> = 0
+</p>
+<p>&gt;&gt;&gt; dist.normalize()
+</p>
+<p>&gt;&gt;&gt; list(sorted(dist.items()))
+</p>
+<p><a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0)</a>
+</p>
+<p>&gt;&gt;&gt; dist<a href="'e'" target=&ldquo;blank&rdquo;>'e'</a> = 4
+</p>
+<p>&gt;&gt;&gt; list(sorted(dist.items()))
+</p>
+<p><a href="('a'," target=&ldquo;blank&rdquo;>0.2), ('b&rsquo;, 0.4), ('c&rsquo;, 0.4), ('d&rsquo;, 0.0), ('e&rsquo;, 4)</a>
+</p>
+<p>&gt;&gt;&gt; empty = DiscreteDistribution()
+</p>
+<p>&gt;&gt;&gt; empty.normalize()
+</p>
+<p>&gt;&gt;&gt; empty
 </p>
 <p>{}
 </p>
-<p>Then use the following for testing <tt>sample</tt>.
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>&gt;&gt;&gt; dist = DiscreteDistribution()
+</p>
+<p>&gt;&gt;&gt; dist<a href="'a'" target=&ldquo;blank&rdquo;>'a'</a> = 1
+</p>
+<p>&gt;&gt;&gt; dist<a href="'b'" target=&ldquo;blank&rdquo;>'b'</a> = 2
+</p>
+<p>&gt;&gt;&gt; dist<a href="'c'" target=&ldquo;blank&rdquo;>'c'</a> = 2
+</p>
+<p>&gt;&gt;&gt; dist<a href="'d'" target=&ldquo;blank&rdquo;>'d'</a> = 0
+</p>
+<p>&gt;&gt;&gt; N = 100000.0
+</p>
+<p>&gt;&gt;&gt; samples = <a href="dist.sample()" target=&ldquo;blank&rdquo;>for _ in range(int(N))</a>
+</p>
+<p>&gt;&gt;&gt; round(samples.count('a&rsquo;) * 1.0/N, 1)
+</p>
+<p>0.2
+</p>
+<p>&gt;&gt;&gt; round(samples.count('b&rsquo;) * 1.0/N, 1)
+</p>
+<p>0.4
+</p>
+<p>&gt;&gt;&gt; round(samples.count('c&rsquo;) * 1.0/N, 1)
+</p>
+<p>0.4
+</p>
+<p>&gt;&gt;&gt; round(samples.count('d&rsquo;) * 1.0/N, 1)
+</p>
+<p>0.0
 </p>
 </div></div>
-<p>&gt;&gt;&gt; dist<a href="'a'" target=&ldquo;blank&rdquo;>'a'</a> = 1
-&gt;&gt;&gt; dist<a href="'b'" target=&ldquo;blank&rdquo;>'b'</a> = 2
-&gt;&gt;&gt; dist<a href="'c'" target=&ldquo;blank&rdquo;>'c'</a> = 2
-&gt;&gt;&gt; dist<a href="'d'" target=&ldquo;blank&rdquo;>'d'</a> = 0
-&gt;&gt;&gt; N = 100000.0
-&gt;&gt;&gt; samples = <a href="dist.sample()" target=&ldquo;blank&rdquo;>for _ in range(int(N))</a>
-&gt;&gt;&gt; round(samples.count('a&rsquo;) <b> 1.0<i>N, 1)
-0.2
-&gt;&gt;&gt; round(samples.count('b&rsquo;) </b> 1.0</i>N, 1)
-0.4
-&gt;&gt;&gt; round(samples.count('c&rsquo;) <b> 1.0<i>N, 1)
-0.4
-&gt;&gt;&gt; round(samples.count('d&rsquo;) </b> 1.0</i>N, 1)
-0.0
+<p>python -m doctest -v inference.py
 </p>
-<p>We have provided these as Python doctests in the file as a starting point, and you can feel free to add more and implement other tests of your own. You can run the doctests using:
+<p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
 </p>
 <div class="infoblock">
 <div class="blockcontent">
 <p>python -m doctest -v inference.py
 </p>
-<p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.
-</p>
 </div></div>
-<div class="infoblock">
-<div class="blockcontent">
 <p>Note that, depending on the implementation details of the <tt>sample</tt> method, sometimes the provided doctests may not pass. But you can make sure that the <tt>sample</tt> method works by drawing many samples and see if the frequency of each key converges to be proportional of its corresponding value.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:25:42 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:31:59 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
