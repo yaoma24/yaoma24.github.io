@@ -183,7 +183,7 @@
 </p>
 <p>In the Pacman display, high posterior beliefs are represented by bright colors, while low beliefs are represented by dim colors. You should start with a large cloud of belief that shrinks over time as more evidence accumulates. As you watch the test cases, be sure that you understand how the squares converge to their final coloring.
 </p>
-<p>Note: your busters agents have a separate inference module for each ghost they are tracking. That's why if you print an observation inside the update function, you'll only see a single number even though there may be multiple ghosts on the board.
+<p>Note: your busters agents have a separate inference module for each ghost they are tracking. That's why if you print an observation inside the <tt>update</tt> function, you'll only see a single number even though there may be multiple ghosts on the board.
 </p>
 <p>To run the autograder for this question and visualize the output:
 </p>
@@ -199,10 +199,48 @@
 <p>python autograder.py -q q2 --no-graphics
 </p>
 </div></div>
-<p><b>IMPORTANT</b>: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>--no-graphics</tt> flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.</p>
+<p><b>IMPORTANT</b>: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>--no-graphics</tt> flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.
+</p>
+<h2>Question 3 (3 points): Exact Inference with Time Elapse</h2>
+<p>In the previous question you implemented belief updates for Pacman based on his observations. Fortunately, Pacman's observations are not his only source of knowledge about where a ghost may be. Pacman also has knowledge about the ways that a ghost may move; namely that the ghost can not move through a wall or more than one space in one time step.
+</p>
+<p>To understand why this is useful to Pacman, consider the following scenario in which there is Pacman and one Ghost. Pacman receives many observations which indicate the ghost is very near, but then one which indicates the ghost is very far. The reading indicating the ghost is very far is likely to be the result of a buggy sensor. Pacman's prior knowledge of how the ghost may move will decrease the impact of this reading since Pacman knows the ghost could not move so far in only one move.
+</p>
+<p>In this question, you will implement the <tt>elapseTime</tt> method in <tt>ExactInference</tt>. The <tt>elapseTime</tt> step should, for this problem, update the belief at every position on the map after one time step elapsing. Your agent has access to the action distribution for the ghost through <tt>self.getPositionDistribution</tt>. In order to obtain the distribution over new positions for the ghost, given its previous position, use this line of code:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>newPosDist = self.getPositionDistribution(gameState, oldPos)
+</p>
+</div></div>
+<p>Where <tt>oldPos</tt> refers to the previous ghost position. <tt>newPosDist</tt> is a <tt>DiscreteDistribution</tt> object, where for each position <tt>p</tt> in <tt>self.allPositions</tt>, <tt>newPosDist<a href="p" target=&ldquo;blank&rdquo;>p</a></tt> is the probability that the ghost is at position <tt>p</tt> at time <tt>t </tt> 1<tt>, given that the ghost is at position </tt>oldPos<tt> at time </tt>t<tt>. Note that this call can be fairly expensive, so if your code is timing out, one thing to think about is whether or not you can reduce the number of calls to </tt>self.getPositionDistribution+.
+</p>
+<p>Before typing any code, write down the equation of the inference problem you are trying to solve. In order to test your predict implementation separately from your update implementation in the previous question, this question will not make use of your update implementation.
+</p>
+<p>Since Pacman is not observing the ghost, this means the ghost's actions will not impact Pacman's beliefs. Over time, Pacman's beliefs will come to reflect places on the board where he believes ghosts are most likely to be given the geometry of the board and what Pacman already knows about their valid movements.
+</p>
+<p>For the tests in this question we will sometimes use a ghost with random movements and other times we will use the <tt>GoSouthGhost</tt>. This ghost tends to move south so over time, and without any observations, Pacman's belief distribution should begin to focus around the bottom of the board. To see which ghost is used for each test case you can look in the <tt>.test</tt> files.
+</p>
+<p>To run the autograder for this question and visualize the output:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python autograder.py -q q3
+</p>
+</div></div>
+<p>If you want to run this test (or any of the other tests) without graphics you can add the following flag:
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>python autograder.py -q q3 --no-graphics
+</p>
+</div></div>
+<p><b>IMPORTANT</b>: In general, it is possible sometimes for the autograder to time out if running the tests with graphics. To accurately determine whether or not your code is efficient enough, you should run the tests with the <tt>--no-graphics</tt> flag. Submitty will run your code with this flag, so if your code is efficient, it will give you full credit.
+</p>
+<p>As you watch the autograder output, remember that lighter squares indicate that pacman believes a ghost is more likely to occupy that location, and darker squares indicate a ghost is less likely to occupy that location. For which of the test cases do you notice differences emerging in the shading of the squares? Can you explain why some squares get lighter and some squares get darker?</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-04-02 17:43:10 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-02 17:46:06 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </div>
