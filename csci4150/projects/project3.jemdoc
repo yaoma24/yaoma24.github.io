@@ -79,19 +79,19 @@ There are no autograder tests for this question, but the correctness of your imp
 ~~~
 >>> dist = DiscreteDistribution()
 
->>> dist['a'] = 1
+>>> dist\['a'\] = 1
 
->>> dist['b'] = 2
+>>> dist\['b'\] = 2
 
->>> dist['c'] = 2
+>>> dist\['c'\] = 2
 
->>> dist['d'] = 0
+>>> dist\['d'\] = 0
 
 >>> dist.normalize()
 
 >>> list(sorted(dist.items()))
 
-[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)]
+\[('a', 0.2), ('b', 0.4), ('c', 0.4), ('d', 0.0)\]
 
 >>> dist['e'] = 4
 
@@ -112,17 +112,17 @@ Then use the following for testing +sample+.
 ~~~
 >>> dist = DiscreteDistribution()
 
->>> dist['a'] = 1
+>>> dist\['a'\] = 1
 
->>> dist['b'] = 2
+>>> dist\['b'\] = 2
 
->>> dist['c'] = 2
+>>> dist\['c'\] = 2
 
->>> dist['d'] = 0
+>>> dist\['d'\] = 0
 
 >>> N = 100000.0
 
->>> samples = [dist.sample() for _ in range(int(N))]
+>>> samples = \[dist.sample() for _ in range(int(N))\]
 
 >>> round(samples.count('a') \* 1.0/N, 1)  # proportion of 'a'
 
